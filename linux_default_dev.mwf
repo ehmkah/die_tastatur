@@ -59,8 +59,8 @@ MSR M3, : ""
 !@KEYPRINT:C12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C13 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C15 "yes";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C16 "no";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D01 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -77,7 +77,7 @@ MSR M3, : ""
 !@KEYPRINT:D14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:E01 "open commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E01 "load\linegradle\linechanges";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E04 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -112,12 +112,12 @@ MSR M3, : ""
 !@KEYPRINT:G01 "fetch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G02 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G03 "checkout\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G04 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G05 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G06 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G07 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G08 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G09 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G05 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "checkout\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 " ";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G10 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -126,14 +126,14 @@ MSR M3, : ""
 !@KEYPRINT:G15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H01 "git\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H02 "open\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H03 "open\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H05 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H06 "run last";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H07 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H08 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H09 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H10 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -144,7 +144,9 @@ MSR M3, : ""
 !@KEYLAYER:AlwaysActive,AAAA,11
 A12/K/P: "a"
 A16/P: "sudo{SPACE}/home/osboxes/opt/bin/reconnect.sh{RETURN}"
-E01/P: "{LWIN+{9}}"
+C15/P: "yes{RETURN}"
+C16/P: "no{RETURN}"
+E01/P: "{CTRL+{SHIFT+O}}"
 E03/P: "{LWIN+{k}}"
 E04/K/P: "{ALT+i}"
 E07/P: "{SHIFT+{F10}}"
@@ -159,18 +161,26 @@ F07/K/P: "ssh-add{SPACE}~/.ssh/id_rsa{RETURN}"
 G01/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
 G02/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
 G03/P: "git{SPACE}checkout{SPACE}master{RETURN}"
-G04/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
-G05/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
-G06/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
-G07/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
+G04/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
+G05/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
+G06/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
+G07/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
+G08/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
 H01/P: "{ALT+9}"
+H02/P: "{CTRL+k}"
 H03/P: "{CTRL+k}"
 H04/P: "{ALT+i}"
-H06/K/P: "{SHIFT+{F10}}"
+H05/P: "{ALT+i}"
+H06/P: "{CTRL+{SHIFT+k}}"
+H07/P: "{CTRL+{SHIFT+k}}"
+H08/K/P: "{ALT+p}"
+H09/K/P: "{ALT+p}"
 H14/K/P: "{LWIN+{SPACE}}"
 H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:A12 00000A11
 !@KEYATTRIB:A16 00000A10
+!@KEYATTRIB:C15 00000A10
+!@KEYATTRIB:C16 00000A10
 !@KEYATTRIB:E01 00000A10
 !@KEYATTRIB:E03 00000A10
 !@KEYATTRIB:E04 00000A11
@@ -186,14 +196,20 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:G01 00000A10
 !@KEYATTRIB:G02 00000A10
 !@KEYATTRIB:G03 00000A10
-!@KEYATTRIB:G04 00000A10
-!@KEYATTRIB:G05 00000A10
-!@KEYATTRIB:G06 00000A11
-!@KEYATTRIB:G07 00000A11
+!@KEYATTRIB:G04 00000A11
+!@KEYATTRIB:G05 00000A11
+!@KEYATTRIB:G06 00000A10
+!@KEYATTRIB:G07 00000A10
+!@KEYATTRIB:G08 00000A10
 !@KEYATTRIB:H01 00000A10
+!@KEYATTRIB:H02 00000A10
 !@KEYATTRIB:H03 00000A10
 !@KEYATTRIB:H04 00000A10
-!@KEYATTRIB:H06 00000A11
+!@KEYATTRIB:H05 00000A10
+!@KEYATTRIB:H06 00000A10
+!@KEYATTRIB:H07 00000A10
+!@KEYATTRIB:H08 00000A11
+!@KEYATTRIB:H09 00000A11
 !@KEYATTRIB:H14 00000A11
 !@KEYATTRIB:H15 00000A11
 !@KEYLAYER:Normal-Layer,8A80,10
