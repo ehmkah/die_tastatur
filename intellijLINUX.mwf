@@ -142,6 +142,7 @@ MSR M3, : ""
 !@KEYPRINT:H15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYLAYER:AlwaysActive,AAAA,11
+A12/K/P: "a"
 A16/P: "sudo{SPACE}/home/osboxes/opt/bin/reconnect.sh{RETURN}"
 E01/P: "{LWIN+{9}}"
 E03/P: "{LWIN+{k}}"
@@ -163,6 +164,7 @@ H04/P: "{ALT+i}"
 H06/K/P: "{SHIFT+{F10}}"
 H14/K/P: "{LWIN+{SPACE}}"
 H15/K/P: "{LWIN+{SPACE}}"
+!@KEYATTRIB:A12 00000A11
 !@KEYATTRIB:A16 00000A10
 !@KEYATTRIB:E01 00000A10
 !@KEYATTRIB:E03 00000A10
