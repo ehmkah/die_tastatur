@@ -61,10 +61,10 @@ MSR M3, : ""
 !@KEYPRINT:C14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C15 "yes";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C16 "no";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:D01 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:D02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:D03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:D04 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D01 "run\linelast";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D02 "debug\linelast";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D03 "select\linerun";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D04 "select\linedebug";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D05 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D06 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D07 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -83,9 +83,9 @@ MSR M3, : ""
 !@KEYPRINT:E04 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E05 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E06 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:E07 "run last";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E07 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E08 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:E09 "debug last";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E09 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E10 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -146,13 +146,11 @@ A12/K/P: "a"
 A16/P: "sudo{SPACE}/home/osboxes/opt/bin/reconnect.sh{RETURN}"
 C15/P: "yes{RETURN}"
 C16/P: "no{RETURN}"
+D01/P: "{SHIFT+{F10}}"
+D02/P: "{SHIFT+{F9}}"
+D03/K/P: "{ALT+{SHIFT+{F10}}}"
+D04/P: "{ALT+{SHIFT+{F9}}}"
 E01/P: "{CTRL+{SHIFT+O}}"
-E03/P: "{LWIN+{k}}"
-E04/K/P: "{ALT+i}"
-E07/P: "{SHIFT+{F10}}"
-E09/K/P: "{SHIFT+{F9}}"
-F01/P: " "
-F02/K/P: " "
 F03/P: "ssh{SPACE}dev{RETURN}"
 F04/P: "ssh-agent{SPACE}bash{RETURN}"
 F05/P: "ssh-agent{SPACE}bash{RETURN}"
@@ -181,13 +179,11 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:A16 00000A10
 !@KEYATTRIB:C15 00000A10
 !@KEYATTRIB:C16 00000A10
+!@KEYATTRIB:D01 00000A10
+!@KEYATTRIB:D02 00000A10
+!@KEYATTRIB:D03 00000A11
+!@KEYATTRIB:D04 00000A10
 !@KEYATTRIB:E01 00000A10
-!@KEYATTRIB:E03 00000A10
-!@KEYATTRIB:E04 00000A11
-!@KEYATTRIB:E07 00000A10
-!@KEYATTRIB:E09 00000A11
-!@KEYATTRIB:F01 00000A10
-!@KEYATTRIB:F02 00000A11
 !@KEYATTRIB:F03 00000A10
 !@KEYATTRIB:F04 00000A10
 !@KEYATTRIB:F05 00000A10
