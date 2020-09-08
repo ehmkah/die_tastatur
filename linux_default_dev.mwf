@@ -13,7 +13,7 @@ MSR M3, : ""
 !@KEYBOARDTYPESTRING:MCI 128
 !@KEYGLOBALPRINT:1.00;0.20;0.00;4.80;  FFFFFF;       0;190;0;0;0;0;Arial
 !@KEYBOARDSIZE:364.00;207.00
-!@KEYPRINT:A01 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A01 "gradle";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:A02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:A03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:A04 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -29,7 +29,7 @@ MSR M3, : ""
 !@KEYPRINT:A14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:A15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:A16 "reconnect";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:B01 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B01 "gradle";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B04 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -116,9 +116,9 @@ MSR M3, : ""
 !@KEYPRINT:G05 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G08 "checkout\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G09 " ";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G10 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "checkout";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 "checkout\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G10 "checkout\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G13 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -142,8 +142,10 @@ MSR M3, : ""
 !@KEYPRINT:H15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYLAYER:AlwaysActive,AAAA,11
+A01/P: "./gradlew{SPACE}-Dhttps.proxyHost=127.0.0.1{SPACE}-Dhttps.proxyPort=3128{SPACE}"
 A12/K/P: "a"
 A16/P: "sudo{SPACE}/home/osboxes/opt/bin/reconnect.sh{RETURN}"
+B01/P: "./gradlew{SPACE}-Dhttps.proxyHost=127.0.0.1{SPACE}-Dhttps.proxyPort=3128{SPACE}"
 C15/P: "yes{RETURN}"
 C16/P: "no{RETURN}"
 D01/P: "{SHIFT+{F10}}"
@@ -163,7 +165,9 @@ G04/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
 G05/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
 G06/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
 G07/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
-G08/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
+G08/P: "git{SPACE}checkout{SPACE}"
+G09/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
+G10/P: "git{SPACE}checkout{SPACE}-{RETURN}"
 H01/P: "{ALT+9}"
 H02/P: "{CTRL+k}"
 H03/P: "{CTRL+k}"
@@ -171,12 +175,14 @@ H04/P: "{ALT+i}"
 H05/P: "{ALT+i}"
 H06/P: "{CTRL+{SHIFT+k}}"
 H07/P: "{CTRL+{SHIFT+k}}"
-H08/K/P: "{ALT+p}"
-H09/K/P: "{ALT+p}"
+H08/P: "{ALT+p}"
+H09/P: "{ALT+p}"
 H14/K/P: "{LWIN+{SPACE}}"
 H15/K/P: "{LWIN+{SPACE}}"
+!@KEYATTRIB:A01 00000A10
 !@KEYATTRIB:A12 00000A11
 !@KEYATTRIB:A16 00000A10
+!@KEYATTRIB:B01 00000A10
 !@KEYATTRIB:C15 00000A10
 !@KEYATTRIB:C16 00000A10
 !@KEYATTRIB:D01 00000A10
@@ -197,6 +203,8 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:G06 00000A10
 !@KEYATTRIB:G07 00000A10
 !@KEYATTRIB:G08 00000A10
+!@KEYATTRIB:G09 00000A10
+!@KEYATTRIB:G10 00000A10
 !@KEYATTRIB:H01 00000A10
 !@KEYATTRIB:H02 00000A10
 !@KEYATTRIB:H03 00000A10
@@ -204,8 +212,8 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:H05 00000A10
 !@KEYATTRIB:H06 00000A10
 !@KEYATTRIB:H07 00000A10
-!@KEYATTRIB:H08 00000A11
-!@KEYATTRIB:H09 00000A11
+!@KEYATTRIB:H08 00000A10
+!@KEYATTRIB:H09 00000A10
 !@KEYATTRIB:H14 00000A11
 !@KEYATTRIB:H15 00000A11
 !@KEYLAYER:Normal-Layer,8A80,10
