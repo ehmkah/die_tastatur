@@ -111,16 +111,16 @@ MSR M3, : ""
 !@KEYPRINT:F16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G01 "fetch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G02 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G03 "checkout\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G04 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G05 "git\linereset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G08 "checkout";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G09 "checkout\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G10 "checkout\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G11 "delete\linebranch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G12 "pull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "pull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "co\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G05 "co\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "co\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G07 "co";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 "reset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G10 "delete\linebranch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G13 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -160,16 +160,14 @@ F06/K/P: "ssh-add{SPACE}~/.ssh/id_rsa{RETURN}"
 F07/K/P: "ssh-add{SPACE}~/.ssh/id_rsa{RETURN}"
 G01/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
 G02/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
-G03/P: "git{SPACE}checkout{SPACE}master{RETURN}"
-G04/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
-G05/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
-G06/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
-G07/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
-G08/P: "git{SPACE}checkout{SPACE}"
-G09/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
-G10/P: "git{SPACE}checkout{SPACE}-{RETURN}"
-G11/P: "git{SPACE}branch{SPACE}-D{SPACE}"
-G12/P: "git{SPACE}pull{RETURN}"
+G03/P: "git{SPACE}pull{RETURN}"
+G04/P: "git{SPACE}checkout{SPACE}master{RETURN}"
+G05/P: "git{SPACE}checkout{SPACE}-{RETURN}"
+G06/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
+G07/P: "git{SPACE}checkout{SPACE}"
+G08/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
+G09/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
+G10/P: "git{SPACE}branch{SPACE}-D{SPACE}"
 H01/P: "{ALT+9}"
 H02/P: "{CTRL+k}"
 H03/P: "{CTRL+k}"
@@ -200,15 +198,13 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:G01 00000A10
 !@KEYATTRIB:G02 00000A10
 !@KEYATTRIB:G03 00000A10
-!@KEYATTRIB:G04 00000A11
-!@KEYATTRIB:G05 00000A11
+!@KEYATTRIB:G04 00000A10
+!@KEYATTRIB:G05 00000A10
 !@KEYATTRIB:G06 00000A10
 !@KEYATTRIB:G07 00000A10
 !@KEYATTRIB:G08 00000A10
 !@KEYATTRIB:G09 00000A10
 !@KEYATTRIB:G10 00000A10
-!@KEYATTRIB:G11 00000A10
-!@KEYATTRIB:G12 00000A10
 !@KEYATTRIB:H01 00000A10
 !@KEYATTRIB:H02 00000A10
 !@KEYATTRIB:H03 00000A10
@@ -224,11 +220,11 @@ H15/K/P: "{LWIN+{SPACE}}"
 F01-C-S-A-L/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
 G01-C-S-A-L/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
 G02-C-S-A-L/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
-G03-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
+G04-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
 !@KEYATTRIB:F01 00000A10
 !@KEYATTRIB:G01 00000A10
 !@KEYATTRIB:G02 00000A10
-!@KEYATTRIB:G03 00000A10
+!@KEYATTRIB:G04 00000A10
 !@KEYLAYER:Shift-Layer,8A81,10
 !@KEYLAYER:Control-Layer,8A86,10
 !@KEYLAYER:StdKey-Layer,6AAA,514
