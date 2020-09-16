@@ -119,8 +119,8 @@ MSR M3, : ""
 !@KEYPRINT:G08 "checkout";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G09 "checkout\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G10 "checkout\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G11 "delete\linebranch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G12 "pull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G13 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -163,11 +163,13 @@ G02/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
 G03/P: "git{SPACE}checkout{SPACE}master{RETURN}"
 G04/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
 G05/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
-G06/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
-G07/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
+G06/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
+G07/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
 G08/P: "git{SPACE}checkout{SPACE}"
 G09/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
 G10/P: "git{SPACE}checkout{SPACE}-{RETURN}"
+G11/P: "git{SPACE}branch{SPACE}-D{SPACE}"
+G12/P: "git{SPACE}pull{RETURN}"
 H01/P: "{ALT+9}"
 H02/P: "{CTRL+k}"
 H03/P: "{CTRL+k}"
@@ -205,6 +207,8 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:G08 00000A10
 !@KEYATTRIB:G09 00000A10
 !@KEYATTRIB:G10 00000A10
+!@KEYATTRIB:G11 00000A10
+!@KEYATTRIB:G12 00000A10
 !@KEYATTRIB:H01 00000A10
 !@KEYATTRIB:H02 00000A10
 !@KEYATTRIB:H03 00000A10
