@@ -47,12 +47,12 @@ MSR M3, : ""
 !@KEYPRINT:B16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C01 "docker\linels";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C02 "docker\linestop";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C03 "docker\linelogs";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C04 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C05 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C06 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C07 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C08 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C08 "compose\linedown";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C09 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C10 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -110,19 +110,19 @@ MSR M3, : ""
 !@KEYPRINT:F15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G01 "fetch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G02 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G03 "pull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G04 "co\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G05 "co\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G06 "co\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G07 "co";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G08 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G09 "reset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G10 "delete\linebranch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G13 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G14 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G02 "pull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G05 "co\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "co\linedevelop";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G07 "co\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "co\line-b";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 "co";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G10 "push\lineHEAD";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G11 "push\linetag";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G12 "undo\linecommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G13 "reset";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G14 "delete\linebranch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G15 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H01 "git\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -145,11 +145,13 @@ MSR M3, : ""
 A12/K/P: "a"
 A16/P: "sudo{SPACE}/home/osboxes/opt/bin/reconnect.sh{RETURN}"
 B01/P: "kubectl get pods {RETURN}"
-B02/K/P: "kubectl logs -f "
+B02/P: "kubectl logs -f "
 B03/K/P: "kubens{RETURN}"
 B04/K/P: "kubectx{RETURN}"
-C01/K/P: "docker container ls{RETURN}"
+C01/P: "docker container ls{RETURN}"
 C02/P: "docker container stop "
+C03/P: "docker{SPACE}logs{SPACE}-f{SPACE}"
+C08/P: "docker-compose{SPACE}down{SPACE}{RETURN}"
 C15/P: "yes{RETURN}"
 C16/P: "no{RETURN}"
 D01/P: "{SHIFT+{F10}}"
@@ -160,18 +162,22 @@ E01/P: "{CTRL+{SHIFT+O}}"
 F03/P: "ssh{SPACE}dev{RETURN}"
 F04/P: "ssh-agent{SPACE}bash{RETURN}"
 F05/P: "ssh-agent{SPACE}bash{RETURN}"
-F06/K/P: "ssh-add{SPACE}~/.ssh/id_rsa{RETURN}"
+F06/K/P: "ssh-add{SPACE}{ALT+n}/.ssh/id_rsa{RETURN}"
 F07/K/P: "ssh-add{SPACE}~/.ssh/id_rsa{RETURN}"
 G01/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
-G02/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
-G03/P: "git{SPACE}pull{RETURN}"
-G04/P: "git{SPACE}checkout{SPACE}master{RETURN}"
-G05/P: "git{SPACE}checkout{SPACE}-{RETURN}"
-G06/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
-G07/P: "git{SPACE}checkout{SPACE}"
-G08/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
-G09/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
-G10/P: "git{SPACE}branch{SPACE}-D{SPACE}"
+G02/P: "git{SPACE}pull{SPACE}-p{RETURN}"
+G03/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
+G04/P: "git{SPACE}merge{SPACE}origin/develop{RETURN}"
+G05/P: "git{SPACE}checkout{SPACE}master{RETURN}"
+G06/P: "git{SPACE}checkout{SPACE}develop{RETURN}"
+G07/P: "git{SPACE}checkout{SPACE}-{RETURN}"
+G08/P: "git{SPACE}checkout{SPACE}-b{SPACE}"
+G09/P: "git{SPACE}checkout{SPACE}"
+G10/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}HEAD{RETURN}"
+G11/P: "git{SPACE}push{SPACE}-u{SPACE}origin{SPACE}--tags{RETURN}"
+G12/P: "git{SPACE}reset{SPACE}HEAD{ALT+n}{SPACE}{RETURN}"
+G13/K/P: "git{SPACE}reset{SPACE}--hard{RETURN}"
+G14/P: "git{SPACE}branch{SPACE}-D{SPACE}"
 H01/P: "{LWIN+9}"
 H02/P: "{CTRL+k}"
 H03/P: "{CTRL+k}"
@@ -186,11 +192,13 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:A12 00000A11
 !@KEYATTRIB:A16 00000A10
 !@KEYATTRIB:B01 00000A10
-!@KEYATTRIB:B02 00000A11
+!@KEYATTRIB:B02 00000A10
 !@KEYATTRIB:B03 00000A11
 !@KEYATTRIB:B04 00000A11
-!@KEYATTRIB:C01 00000A11
+!@KEYATTRIB:C01 00000A10
 !@KEYATTRIB:C02 00000A10
+!@KEYATTRIB:C03 00000A10
+!@KEYATTRIB:C08 00000A10
 !@KEYATTRIB:C15 00000A10
 !@KEYATTRIB:C16 00000A10
 !@KEYATTRIB:D01 00000A10
@@ -213,6 +221,10 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:G08 00000A10
 !@KEYATTRIB:G09 00000A10
 !@KEYATTRIB:G10 00000A10
+!@KEYATTRIB:G11 00000A10
+!@KEYATTRIB:G12 00000A10
+!@KEYATTRIB:G13 00000A11
+!@KEYATTRIB:G14 00000A10
 !@KEYATTRIB:H01 00000A10
 !@KEYATTRIB:H02 00000A10
 !@KEYATTRIB:H03 00000A10
@@ -227,12 +239,16 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYLAYER:Normal-Layer,8A80,10
 F01-C-S-A-L/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
 G01-C-S-A-L/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
-G02-C-S-A-L/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
-G04-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
+G03-C-S-A-L/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
+G04-C-S-A-L/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
+G05-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
+G06-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
 !@KEYATTRIB:F01 00000A10
 !@KEYATTRIB:G01 00000A10
-!@KEYATTRIB:G02 00000A10
+!@KEYATTRIB:G03 00000A10
 !@KEYATTRIB:G04 00000A10
+!@KEYATTRIB:G05 00000A10
+!@KEYATTRIB:G06 00000A10
 !@KEYLAYER:Shift-Layer,8A81,10
 !@KEYLAYER:Control-Layer,8A86,10
 !@KEYLAYER:StdKey-Layer,6AAA,514
