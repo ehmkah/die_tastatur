@@ -53,8 +53,8 @@ MSR M3, : ""
 !@KEYPRINT:C06 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C07 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C08 "compose\linedown";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C09 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C10 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C09 "compose\linepull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C10 "compose\lineup";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C11 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C12 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C13 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -112,7 +112,7 @@ MSR M3, : ""
 !@KEYPRINT:G01 "fetch";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G02 "pull";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G03 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G04 "merge\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "merge\linedevelop";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G05 "co\linemaster";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G06 "co\linedevelop";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G07 "co\line-";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -152,6 +152,8 @@ C01/P: "docker container ls{RETURN}"
 C02/P: "docker container stop "
 C03/P: "docker{SPACE}logs{SPACE}-f{SPACE}"
 C08/P: "docker-compose{SPACE}down{SPACE}{RETURN}"
+C09/P: "docker-compose{SPACE}pull{SPACE}{RETURN}"
+C10/P: "docker-compose{SPACE}up{SPACE}-d{SPACE}"
 C15/P: "yes{RETURN}"
 C16/P: "no{RETURN}"
 D01/P: "{SHIFT+{F10}}"
@@ -199,6 +201,8 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYATTRIB:C02 00000A10
 !@KEYATTRIB:C03 00000A10
 !@KEYATTRIB:C08 00000A10
+!@KEYATTRIB:C09 00000A10
+!@KEYATTRIB:C10 00000A10
 !@KEYATTRIB:C15 00000A10
 !@KEYATTRIB:C16 00000A10
 !@KEYATTRIB:D01 00000A10
@@ -239,16 +243,10 @@ H15/K/P: "{LWIN+{SPACE}}"
 !@KEYLAYER:Normal-Layer,8A80,10
 F01-C-S-A-L/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
 G01-C-S-A-L/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
-G03-C-S-A-L/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
-G04-C-S-A-L/P: "git{SPACE}merge{SPACE}origin/master{RETURN}"
 G05-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
-G06-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
 !@KEYATTRIB:F01 00000A10
 !@KEYATTRIB:G01 00000A10
-!@KEYATTRIB:G03 00000A10
-!@KEYATTRIB:G04 00000A10
 !@KEYATTRIB:G05 00000A10
-!@KEYATTRIB:G06 00000A10
 !@KEYLAYER:Shift-Layer,8A81,10
 !@KEYLAYER:Control-Layer,8A86,10
 !@KEYLAYER:StdKey-Layer,6AAA,514
