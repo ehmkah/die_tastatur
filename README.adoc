@@ -23,4 +23,3 @@ Your contributions are always welcome.
 == Howto define your own keyboard-layout?
 
 == Howto add a new execution to die tastatur?
-
