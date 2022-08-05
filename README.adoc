@@ -4,6 +4,8 @@ Defines useful shortcut for several programs so they can be easily be added to a
 
 Current state - maybe usefule maybe not
 
+Your contributions are always welcome.
+
 == Supported devices
 
 * Prehkeytech MCI 128
