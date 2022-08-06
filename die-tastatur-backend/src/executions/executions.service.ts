@@ -12,6 +12,7 @@ import {kubens_default_macos} from "./kubens_default_macos";
 import {kubectx_default_macos} from "./kubectx_classic_macosx";
 import {docker_default_macos} from "./docker_default_macosx";
 import {docker_compose_default_macosx} from "./docker_compose_default_macosx";
+import {shellDefaultMacosx} from "./shell-default-macosx";
 
 @Injectable()
 export class ExecutionsService {
@@ -29,8 +30,8 @@ export class ExecutionsService {
             kubens_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             kubectx_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             docker_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
-            docker_compose_default_macosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))
-        );
+            docker_compose_default_macosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
+            shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX)));
 
         return executions;
     }

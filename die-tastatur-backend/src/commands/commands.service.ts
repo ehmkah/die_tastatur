@@ -37,8 +37,8 @@ export class CommandsService {
             <Command>{id: 'kubens', description: 'Select kubernetes namespace interactive', defaultKeyPrintText: 'kubens', name: CommandsDefinitions.KUBENS},
 
             // Other
-            <Command>{id: 'yes', description: 'say yes', name: CommandsDefinitions.YES},
-            <Command>{id: 'no', description: 'say no', name: CommandsDefinitions.NO}
+            <Command>{id: 'yes', description: 'say yes', defaultKeyPrintText:'yes', name: CommandsDefinitions.YES},
+            <Command>{id: 'no', description: 'say no', defaultKeyPrintText:'no', name: CommandsDefinitions.NO}
         ];
     }
 
