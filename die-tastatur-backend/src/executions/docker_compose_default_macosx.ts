@@ -8,6 +8,8 @@ export function docker_compose_default_macosx(executionService: ExecutionsServic
 
     return [
         executionService.createExecution('docker_compose-up', CommandsDefinitions.DOCKER_COMPOSE_UP, keyset, `docker-compose{${SpecialKeys.SPACE}}up{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('docker_compose-down', CommandsDefinitions.DOCKER_COMPOSE_DOWN, keyset, `docker-compose{${SpecialKeys.SPACE}}down{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('docker_compose-pull', CommandsDefinitions.DOCKER_COMPOSE_PULL, keyset, `docker-compose{${SpecialKeys.SPACE}}pull{${SpecialKeys.RETURN}}`),
     ]
 
 }

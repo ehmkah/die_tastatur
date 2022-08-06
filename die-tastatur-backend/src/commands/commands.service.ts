@@ -19,6 +19,8 @@ export class CommandsService {
 
             //docker-compose
             <Command>{id: 'docker_compose-up', description: 'Start all container from docker-compose', defaultKeyPrintText: 'compose\nup', name: CommandsDefinitions.DOCKER_COMPOSE_UP},
+            <Command>{id: 'docker_compose-down', description: 'Stop all running docker container from docker-compose', defaultKeyPrintText: 'compose\ndown', name: CommandsDefinitions.DOCKER_COMPOSE_DOWN},
+            <Command>{id: 'docker_compose-pull', description: 'Pull al required containers for docker-compose', defaultKeyPrintText: 'compose\npull', name: CommandsDefinitions.DOCKER_COMPOSE_PULL},
 
             // GIT
             <Command>{id: 'git checkout master branch', description: 'git checkout code master branch', defaultKeyPrintText: 'co\nmaster', name: CommandsDefinitions.GIT_CHECKOUT_MASTER},

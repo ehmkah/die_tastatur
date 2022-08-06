@@ -18,6 +18,8 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[5][0] = keyboardLayoutsService.createKeyDetails('5_0', CommandsDefinitions.DOCKER_LS, terminalDefaultKeyset);
     board[5][1] = keyboardLayoutsService.createKeyDetails('5_1', CommandsDefinitions.DOCKER_STOP, terminalDefaultKeyset);
     board[5][2] = keyboardLayoutsService.createKeyDetails('5_2', CommandsDefinitions.DOCKER_LOGS, terminalDefaultKeyset);
+    board[5][7] = keyboardLayoutsService.createKeyDetails('5_9', CommandsDefinitions.DOCKER_COMPOSE_DOWN, terminalDefaultKeyset);
+    board[5][8] = keyboardLayoutsService.createKeyDetails('5_9', CommandsDefinitions.DOCKER_COMPOSE_PULL, terminalDefaultKeyset);
     board[5][9] = keyboardLayoutsService.createKeyDetails('5_9', CommandsDefinitions.DOCKER_COMPOSE_UP, terminalDefaultKeyset);
     board[6][0] = keyboardLayoutsService.createKeyDetails('6_0', CommandsDefinitions.KUBECTL_GET_PODS, terminalDefaultKeyset);
     board[6][1] = keyboardLayoutsService.createKeyDetails('6_1', CommandsDefinitions.KUBECTL_LOGS, terminalDefaultKeyset);

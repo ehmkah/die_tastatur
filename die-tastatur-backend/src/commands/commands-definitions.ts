@@ -10,6 +10,8 @@ export enum CommandsDefinitions {
 
     // Docker compose
     DOCKER_COMPOSE_UP = 'docker_compose-up',
+    DOCKER_COMPOSE_DOWN = 'docker_compose-down',
+    DOCKER_COMPOSE_PULL = 'docker_compose-pull',
 
     // Git Commands
     GIT_FETCH = 'git_fetch_cmd',
