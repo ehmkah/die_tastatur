@@ -11,6 +11,7 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     let terminalDefaultKeyset = KeysetDefinitions.TERMINAL_MACOSX;
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
 
+    board[0][0] = keyboardLayoutsService.createKeyDetails('0_0', CommandsDefinitions.JUMP_TO_GIT_VIEW, intelliJClassicKeyset);
     board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, intelliJClassicKeyset);
 
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);

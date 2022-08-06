@@ -8,6 +8,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
 
     return [
         executionService.createExecution('1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('git_view', CommandsDefinitions.JUMP_TO_GIT_VIEW, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('2', CommandsDefinitions.RUN_LAST, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('3', CommandsDefinitions.DEBUG_LAST, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('4', CommandsDefinitions.SELECT_RUN, keyset, `{${SpecialKeys.CTRL}+{1}}`),

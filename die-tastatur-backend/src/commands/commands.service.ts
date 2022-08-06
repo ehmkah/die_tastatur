@@ -10,6 +10,7 @@ export class CommandsService {
         return [
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
+            <Command>{id: 'jump_to_git_view', description: 'Jump to git view', defaultKeyPrintText: 'git\nview', name: CommandsDefinitions.JUMP_TO_GIT_VIEW},
             <Command>{id: 'run_last', description: 'Run last Runconfiguration', defaultKeyPrintText: 'run\nlast', name: CommandsDefinitions.RUN_LAST},
             <Command>{id: 'debug_last', description: 'Debug last Runconfiguration', defaultKeyPrintText: 'debug\nlast', name: CommandsDefinitions.DEBUG_LAST},
             <Command>{id: 'select_run', description: 'Open select menu to choose Runconfiguration', defaultKeyPrintText: 'select\nrun', name: CommandsDefinitions.SELECT_RUN},
