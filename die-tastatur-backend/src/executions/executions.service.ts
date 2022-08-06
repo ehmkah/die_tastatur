@@ -13,6 +13,7 @@ import {kubectx_default_macos} from "./kubectx_classic_macosx";
 import {docker_default_macos} from "./docker_default_macosx";
 import {docker_compose_default_macosx} from "./docker_compose_default_macosx";
 import {shellDefaultMacosx} from "./shell-default-macosx";
+import {ssh_agentDefaultMaxosx} from "./ssh_agent-default-maxosx";
 
 @Injectable()
 export class ExecutionsService {
@@ -31,7 +32,8 @@ export class ExecutionsService {
             kubectx_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             docker_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             docker_compose_default_macosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
-            shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX)));
+            shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
+            ssh_agentDefaultMaxosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX)));
 
         return executions;
     }

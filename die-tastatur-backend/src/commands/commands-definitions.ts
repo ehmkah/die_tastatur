@@ -30,6 +30,10 @@ export enum CommandsDefinitions {
     // kubens commands
     KUBENS = 'KUBENS',
 
+    // ssh
+    SSH_AGENT_START = 'ssh_agent-start',
+    SSH_AGENT_ADD_KEY = 'ssh_agent_addkey',
+
     // other
     YES = 'yes',
     NO = 'no',

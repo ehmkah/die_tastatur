@@ -39,6 +39,10 @@ export class CommandsService {
             // kubens
             <Command>{id: 'kubens', description: 'Select kubernetes namespace interactive', defaultKeyPrintText: 'kubens', name: CommandsDefinitions.KUBENS},
 
+            // ssh-agent
+            <Command>{id: 'ssh_agent-start', description: 'start ssh-agent', defaultKeyPrintText: 'ssh\nagent', name: CommandsDefinitions.SSH_AGENT_START},
+            <Command>{id: 'ssh-agent-add_key', description: 'add key to ssh-agent', defaultKeyPrintText: 'add\nkey', name: CommandsDefinitions.SSH_AGENT_ADD_KEY},
+
             // Other
             <Command>{id: 'yes', description: 'say yes', defaultKeyPrintText:'yes', name: CommandsDefinitions.YES},
             <Command>{id: 'no', description: 'say no', defaultKeyPrintText:'no', name: CommandsDefinitions.NO}
