@@ -28,6 +28,10 @@ export class CommandsService {
             // GIT
             <Command>{id: 'git checkout master branch', description: 'git checkout code master branch', defaultKeyPrintText: 'co\nmaster', name: CommandsDefinitions.GIT_CHECKOUT_MASTER},
             <Command>{id: 'git fetch', description: 'git fetch', defaultKeyPrintText: 'fetch', name: CommandsDefinitions.GIT_FETCH},
+            <Command>{id: 'git pull', description: 'git pull', defaultKeyPrintText: 'pull', name: CommandsDefinitions.GIT_PULL},
+            <Command>{id: 'git merge master', description: 'git merge origin/master', defaultKeyPrintText: 'merge\nmaster', name: CommandsDefinitions.GIT_MERGE_MASTER},
+            <Command>{id: 'git merge develop', description: 'git merge origin/develop', defaultKeyPrintText: 'merge\ndevelop', name: CommandsDefinitions.GIT_MERGE_DEVELOP},
+            <Command>{id: 'git checkout develop branch', description: 'git checkout develop branch', defaultKeyPrintText: 'co\ndevelop', name: CommandsDefinitions.GIT_CHECKOUT_DEVELOP},
 
             // gradle
             <Command>{id: 'gradle-reload_chanegs', description: 'gradle reload changes', defaultKeyPrintText: 'load\ngradle\nchanges', name: CommandsDefinitions.GRADLE_RELOAD_CHANGES},

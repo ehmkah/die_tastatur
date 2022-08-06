@@ -17,8 +17,16 @@ export enum CommandsDefinitions {
     DOCKER_COMPOSE_PULL = 'docker_compose-pull',
 
     // Git Commands
-    GIT_FETCH = 'git_fetch_cmd',
-    GIT_CHECKOUT_MASTER = 'checkout_master_cmd',
+    GIT_FETCH = 'git-fetch',
+    GIT_PULL = 'git-pull',
+    GIT_MERGE_MASTER = 'git-merge_master',
+    GIT_MERGE_DEVELOP = 'git-merge_develop',
+    GIT_CHECKOUT_MASTER = 'git-checkout_master',
+    GIT_CHECKOUT_DEVELOP = 'git-checkout_develop',
+    GIT_CHECKOUT_LAST = 'git-checkout_last',
+    GIT_CREATE_AND_CHECKOUT_NEW_BRANCH = 'git-create_and_checkout_new_branch',
+    GIT_PUSH_ORIGIN_HEAD = 'git-push_origin_head',
+    GIT_PUSH_TAGS = 'git-push_tags',
 
     // Gradle
     GRADLE_RELOAD_CHANGES = 'gradle-reload_changes',

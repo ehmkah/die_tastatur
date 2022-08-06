@@ -12,8 +12,14 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
 
     board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, intelliJClassicKeyset);
-    board[1][0] = keyboardLayoutsService.createKeyDetails('1_4', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);
+
+    board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);
+    board[1][1] = keyboardLayoutsService.createKeyDetails('1_1', CommandsDefinitions.GIT_PULL, terminalDefaultKeyset);
+    board[1][2] = keyboardLayoutsService.createKeyDetails('1_2', CommandsDefinitions.GIT_MERGE_MASTER, terminalDefaultKeyset);
+    board[1][3] = keyboardLayoutsService.createKeyDetails('1_3', CommandsDefinitions.GIT_MERGE_DEVELOP, terminalDefaultKeyset);
     board[1][4] = keyboardLayoutsService.createKeyDetails('1_4', CommandsDefinitions.GIT_CHECKOUT_MASTER, terminalDefaultKeyset);
+    board[1][5] = keyboardLayoutsService.createKeyDetails('1_5', CommandsDefinitions.GIT_CHECKOUT_DEVELOP, terminalDefaultKeyset);
+
     board[2][3] = keyboardLayoutsService.createKeyDetails('2_3', CommandsDefinitions.SSH_AGENT_START, terminalDefaultKeyset);
     board[2][4] = keyboardLayoutsService.createKeyDetails('2_4', CommandsDefinitions.SSH_AGENT_START, terminalDefaultKeyset);
     board[2][5] = keyboardLayoutsService.createKeyDetails('2_5', CommandsDefinitions.SSH_AGENT_ADD_KEY, terminalDefaultKeyset);
