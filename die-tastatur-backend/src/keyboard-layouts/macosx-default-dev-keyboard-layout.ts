@@ -22,6 +22,8 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[1][6] = keyboardLayoutsService.createKeyDetails('1_6', CommandsDefinitions.GIT_CHECKOUT_LAST, terminalDefaultKeyset);
     board[1][7] = keyboardLayoutsService.createKeyDetails('1_7', CommandsDefinitions.GIT_CREATE_AND_CHECKOUT_NEW_BRANCH, terminalDefaultKeyset);
     board[1][8] = keyboardLayoutsService.createKeyDetails('1_8', CommandsDefinitions.GIT_CHECKOUT, terminalDefaultKeyset);
+    board[1][9] = keyboardLayoutsService.createKeyDetails('1_9', CommandsDefinitions.GIT_PUSH_ORIGIN_HEAD, terminalDefaultKeyset);
+    board[1][10] = keyboardLayoutsService.createKeyDetails('1_10', CommandsDefinitions.GIT_PUSH_TAGS, terminalDefaultKeyset);
 
     board[2][3] = keyboardLayoutsService.createKeyDetails('2_3', CommandsDefinitions.SSH_AGENT_START, terminalDefaultKeyset);
     board[2][4] = keyboardLayoutsService.createKeyDetails('2_4', CommandsDefinitions.SSH_AGENT_START, terminalDefaultKeyset);

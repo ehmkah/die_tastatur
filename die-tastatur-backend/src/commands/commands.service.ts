@@ -35,6 +35,8 @@ export class CommandsService {
             <Command>{id: 'git checkout develop branch', description: 'git checkout develop branch', defaultKeyPrintText: 'co\ndevelop', name: CommandsDefinitions.GIT_CHECKOUT_DEVELOP},
             <Command>{id: 'git checkout last', description: 'git checkout last branch', defaultKeyPrintText: 'co\n-', name: CommandsDefinitions.GIT_CHECKOUT_LAST},
             <Command>{id: 'git checkout new branch', description: 'git checkout new branch', defaultKeyPrintText: 'co\n-b', name: CommandsDefinitions.GIT_CREATE_AND_CHECKOUT_NEW_BRANCH},
+            <Command>{id: 'git push head', description: 'git push origin HEAD', defaultKeyPrintText: 'push\nHEAD', name: CommandsDefinitions.GIT_PUSH_ORIGIN_HEAD},
+            <Command>{id: 'git push tags', description: 'git push tag', defaultKeyPrintText: 'push\ntag', name: CommandsDefinitions.GIT_PUSH_TAGS},
 
             // gradle
             <Command>{id: 'gradle-reload_chanegs', description: 'gradle reload changes', defaultKeyPrintText: 'load\ngradle\nchanges', name: CommandsDefinitions.GRADLE_RELOAD_CHANGES},
