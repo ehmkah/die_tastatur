@@ -28,6 +28,9 @@ export enum CommandsDefinitions {
     GIT_CREATE_AND_CHECKOUT_NEW_BRANCH = 'git-create_and_checkout_new_branch',
     GIT_PUSH_ORIGIN_HEAD = 'git-push_origin_head',
     GIT_PUSH_TAGS = 'git-push_tags',
+    GIT_UNDO_COMMIT = 'git-undo_commit',
+    GIT_RESET = 'git-reset',
+    GIT_DELETE_BRANCH = 'git-delete-branch',
 
     // Gradle
     GRADLE_RELOAD_CHANGES = 'gradle-reload_changes',

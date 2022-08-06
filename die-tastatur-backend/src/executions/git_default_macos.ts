@@ -18,6 +18,9 @@ export function git_default_macos(executionService: ExecutionsService, keyset: K
         executionService.createExecution('git_9', CommandsDefinitions.GIT_CHECKOUT, keyset, `git{${SpecialKeys.SPACE}}fetch{${SpecialKeys.SPACE}}-p{${SpecialKeys.RETURN}}`),
         executionService.createExecution('git_10', CommandsDefinitions.GIT_PUSH_ORIGIN_HEAD, keyset, `git{${SpecialKeys.SPACE}}fetch{${SpecialKeys.SPACE}}-p{${SpecialKeys.RETURN}}`),
         executionService.createExecution('git_11', CommandsDefinitions.GIT_PUSH_TAGS, keyset, `git{${SpecialKeys.SPACE}}fetch{${SpecialKeys.SPACE}}-p{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('git_12', CommandsDefinitions.GIT_UNDO_COMMIT, keyset, `git{${SpecialKeys.SPACE}}fetch{${SpecialKeys.SPACE}}-p{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('git_13', CommandsDefinitions.GIT_RESET, keyset, `git{${SpecialKeys.SPACE}}fetch{${SpecialKeys.SPACE}}-p{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('git_14', CommandsDefinitions.GIT_DELETE_BRANCH, keyset, `git{${SpecialKeys.SPACE}}fetch{${SpecialKeys.SPACE}}-p{${SpecialKeys.RETURN}}`),
     ]
 
 }
