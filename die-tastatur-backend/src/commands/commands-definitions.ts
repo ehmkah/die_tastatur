@@ -1,7 +1,10 @@
 export enum CommandsDefinitions {
     // IDE Commands
-    RERUN_LAST = 'rerun_last',
     JUMP_TO_PROJECT_VIEW = 'project_view',
+    RUN_LAST = 'run_last',
+    DEBUG_LAST='debug_last',
+    SELECT_RUN='select_run',
+    SELECT_DEBUG='select_debug',
 
     // Docker commands
     DOCKER_LS = 'dockerls',

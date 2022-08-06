@@ -11,10 +11,13 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     let terminalDefaultKeyset = KeysetDefinitions.TERMINAL_MACOSX;
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
 
-    board[0][0] = keyboardLayoutsService.createKeyDetails('0_0', CommandsDefinitions.RERUN_LAST, intelliJClassicKeyset);
     board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, intelliJClassicKeyset);
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_4', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);
     board[1][4] = keyboardLayoutsService.createKeyDetails('1_4', CommandsDefinitions.GIT_CHECKOUT_MASTER, terminalDefaultKeyset);
+    board[4][0] = keyboardLayoutsService.createKeyDetails('4_0', CommandsDefinitions.RUN_LAST, intelliJClassicKeyset);
+    board[4][1] = keyboardLayoutsService.createKeyDetails('4_1', CommandsDefinitions.DEBUG_LAST, intelliJClassicKeyset);
+    board[4][2] = keyboardLayoutsService.createKeyDetails('4_2', CommandsDefinitions.SELECT_RUN, intelliJClassicKeyset);
+    board[4][3] = keyboardLayoutsService.createKeyDetails('4_3', CommandsDefinitions.SELECT_DEBUG, intelliJClassicKeyset);
     board[5][0] = keyboardLayoutsService.createKeyDetails('5_0', CommandsDefinitions.DOCKER_LS, terminalDefaultKeyset);
     board[5][1] = keyboardLayoutsService.createKeyDetails('5_1', CommandsDefinitions.DOCKER_STOP, terminalDefaultKeyset);
     board[5][2] = keyboardLayoutsService.createKeyDetails('5_2', CommandsDefinitions.DOCKER_LOGS, terminalDefaultKeyset);

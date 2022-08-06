@@ -7,8 +7,11 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 export function intellijClassicMaxosxExecutions(executionService: ExecutionsService, keyset: Keyset): Array<Execution> {
 
     return [
-        executionService.createExecution('1', CommandsDefinitions.RERUN_LAST, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.F10}}}`),
-        executionService.createExecution('2', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset, `{${SpecialKeys.CTRL}+{1}}`)
+        executionService.createExecution('1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('2', CommandsDefinitions.RUN_LAST, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('3', CommandsDefinitions.DEBUG_LAST, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('4', CommandsDefinitions.SELECT_RUN, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('5', CommandsDefinitions.SELECT_DEBUG, keyset, `{${SpecialKeys.CTRL}+{1}}`),
     ];
 
 

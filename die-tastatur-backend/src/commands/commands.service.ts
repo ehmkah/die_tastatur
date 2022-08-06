@@ -9,8 +9,11 @@ export class CommandsService {
     findAll(): Array<Command> {
         return [
             // IDEs
-            <Command>{id: 'rerun_last', description: 'Rerun last run', defaultKeyPrintText: 'rerun', name: CommandsDefinitions.RERUN_LAST},
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
+            <Command>{id: 'run_last', description: 'Run last Runconfiguration', defaultKeyPrintText: 'run\nlast', name: CommandsDefinitions.RUN_LAST},
+            <Command>{id: 'debug_last', description: 'Debug last Runconfiguration', defaultKeyPrintText: 'debug\nlast', name: CommandsDefinitions.DEBUG_LAST},
+            <Command>{id: 'select_run', description: 'Open select menu to choose Runconfiguration', defaultKeyPrintText: 'select\nrun', name: CommandsDefinitions.SELECT_RUN},
+            <Command>{id: 'select_debug', description: 'Open select menu to choose Runconfiguration to debug', defaultKeyPrintText: 'select\ndebug', name: CommandsDefinitions.SELECT_DEBUG},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
