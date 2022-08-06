@@ -18,6 +18,7 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[2][4] = keyboardLayoutsService.createKeyDetails('2_4', CommandsDefinitions.SSH_AGENT_START, terminalDefaultKeyset);
     board[2][5] = keyboardLayoutsService.createKeyDetails('2_5', CommandsDefinitions.SSH_AGENT_ADD_KEY, terminalDefaultKeyset);
     board[2][6] = keyboardLayoutsService.createKeyDetails('2_6', CommandsDefinitions.SSH_AGENT_ADD_KEY, terminalDefaultKeyset);
+    board[3][0] = keyboardLayoutsService.createKeyDetails('3_0', CommandsDefinitions.GRADLE_RELOAD_CHANGES, intelliJClassicKeyset);
     board[4][0] = keyboardLayoutsService.createKeyDetails('4_0', CommandsDefinitions.RUN_LAST, intelliJClassicKeyset);
     board[4][1] = keyboardLayoutsService.createKeyDetails('4_1', CommandsDefinitions.DEBUG_LAST, intelliJClassicKeyset);
     board[4][2] = keyboardLayoutsService.createKeyDetails('4_2', CommandsDefinitions.SELECT_RUN, intelliJClassicKeyset);

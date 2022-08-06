@@ -20,6 +20,9 @@ export enum CommandsDefinitions {
     GIT_FETCH = 'git_fetch_cmd',
     GIT_CHECKOUT_MASTER = 'checkout_master_cmd',
 
+    // Gradle
+    GRADLE_RELOAD_CHANGES = 'gradle-reload_changes',
+
     // Kubectl commands
     KUBECTL_GET_PODS = 'kubectl_get_pods',
     KUBECTL_LOGS = 'kubectl_logs',

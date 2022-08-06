@@ -12,6 +12,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('3', CommandsDefinitions.DEBUG_LAST, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('4', CommandsDefinitions.SELECT_RUN, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('5', CommandsDefinitions.SELECT_DEBUG, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('6', CommandsDefinitions.GRADLE_RELOAD_CHANGES, keyset, `{${SpecialKeys.CTRL}+{1}}`),
     ];
 
 

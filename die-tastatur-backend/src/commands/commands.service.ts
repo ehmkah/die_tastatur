@@ -29,6 +29,9 @@ export class CommandsService {
             <Command>{id: 'git checkout master branch', description: 'git checkout code master branch', defaultKeyPrintText: 'co\nmaster', name: CommandsDefinitions.GIT_CHECKOUT_MASTER},
             <Command>{id: 'git fetch', description: 'git fetch', defaultKeyPrintText: 'fetch', name: CommandsDefinitions.GIT_FETCH},
 
+            // gradle
+            <Command>{id: 'gradle-reload_chanegs', description: 'gradle reload changes', defaultKeyPrintText: 'load\ngradle\nchanges', name: CommandsDefinitions.GRADLE_RELOAD_CHANGES},
+
             // kubectl
             <Command>{id: 'kubectl get pods', description: 'Show all kubernetes pods for selected namespace', defaultKeyPrintText: 'kube\npods', name: CommandsDefinitions.KUBECTL_GET_PODS},
             <Command>{id: 'kubectl logs', description: 'Show logs for pod', defaultKeyPrintText: 'kube\nlogs', name: CommandsDefinitions.KUBECTL_LOGS},

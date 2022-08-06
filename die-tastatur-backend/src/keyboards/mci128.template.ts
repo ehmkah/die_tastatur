@@ -2,7 +2,7 @@ import {KeyboardLayout} from "../keyboard-layouts/keyboard-layout.interface";
 
 function mapToMciKeyprint(keyboardLayout: KeyboardLayout, value: number, columnCounter: number) {
     let keyPrint = keyboardLayout.keys[value][columnCounter]?.execution.command.defaultKeyPrintText ?? '';
-    return keyPrint.replace("\n", "\\\\line");
+    return keyPrint.replace(/\n/gi, "\\\\line");
 }
 
 export function mapToMC128(keyboardLayout: KeyboardLayout): string {
