@@ -17,6 +17,9 @@ export class CommandsService {
             <Command>{id: 'docker_stop', description: 'Stop running docker container', defaultKeyPrintText: 'docker\nstop', name: CommandsDefinitions.DOCKER_STOP},
             <Command>{id: 'docker_logs', description: 'Show logs for running docker container', defaultKeyPrintText: 'docker\nlogs', name: CommandsDefinitions.DOCKER_LOGS},
 
+            //docker-compose
+            <Command>{id: 'docker_compose-up', description: 'Start all container from docker-compose', defaultKeyPrintText: 'compose\nup', name: CommandsDefinitions.DOCKER_COMPOSE_UP},
+
             // GIT
             <Command>{id: 'git checkout master branch', description: 'git checkout code master branch', defaultKeyPrintText: 'co\nmaster', name: CommandsDefinitions.GIT_CHECKOUT_MASTER},
             <Command>{id: 'git fetch', description: 'git fetch', defaultKeyPrintText: 'fetch', name: CommandsDefinitions.GIT_FETCH},

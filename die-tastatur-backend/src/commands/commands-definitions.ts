@@ -8,6 +8,9 @@ export enum CommandsDefinitions {
     DOCKER_STOP = 'docker_stop',
     DOCKER_LOGS = 'docker_logs',
 
+    // Docker compose
+    DOCKER_COMPOSE_UP = 'docker_compose-up',
+
     // Git Commands
     GIT_FETCH = 'git_fetch_cmd',
     GIT_CHECKOUT_MASTER = 'checkout_master_cmd',
