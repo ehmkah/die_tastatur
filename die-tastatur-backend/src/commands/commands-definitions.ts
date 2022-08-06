@@ -21,6 +21,7 @@ export enum CommandsDefinitions {
     GIT_PULL = 'git-pull',
     GIT_MERGE_MASTER = 'git-merge_master',
     GIT_MERGE_DEVELOP = 'git-merge_develop',
+    GIT_CHECKOUT = 'git-checkout',
     GIT_CHECKOUT_MASTER = 'git-checkout_master',
     GIT_CHECKOUT_DEVELOP = 'git-checkout_develop',
     GIT_CHECKOUT_LAST = 'git-checkout_last',
