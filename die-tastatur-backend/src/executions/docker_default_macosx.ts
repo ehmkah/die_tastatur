@@ -7,9 +7,9 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 export function docker_default_macos(executionService: ExecutionsService, keyset: Keyset): Array<Execution> {
 
     return [
-        executionService.createExecution('docker_ls', CommandsDefinitions.DOCKER_LS, keyset, `docker{${SpecialKeys.SPACE}}ls{${SpecialKeys.RETURN}}`),
-        executionService.createExecution('docker_stop', CommandsDefinitions.DOCKER_STOP, keyset, `docker{${SpecialKeys.SPACE}}stop{${SpecialKeys.SPACE}}`),
-        executionService.createExecution('docker_logs', CommandsDefinitions.DOCKER_LOGS, keyset, `docker{${SpecialKeys.SPACE}}logs{${SpecialKeys.SPACE}}`),
+        executionService.createExecution('docker_ls', CommandsDefinitions.DOCKER_LS, keyset, `docker{${SpecialKeys.SPACE}}container{${SpecialKeys.SPACE}}ls{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('docker_stop', CommandsDefinitions.DOCKER_STOP, keyset, `docker{${SpecialKeys.SPACE}}container{${SpecialKeys.SPACE}}stop{${SpecialKeys.SPACE}}`),
+        executionService.createExecution('docker_logs', CommandsDefinitions.DOCKER_LOGS, keyset, `docker{${SpecialKeys.SPACE}}logs{${SpecialKeys.SPACE}}-f{${SpecialKeys.SPACE}}`),
     ]
 
 }
