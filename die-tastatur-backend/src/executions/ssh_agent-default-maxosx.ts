@@ -7,8 +7,8 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 export function ssh_agentDefaultMaxosx(executionService: ExecutionsService, keyset: Keyset): Array<Execution> {
 
     return [
-        executionService.createExecution('ssh_agent-start', CommandsDefinitions.SSH_AGENT_START, keyset, `yes{${SpecialKeys.RETURN}}`),
-        executionService.createExecution('ssh_agent-add_key', CommandsDefinitions.SSH_AGENT_ADD_KEY, keyset, `yes{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('ssh_agent-start', CommandsDefinitions.SSH_AGENT_START, keyset, `ssh-agent{${SpecialKeys.SPACE}}bash{${SpecialKeys.RETURN}}`),
+        executionService.createExecution('ssh_agent-add_key', CommandsDefinitions.SSH_AGENT_ADD_KEY, keyset, `ssh-add{${SpecialKeys.SPACE}}~/.ssh/id_rsa{${SpecialKeys.RETURN}}`),
     ]
 
 }

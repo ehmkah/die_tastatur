@@ -13,7 +13,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('3', CommandsDefinitions.DEBUG_LAST, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.F9}}}`),
         executionService.createExecution('4', CommandsDefinitions.SELECT_RUN, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+{${SpecialKeys.F10}}}}`),
         executionService.createExecution('5', CommandsDefinitions.SELECT_DEBUG, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+{${SpecialKeys.F9}}}}`),
-        executionService.createExecution('6', CommandsDefinitions.GRADLE_RELOAD_CHANGES, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('6', CommandsDefinitions.GRADLE_RELOAD_CHANGES, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+O}}`),
         executionService.createExecution('7', CommandsDefinitions.OPEN_COMMIT_DIALOG, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('8', CommandsDefinitions.COMMIT, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('9', CommandsDefinitions.PUSH_1, keyset, `{${SpecialKeys.CTRL}+{1}}`),
