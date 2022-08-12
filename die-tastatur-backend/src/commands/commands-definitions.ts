@@ -4,6 +4,7 @@ export enum CommandsDefinitions {
     JUMP_TO_GIT_VIEW = 'git_view',
     OPEN_COMMIT_DIALOG = 'open_commit_dialog',
     COMMIT = 'commit_taken',
+    PUSH_1 = 'push_1',
 
     RUN_LAST = 'run_last',
     DEBUG_LAST='debug_last',

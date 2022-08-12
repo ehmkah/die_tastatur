@@ -16,6 +16,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('6', CommandsDefinitions.GRADLE_RELOAD_CHANGES, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('7', CommandsDefinitions.OPEN_COMMIT_DIALOG, keyset, `{${SpecialKeys.CTRL}+{1}}`),
         executionService.createExecution('8', CommandsDefinitions.COMMIT, keyset, `{${SpecialKeys.CTRL}+{1}}`),
+        executionService.createExecution('9', CommandsDefinitions.PUSH_1, keyset, `{${SpecialKeys.CTRL}+{1}}`),
     ];
 
 
