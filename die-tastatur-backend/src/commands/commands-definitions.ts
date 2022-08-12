@@ -5,6 +5,7 @@ export enum CommandsDefinitions {
     OPEN_COMMIT_DIALOG = 'open_commit_dialog',
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
+    PUSH_2 = 'push_2',
 
     RUN_LAST = 'run_last',
     DEBUG_LAST='debug_last',
