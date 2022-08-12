@@ -16,6 +16,7 @@ export class CommandsService {
             <Command>{id: 'select_run', description: 'Open select menu to choose Runconfiguration', defaultKeyPrintText: 'select\nrun', name: CommandsDefinitions.SELECT_RUN},
             <Command>{id: 'select_debug', description: 'Open select menu to choose Runconfiguration to debug', defaultKeyPrintText: 'select\ndebug', name: CommandsDefinitions.SELECT_DEBUG},
             <Command>{id: 'open_git_commit', description: 'Open commit dialog', defaultKeyPrintText: 'open\nCommit', name: CommandsDefinitions.OPEN_COMMIT_DIALOG},
+            <Command>{id: 'git_commit', description: 'commit', defaultKeyPrintText: 'commit', name: CommandsDefinitions.COMMIT},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},

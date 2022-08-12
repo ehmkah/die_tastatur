@@ -14,6 +14,8 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[0][0] = keyboardLayoutsService.createKeyDetails('0_0', CommandsDefinitions.JUMP_TO_GIT_VIEW, intelliJClassicKeyset);
     board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.OPEN_COMMIT_DIALOG, intelliJClassicKeyset);
     board[0][2] = keyboardLayoutsService.createKeyDetails('0_2', CommandsDefinitions.OPEN_COMMIT_DIALOG, intelliJClassicKeyset);
+    board[0][3] = keyboardLayoutsService.createKeyDetails('0_3', CommandsDefinitions.COMMIT, intelliJClassicKeyset);
+    board[0][4] = keyboardLayoutsService.createKeyDetails('0_4', CommandsDefinitions.COMMIT, intelliJClassicKeyset);
 
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);
     board[1][1] = keyboardLayoutsService.createKeyDetails('1_1', CommandsDefinitions.GIT_PULL, terminalDefaultKeyset);
