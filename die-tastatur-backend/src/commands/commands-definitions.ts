@@ -2,6 +2,8 @@ export enum CommandsDefinitions {
     // IDE Commands
     JUMP_TO_PROJECT_VIEW = 'project_view',
     JUMP_TO_GIT_VIEW = 'git_view',
+    OPEN_COMMIT_DIALOG = 'open_commit_taken',
+
     RUN_LAST = 'run_last',
     DEBUG_LAST='debug_last',
     SELECT_RUN='select_run',

@@ -12,7 +12,8 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
 
     board[0][0] = keyboardLayoutsService.createKeyDetails('0_0', CommandsDefinitions.JUMP_TO_GIT_VIEW, intelliJClassicKeyset);
-    board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, intelliJClassicKeyset);
+    board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.OPEN_COMMIT_DIALOG, intelliJClassicKeyset);
+    board[0][2] = keyboardLayoutsService.createKeyDetails('0_2', CommandsDefinitions.OPEN_COMMIT_DIALOG, intelliJClassicKeyset);
 
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);
     board[1][1] = keyboardLayoutsService.createKeyDetails('1_1', CommandsDefinitions.GIT_PULL, terminalDefaultKeyset);
@@ -34,10 +35,12 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[2][5] = keyboardLayoutsService.createKeyDetails('2_5', CommandsDefinitions.SSH_AGENT_ADD_KEY, terminalDefaultKeyset);
     board[2][6] = keyboardLayoutsService.createKeyDetails('2_6', CommandsDefinitions.SSH_AGENT_ADD_KEY, terminalDefaultKeyset);
     board[3][0] = keyboardLayoutsService.createKeyDetails('3_0', CommandsDefinitions.GRADLE_RELOAD_CHANGES, intelliJClassicKeyset);
+
     board[4][0] = keyboardLayoutsService.createKeyDetails('4_0', CommandsDefinitions.RUN_LAST, intelliJClassicKeyset);
     board[4][1] = keyboardLayoutsService.createKeyDetails('4_1', CommandsDefinitions.DEBUG_LAST, intelliJClassicKeyset);
     board[4][2] = keyboardLayoutsService.createKeyDetails('4_2', CommandsDefinitions.SELECT_RUN, intelliJClassicKeyset);
     board[4][3] = keyboardLayoutsService.createKeyDetails('4_3', CommandsDefinitions.SELECT_DEBUG, intelliJClassicKeyset);
+
     board[5][0] = keyboardLayoutsService.createKeyDetails('5_0', CommandsDefinitions.DOCKER_LS, terminalDefaultKeyset);
     board[5][1] = keyboardLayoutsService.createKeyDetails('5_1', CommandsDefinitions.DOCKER_STOP, terminalDefaultKeyset);
     board[5][2] = keyboardLayoutsService.createKeyDetails('5_2', CommandsDefinitions.DOCKER_LOGS, terminalDefaultKeyset);
@@ -46,6 +49,7 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[5][9] = keyboardLayoutsService.createKeyDetails('5_9', CommandsDefinitions.DOCKER_COMPOSE_UP, terminalDefaultKeyset);
     board[5][14] = keyboardLayoutsService.createKeyDetails('5_14', CommandsDefinitions.YES, terminalDefaultKeyset);
     board[5][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.NO, terminalDefaultKeyset);
+
     board[6][0] = keyboardLayoutsService.createKeyDetails('6_0', CommandsDefinitions.KUBECTL_GET_PODS, terminalDefaultKeyset);
     board[6][1] = keyboardLayoutsService.createKeyDetails('6_1', CommandsDefinitions.KUBECTL_LOGS, terminalDefaultKeyset);
     board[6][2] = keyboardLayoutsService.createKeyDetails('6_2', CommandsDefinitions.KUBENS, terminalDefaultKeyset);
