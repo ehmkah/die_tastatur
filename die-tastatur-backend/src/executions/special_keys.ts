@@ -4,6 +4,8 @@ export enum SpecialKeys {
     CTRL = 'CTRL',
     SPACE = 'SPACE',
     RETURN = 'RETURN',
+    F1 = 'F1',
+    F2 = 'F2',
     F9 = 'F9',
     F10 = 'F10'
 }
