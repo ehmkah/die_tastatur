@@ -3,6 +3,7 @@ export enum SpecialKeys {
     SHIFT = 'SHIFT',
     ALT = 'ALT',
     CTRL = 'CTRL',
+    LWIN = 'LWIN',
     SPACE = 'SPACE',
     RETURN = 'RETURN',
     F1 = 'F1',
