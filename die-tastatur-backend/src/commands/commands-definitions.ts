@@ -6,12 +6,14 @@ export enum CommandsDefinitions {
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
     PUSH_2 = 'push_2',
+    IDE_DEBUG_STEP_OVER = 'step_over',
+    IDE_DEBUG_STEP_INTO = 'step_into',
     TOGGLE_BREAKPOINT = 'toggle_breakpoint',
 
     RUN_LAST = 'run_last',
-    DEBUG_LAST='debug_last',
-    SELECT_RUN='select_run',
-    SELECT_DEBUG='select_debug',
+    DEBUG_LAST = 'debug_last',
+    SELECT_RUN = 'select_run',
+    SELECT_DEBUG = 'select_debug',
 
     // Docker commands
     DOCKER_LS = 'dockerls',

@@ -20,6 +20,8 @@ export class CommandsService {
             <Command>{id: 'git_push', description: 'push', defaultKeyPrintText: 'push', name: CommandsDefinitions.PUSH_1},
             <Command>{id: 'git_push_2', description: 'push2', defaultKeyPrintText: 'push2', name: CommandsDefinitions.PUSH_2},
             <Command>{id: 'toggle_breakpoint', description: 'Toggle breakpoint', defaultKeyPrintText: 'toggle\nbreakpoint', name: CommandsDefinitions.TOGGLE_BREAKPOINT},
+            <Command>{id: 'ide_debug_stepover', description: 'Step over', defaultKeyPrintText: 'step-over', name: CommandsDefinitions.IDE_DEBUG_STEP_OVER},
+            <Command>{id: 'ide_debug_stepinto', description: 'Step into', defaultKeyPrintText: 'step-into', name: CommandsDefinitions.IDE_DEBUG_STEP_INTO},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
