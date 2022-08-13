@@ -8,6 +8,7 @@ export enum SpecialKeys {
     RETURN = 'RETURN',
     F1 = 'F1',
     F2 = 'F2',
+    F8 = 'F8',
     F9 = 'F9',
     F10 = 'F10'
 }

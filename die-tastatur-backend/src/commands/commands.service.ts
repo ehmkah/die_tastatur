@@ -19,6 +19,7 @@ export class CommandsService {
             <Command>{id: 'git_commit', description: 'commit', defaultKeyPrintText: 'commit', name: CommandsDefinitions.COMMIT},
             <Command>{id: 'git_push', description: 'push', defaultKeyPrintText: 'push', name: CommandsDefinitions.PUSH_1},
             <Command>{id: 'git_push_2', description: 'push2', defaultKeyPrintText: 'push2', name: CommandsDefinitions.PUSH_2},
+            <Command>{id: 'toggle_breakpoint', description: 'Toggle breakpoint', defaultKeyPrintText: 'toggle\nbreakpoint', name: CommandsDefinitions.TOGGLE_BREAKPOINT},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},

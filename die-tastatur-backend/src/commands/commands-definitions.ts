@@ -6,6 +6,7 @@ export enum CommandsDefinitions {
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
     PUSH_2 = 'push_2',
+    TOGGLE_BREAKPOINT = 'toggle_breakpoint',
 
     RUN_LAST = 'run_last',
     DEBUG_LAST='debug_last',
