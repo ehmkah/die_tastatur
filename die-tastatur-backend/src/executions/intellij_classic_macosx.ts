@@ -18,10 +18,11 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('8', CommandsDefinitions.COMMIT, keyset, `{${SpecialKeys.ALT}+i}`),
         executionService.createExecution('9', CommandsDefinitions.PUSH_1, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+k}}`),
         executionService.createExecution('10', CommandsDefinitions.PUSH_2, keyset, `{${SpecialKeys.ALT}+p}`),
-        executionService.createExecution('11', CommandsDefinitions.TOGGLE_BREAKPOINT, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F8}`),
+        executionService.createExecution('11', CommandsDefinitions.IDE_TOGGLE_BREAKPOINT, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F8}`),
         executionService.createExecution('12', CommandsDefinitions.IDE_DEBUG_STEP_OVER, keyset, `${SpecialKeys.F8}`),
         executionService.createExecution('13', CommandsDefinitions.IDE_DEBUG_STEP_INTO, keyset, `${SpecialKeys.F7}`),
         executionService.createExecution('14', CommandsDefinitions.IDE_DEBUG_STEP_OUT, keyset, `{${SpecialKeys.SHIFT} + ${SpecialKeys.F7}}`),
+        executionService.createExecution('15', CommandsDefinitions.IDE_DEBUG_EVALUATE_EXPRESSION, keyset, `{${SpecialKeys.ALT} + ${SpecialKeys.F8}}`),
     ];
 
 

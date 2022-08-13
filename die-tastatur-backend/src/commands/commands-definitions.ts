@@ -9,7 +9,8 @@ export enum CommandsDefinitions {
     IDE_DEBUG_STEP_OVER = 'step_over',
     IDE_DEBUG_STEP_INTO = 'step_into',
     IDE_DEBUG_STEP_OUT = 'step_out',
-    TOGGLE_BREAKPOINT = 'toggle_breakpoint',
+    IDE_DEBUG_EVALUATE_EXPRESSION = 'evaluate_expression',
+    IDE_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
 
     RUN_LAST = 'run_last',
     DEBUG_LAST = 'debug_last',
