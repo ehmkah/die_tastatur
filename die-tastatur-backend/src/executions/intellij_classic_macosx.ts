@@ -21,6 +21,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('11', CommandsDefinitions.TOGGLE_BREAKPOINT, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F8}`),
         executionService.createExecution('12', CommandsDefinitions.IDE_DEBUG_STEP_OVER, keyset, `${SpecialKeys.F8}`),
         executionService.createExecution('13', CommandsDefinitions.IDE_DEBUG_STEP_INTO, keyset, `${SpecialKeys.F7}`),
+        executionService.createExecution('14', CommandsDefinitions.IDE_DEBUG_STEP_OUT, keyset, `{${SpecialKeys.SHIFT} + ${SpecialKeys.F7}}`),
     ];
 
 

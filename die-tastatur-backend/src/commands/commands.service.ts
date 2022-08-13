@@ -22,6 +22,7 @@ export class CommandsService {
             <Command>{id: 'toggle_breakpoint', description: 'Toggle breakpoint', defaultKeyPrintText: 'toggle\nbreakpoint', name: CommandsDefinitions.TOGGLE_BREAKPOINT},
             <Command>{id: 'ide_debug_stepover', description: 'Step over', defaultKeyPrintText: 'step-over', name: CommandsDefinitions.IDE_DEBUG_STEP_OVER},
             <Command>{id: 'ide_debug_stepinto', description: 'Step into', defaultKeyPrintText: 'step-into', name: CommandsDefinitions.IDE_DEBUG_STEP_INTO},
+            <Command>{id: 'ide_debug_stepout', description: 'Step out', defaultKeyPrintText: 'step-out', name: CommandsDefinitions.IDE_DEBUG_STEP_OUT},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
