@@ -6,6 +6,7 @@ import {ExecutionsService} from "../executions/executions.service";
 import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
 import {KeyboardLayoutDetail} from "./keyboard-layout-detail.interface";
+import {macosxIntellijKeyboardLayout} from "./macosx-intellij-keyboard-layout";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -17,7 +18,8 @@ export class KeyboardLayoutsService {
         const keyboards = this.keyboardsService.findAll();
         return [
             <KeyboardLayout>{id: '1', keyboard: keyboards[0], name: 'IntelliJ'},
-            macosxDefaultDevKeyboardLayout(keyboards[0], this)
+            macosxDefaultDevKeyboardLayout(keyboards[0], this),
+            macosxIntellijKeyboardLayout(keyboards[0],this)
         ];
     }
 

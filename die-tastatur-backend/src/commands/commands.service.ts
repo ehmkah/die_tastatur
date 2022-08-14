@@ -24,6 +24,7 @@ export class CommandsService {
             <Command>{id: 'ide_debug_stepinto', description: 'Step into', defaultKeyPrintText: 'step-into', name: CommandsDefinitions.IDE_DEBUG_STEP_INTO},
             <Command>{id: 'ide_debug_stepout', description: 'Step out', defaultKeyPrintText: 'step-out', name: CommandsDefinitions.IDE_DEBUG_STEP_OUT},
             <Command>{id: 'ide_debug_evaluateExpression', description: 'Evaluate expression', defaultKeyPrintText: 'evaluate', name: CommandsDefinitions.IDE_DEBUG_EVALUATE_EXPRESSION},
+            <Command>{id: 'ide_navigation_goto_declaration', description: 'Goto declaration', defaultKeyPrintText: 'declaration', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},

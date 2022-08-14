@@ -17,6 +17,9 @@ export enum CommandsDefinitions {
     SELECT_RUN = 'select_run',
     SELECT_DEBUG = 'select_debug',
 
+    IDE_NAVIGATION_GOTO_DECLARATION = 'got_declaration'
+
+
     // Docker commands
     DOCKER_LS = 'dockerls',
     DOCKER_STOP = 'docker_stop',
