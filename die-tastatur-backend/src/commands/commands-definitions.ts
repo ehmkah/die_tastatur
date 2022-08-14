@@ -17,7 +17,8 @@ export enum CommandsDefinitions {
     SELECT_RUN = 'select_run',
     SELECT_DEBUG = 'select_debug',
 
-    IDE_NAVIGATION_GOTO_DECLARATION = 'got_declaration'
+    IDE_NAVIGATION_GOTO_DECLARATION = 'goto_declaration',
+    IDE_NAVIGATION_GOTO_CLASS = 'goto_class',
 
 
     // Docker commands
