@@ -22,6 +22,8 @@ export enum CommandsDefinitions {
     IDE_NAVIGATION_GOTO_FILE = 'goto_file',
     IDE_NAVIGATION_GOTO_SYMBOL = 'goto_symbol',
 
+    IDE_EDITING_GENERATE = 'IDE_EDITING_GENERATE',
+
 
     // Docker commands
     DOCKER_LS = 'dockerls',

@@ -27,6 +27,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('17', CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS, keyset, `{${SpecialKeys.LWIN}+O}`),
         executionService.createExecution('18', CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+O}}`),
         executionService.createExecution('19', CommandsDefinitions.IDE_NAVIGATION_GOTO_SYMBOL, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+O}}`),
+        executionService.createExecution('20', CommandsDefinitions.IDE_EDITING_GENERATE, keyset, `{${SpecialKeys.LWIN}+N}`),
     ];
 
 
