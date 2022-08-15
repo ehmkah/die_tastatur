@@ -20,6 +20,7 @@ export enum CommandsDefinitions {
     IDE_NAVIGATION_GOTO_DECLARATION = 'goto_declaration',
     IDE_NAVIGATION_GOTO_CLASS = 'goto_class',
     IDE_NAVIGATION_GOTO_FILE = 'goto_file',
+    IDE_NAVIGATION_GOTO_SYMBOL = 'goto_symbol',
 
 
     // Docker commands
