@@ -64,6 +64,10 @@ export class CommandsService {
             <Command>{id: 'ide_editing_expand_all', description: 'Expand/collapse code block', defaultKeyPrintText: 'expand all', name: CommandsDefinitions.IDE_EDITING_EXPAND_ALL},
             <Command>{id: 'ide_editing_coolapse_all', description: 'Collapse all', defaultKeyPrintText: 'collapse all', name: CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL},
             <Command>{id: 'ide_editing_close_active_editor_tab', description: 'Close active editor tab', defaultKeyPrintText: 'close tab', name: CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB},
+            <Command>{id: 'ide_multiple_carets_select_all_occurences',description: 'Select all occurences', defaultKeyPrintText: 'select all occurences', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES},
+            <Command>{id: 'ide_multiple_carets_select_next_occurence',description: 'Select next occurence', defaultKeyPrintText: 'select next occurence', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE},
+            <Command>{id: 'ide_multiple_carets_unselect_occurence',description: 'Unselect occurence', defaultKeyPrintText: 'unselect occurence', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE},
+            <Command>{id: 'ide_multiple_carets_unselect_all_occurences_or_carets',description: 'Unselect all occurences or carets', defaultKeyPrintText: 'unselect all occurences', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},

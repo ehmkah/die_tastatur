@@ -59,9 +59,16 @@ export enum CommandsDefinitions {
     IDE_EDITING_COOLAPSE_ALL = 'ide_editing_coolapse_all',
     IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB = 'ide_editing_close_active_editor_tab',
 
+    IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES = 'ide_multiple_carets_select_all_occurences',
+    IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE = 'ide_multiple_carets_select_next_occurence',
+    IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE = 'ide_multiple_carets_unselect_occurence',
+    IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS = 'ide_multiple_carets_unselect_all_occurences_or_carets',
 
-    // Docker commands
-    DOCKER_LS = 'dockerls',
+    /**COLUMN_SELECTION_MODE
+BREAKPOINTS_TOGGLE_ON_OFF
+       **/
+// Docker commands
+DOCKER_LS = 'dockerls',
     DOCKER_STOP = 'docker_stop',
     DOCKER_LOGS = 'docker_logs',
 
