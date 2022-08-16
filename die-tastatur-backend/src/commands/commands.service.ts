@@ -31,6 +31,7 @@ export class CommandsService {
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
             <Command>{id: 'IDE_EDITING_SURROUND', description: 'Surround with if, try, for', defaultKeyPrintText: 'surround', name: CommandsDefinitions.IDE_EDITING_SURROUND},
             <Command>{id: 'IDE_EDITING_INSERT_LIVE_TEMPLATE', description: 'Insert live template', defaultKeyPrintText: 'live template', name: CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE},
+            <Command>{id: 'IDE_EDITING_COMMENT_OR_UNCOMMENT', description: 'Comment/uncomment with line command', defaultKeyPrintText: 'command', name: CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
