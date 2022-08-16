@@ -33,6 +33,7 @@ export class CommandsService {
             <Command>{id: 'IDE_EDITING_INSERT_LIVE_TEMPLATE', description: 'Insert live template', defaultKeyPrintText: 'live template', name: CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE},
             <Command>{id: 'IDE_EDITING_COMMENT_OR_UNCOMMENT', description: 'Comment/uncomment with line command', defaultKeyPrintText: 'command', name: CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT},
             <Command>{id: 'ide_editing_reformat_code', description: 'Reformat code', defaultKeyPrintText: 'reformat', name: CommandsDefinitions.IDE_EDITING_REFORMAT_CODE},
+            <Command>{id: 'IDE_EDITING_DUPLICATE_LINE', description: 'Duplicate current line or selected block', defaultKeyPrintText: 'duplicate', name: CommandsDefinitions.IDE_EDITING_DUPLICATE_LINE},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
