@@ -26,6 +26,7 @@ export enum CommandsDefinitions {
     IDE_EDITING_SURROUND = 'ide_editing_surround',
     IDE_EDITING_INSERT_LIVE_TEMPLATE = 'ide_insert_live_template',
     IDE_EDITING_COMMENT_OR_UNCOMMENT = 'ide_editing_comment_or_uncomment',
+    IDE_EDITING_REFORMAT_CODE = 'ide_editing_reformat_code',
 
 
     // Docker commands

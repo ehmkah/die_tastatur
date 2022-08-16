@@ -31,6 +31,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('21', CommandsDefinitions.IDE_EDITING_SURROUND, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+T}}`),
         executionService.createExecution('22', CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE, keyset, `{${SpecialKeys.LWIN}+J}`),
         executionService.createExecution('23', CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT, keyset, `{${SpecialKeys.LWIN}+/}`),
+        executionService.createExecution('24', CommandsDefinitions.IDE_EDITING_REFORMAT_CODE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+L}}`),
     ];
 
 
