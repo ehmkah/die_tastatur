@@ -22,7 +22,8 @@ export enum CommandsDefinitions {
     IDE_NAVIGATION_GOTO_FILE = 'goto_file',
     IDE_NAVIGATION_GOTO_SYMBOL = 'goto_symbol',
 
-    IDE_EDITING_GENERATE = 'IDE_EDITING_GENERATE',
+    IDE_EDITING_GENERATE = 'ide_editing_generate',
+    IDE_EDITING_SURROUND = 'ide_editing_surround',
 
 
     // Docker commands

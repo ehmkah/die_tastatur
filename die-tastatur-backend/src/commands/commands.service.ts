@@ -29,6 +29,7 @@ export class CommandsService {
             <Command>{id: 'ide_navigation_goto_file', description: 'Goto file', defaultKeyPrintText: 'goto\nfile', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE},
             <Command>{id: 'ide_navigation_goto_symbol', description: 'Goto symbo', defaultKeyPrintText: 'goto\nsymbol', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_SYMBOL},
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
+            <Command>{id: 'IDE_EDITING_SURROUND', description: 'Surround with if, try, for', defaultKeyPrintText: 'surround', name: CommandsDefinitions.IDE_EDITING_SURROUND},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
