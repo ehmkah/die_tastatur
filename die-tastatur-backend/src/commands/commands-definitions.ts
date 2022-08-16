@@ -6,11 +6,16 @@ export enum CommandsDefinitions {
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
     PUSH_2 = 'push_2',
+
     IDE_DEBUG_STEP_OVER = 'step_over',
     IDE_DEBUG_STEP_INTO = 'step_into',
+    IDE_DEBUG_SMART_STEP_INTO = 'smart_step_into',
     IDE_DEBUG_STEP_OUT = 'step_out',
+    IDE_DEBUG_RUN_TO_CURSOR = 'ide_debug_run_to_cursor',
     IDE_DEBUG_EVALUATE_EXPRESSION = 'evaluate_expression',
-    IDE_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
+    IDE_DEBUG_RESUME = 'ide_debug_resume',
+    IDE_DEBUG_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
+    IDE_DEBUG_VIEW_BREAKPOINT = 'ide_toggle_view_breakpoint',
 
     RUN_LAST = 'run_last',
     DEBUG_LAST = 'debug_last',
