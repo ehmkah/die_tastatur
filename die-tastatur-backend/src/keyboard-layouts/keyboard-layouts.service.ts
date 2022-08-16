@@ -17,7 +17,6 @@ export class KeyboardLayoutsService {
     findAll(): Array<KeyboardLayout> {
         const keyboards = this.keyboardsService.findAll();
         return [
-            <KeyboardLayout>{id: '1', keyboard: keyboards[0], name: 'IntelliJ'},
             macosxDefaultDevKeyboardLayout(keyboards[0], this),
             macosxIntellijKeyboardLayout(keyboards[0],this)
         ];
