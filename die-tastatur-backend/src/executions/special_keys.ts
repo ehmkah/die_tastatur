@@ -11,5 +11,6 @@ export enum SpecialKeys {
     F7 = 'F7',
     F8 = 'F8',
     F9 = 'F9',
-    F10 = 'F10'
+    F10 = 'F10',
+    F11 = 'F11',
 }

@@ -69,6 +69,14 @@ export class CommandsService {
             <Command>{id: 'ide_multiple_carets_unselect_occurence',description: 'Unselect occurence', defaultKeyPrintText: 'unselect occurence', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE},
             <Command>{id: 'ide_multiple_carets_unselect_all_occurences_or_carets',description: 'Unselect all occurences or carets', defaultKeyPrintText: 'unselect all occurences', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS},
 
+            <Command>{id: 'ide_running_select_configuration_and_run',description: 'Select configuration and run', defaultKeyPrintText: 'select and run', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN},
+            <Command>{id: 'ide_running_select_configuration_and_debug',description: 'Select configuration and debug', defaultKeyPrintText: 'select and debug', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG},
+            <Command>{id: 'ide_running_run',description: 'Run', defaultKeyPrintText: 'run', name: CommandsDefinitions.IDE_RUNNING_RUN},
+            <Command>{id: 'ide_running_debug',description: 'Debug', defaultKeyPrintText: 'debug', name: CommandsDefinitions.IDE_RUNNING_DEBUG},
+            <Command>{id: 'ide_runningrun_context_configuration_from_editor',description: 'Run context configuration from editor', defaultKeyPrintText: 'run context', name: CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR},
+            <Command>{id: 'ide_running_rerun__tests',description: 'Rerun tests', defaultKeyPrintText: 'rerun tests', name: CommandsDefinitions.IDE_RUNNING_RERUN__TESTS},
+            <Command>{id: 'ide_running_run_gulp_npm_grunt',description: 'Run Gulp7Grun/npm tasks', defaultKeyPrintText: 'run npm', name: CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT},
+
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},
             <Command>{id: 'docker_stop', description: 'Stop running docker container', defaultKeyPrintText: 'docker\nstop', name: CommandsDefinitions.DOCKER_STOP},

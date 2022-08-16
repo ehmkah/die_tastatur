@@ -64,11 +64,19 @@ export enum CommandsDefinitions {
     IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE = 'ide_multiple_carets_unselect_occurence',
     IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS = 'ide_multiple_carets_unselect_all_occurences_or_carets',
 
+    IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN = 'ide_running_select_configuration_and_run',
+    IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG = 'ide_running_select_configuration_and_debug',
+    IDE_RUNNING_RUN = 'ide_running_run',
+    IDE_RUNNING_DEBUG = 'ide_running_debug',
+    IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR = 'ide_runningrun_context_configuration_from_editor',
+    IDE_RUNNING_RERUN__TESTS = 'ide_running_rerun__tests',
+    IDE_RUNNING_RUN_GULP_NPM_GRUNT = 'ide_running_run_gulp_npm_grunt',
+
     /**COLUMN_SELECTION_MODE
-BREAKPOINTS_TOGGLE_ON_OFF
-       **/
+     BREAKPOINTS_TOGGLE_ON_OFF
+     **/
 // Docker commands
-DOCKER_LS = 'dockerls',
+    DOCKER_LS = 'dockerls',
     DOCKER_STOP = 'docker_stop',
     DOCKER_LOGS = 'docker_logs',
 
