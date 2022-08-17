@@ -1,0 +1,332 @@
+TYPE MC128
+MEMORY 8000
+VERSION  CYPRESS  WINPROG 2.5.3.5
+INTERFACE AT
+SOUND 33,40,100,400
+RATE 10,500,FAST
+LANGUAGE GR,C
+HOTKEY0 : "{EMPTY}"
+HOTKEY1 : "{EMPTY}"
+MODE -BCR-FCR+BA1
+MSR M3, : ""
+!@KEYCAP:12.00
+!@KEYBOARDTYPESTRING:MCI 128
+!@KEYGLOBALPRINT:1.00;0.20;0.00;4.80;  FFFFFF;       0;190;0;0;0;0;Arial
+!@KEYBOARDSIZE:364.00;207.00
+!@KEYPRINT:A01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H01 "git\\lineview";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H02 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H05 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H06 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H07 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H08 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H09 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H10 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H11 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H12 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H13 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H14 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H15 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H16 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYLAYER:AlwaysActive,AAAA,11
+A01/P: "{LWIN+9}"
+A02/P: "{CTRL+k}"
+A03/P: "{CTRL+k}"
+A04/P: "{ALT+i}"
+A05/P: "{ALT+i}"
+A06/P: "{CTRL+{SHIFT+k}}"
+A07/P: "{CTRL+{SHIFT+k}}"
+A08/P: "{ALT+p}"
+A09/P: "{ALT+p}"
+A10/P: "{ALT+p}"
+A11/P: "{ALT+p}"
+A12/P: "{ALT+p}"
+A13/P: "{ALT+p}"
+A14/P: "{ALT+p}"
+A15/P: "{ALT+p}"
+A16/P: "{ALT+p}"
+B01/P: "{LWIN+9}"
+B02/P: "{CTRL+k}"
+B03/P: "{CTRL+k}"
+B04/P: "{ALT+i}"
+B05/P: "{ALT+i}"
+B06/P: "{CTRL+{SHIFT+k}}"
+B07/P: "{CTRL+{SHIFT+k}}"
+B08/P: "{ALT+p}"
+B09/P: "{ALT+p}"
+B10/P: "{ALT+p}"
+B11/P: "{ALT+p}"
+B12/P: "{ALT+p}"
+B13/P: "{ALT+p}"
+B14/P: "{ALT+p}"
+B15/P: "{ALT+p}"
+B16/P: "{ALT+p}"
+C01/P: "{LWIN+9}"
+C02/P: "{CTRL+k}"
+C03/P: "{CTRL+k}"
+C04/P: "{ALT+i}"
+C05/P: "{ALT+i}"
+C06/P: "{CTRL+{SHIFT+k}}"
+C07/P: "{CTRL+{SHIFT+k}}"
+C08/P: "{ALT+p}"
+C09/P: "{ALT+p}"
+C10/P: "{ALT+p}"
+C11/P: "{ALT+p}"
+C12/P: "{ALT+p}"
+C13/P: "{ALT+p}"
+C14/P: "{ALT+p}"
+C15/P: "{ALT+p}"
+C16/P: "{ALT+p}"
+D01/P: "{LWIN+9}"
+D02/P: "{CTRL+k}"
+D03/P: "{CTRL+k}"
+D04/P: "{ALT+i}"
+D05/P: "{ALT+i}"
+D06/P: "{CTRL+{SHIFT+k}}"
+D07/P: "{CTRL+{SHIFT+k}}"
+D08/P: "{ALT+p}"
+D09/P: "{ALT+p}"
+D10/P: "{ALT+p}"
+D11/P: "{ALT+p}"
+D12/P: "{ALT+p}"
+D13/P: "{ALT+p}"
+D14/P: "{ALT+p}"
+D15/P: "{ALT+p}"
+D16/P: "{ALT+p}"
+E01/P: "{LWIN+9}"
+E02/P: "{CTRL+k}"
+E03/P: "{CTRL+k}"
+E04/P: "{ALT+i}"
+E05/P: "{ALT+i}"
+E06/P: "{CTRL+{SHIFT+k}}"
+E07/P: "{CTRL+{SHIFT+k}}"
+E08/P: "{ALT+p}"
+E09/P: "{ALT+p}"
+E10/P: "{ALT+p}"
+E11/P: "{ALT+p}"
+E12/P: "{ALT+p}"
+E13/P: "{ALT+p}"
+E14/P: "{ALT+p}"
+E15/P: "{ALT+p}"
+E16/P: "{ALT+p}"
+F01/P: "{LWIN+9}"
+F02/P: "{CTRL+k}"
+F03/P: "{CTRL+k}"
+F04/P: "{ALT+i}"
+F05/P: "{ALT+i}"
+F06/P: "{CTRL+{SHIFT+k}}"
+F07/P: "{CTRL+{SHIFT+k}}"
+F08/P: "{ALT+p}"
+F09/P: "{ALT+p}"
+F10/P: "{ALT+p}"
+F11/P: "{ALT+p}"
+F12/P: "{ALT+p}"
+F13/P: "{ALT+p}"
+F14/P: "{ALT+p}"
+F15/P: "{ALT+p}"
+F16/P: "{ALT+p}"
+G01/P: "{LWIN+9}"
+G02/P: "{CTRL+k}"
+G03/P: "{CTRL+k}"
+G04/P: "{ALT+i}"
+G05/P: "{ALT+i}"
+G06/P: "{CTRL+{SHIFT+k}}"
+G07/P: "{CTRL+{SHIFT+k}}"
+G08/P: "{ALT+p}"
+G09/P: "{ALT+p}"
+G10/P: "{ALT+p}"
+G11/P: "{ALT+p}"
+G12/P: "{ALT+p}"
+G13/P: "{ALT+p}"
+G14/P: "{ALT+p}"
+G15/P: "{ALT+p}"
+G16/P: "{ALT+p}"
+H01/P: "{LWIN+9}"
+H02/P: "{CTRL+k}"
+H03/P: "{CTRL+k}"
+H04/P: "{ALT+i}"
+H05/P: "{ALT+i}"
+H06/P: "{CTRL+{SHIFT+k}}"
+H07/P: "{CTRL+{SHIFT+k}}"
+H08/P: "{ALT+p}"
+H09/P: "{ALT+p}"
+H10/P: "{ALT+p}"
+H11/P: "{ALT+p}"
+H12/P: "{ALT+p}"
+H13/P: "{ALT+p}"
+H14/P: "{ALT+p}"
+H15/P: "{ALT+p}"
+H16/P: "{ALT+p}"
+!@KEYATTRIB:A12 00000A11
+!@KEYATTRIB:A16 00000A10
+!@KEYATTRIB:B01 00000A10
+!@KEYATTRIB:B02 00000A10
+!@KEYATTRIB:B03 00000A11
+!@KEYATTRIB:B04 00000A11
+!@KEYATTRIB:C01 00000A10
+!@KEYATTRIB:C02 00000A10
+!@KEYATTRIB:C03 00000A10
+!@KEYATTRIB:C08 00000A10
+!@KEYATTRIB:C09 00000A10
+!@KEYATTRIB:C10 00000A10
+!@KEYATTRIB:C15 00000A10
+!@KEYATTRIB:C16 00000A10
+!@KEYATTRIB:D01 00000A10
+!@KEYATTRIB:D02 00000A10
+!@KEYATTRIB:D03 00000A11
+!@KEYATTRIB:D04 00000A10
+!@KEYATTRIB:E01 00000A10
+!@KEYATTRIB:F03 00000A10
+!@KEYATTRIB:F04 00000A10
+!@KEYATTRIB:F05 00000A10
+!@KEYATTRIB:F06 00000A11
+!@KEYATTRIB:F07 00000A11
+!@KEYATTRIB:G01 00000A10
+!@KEYATTRIB:G02 00000A10
+!@KEYATTRIB:G03 00000A10
+!@KEYATTRIB:G04 00000A10
+!@KEYATTRIB:G05 00000A10
+!@KEYATTRIB:G06 00000A10
+!@KEYATTRIB:G07 00000A10
+!@KEYATTRIB:G08 00000A10
+!@KEYATTRIB:G09 00000A10
+!@KEYATTRIB:G10 00000A10
+!@KEYATTRIB:G11 00000A10
+!@KEYATTRIB:G12 00000A10
+!@KEYATTRIB:G13 00000A11
+!@KEYATTRIB:G14 00000A10
+!@KEYATTRIB:H01 00000A10
+!@KEYATTRIB:H02 00000A10
+!@KEYATTRIB:H03 00000A10
+!@KEYATTRIB:H04 00000A10
+!@KEYATTRIB:H05 00000A10
+!@KEYATTRIB:H06 00000A10
+!@KEYATTRIB:H07 00000A10
+!@KEYATTRIB:H08 00000A10
+!@KEYATTRIB:H09 00000A10
+!@KEYATTRIB:H14 00000A11
+!@KEYATTRIB:H15 00000A11
+!@KEYLAYER:Normal-Layer,8A80,10
+F01-C-S-A-L/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
+G01-C-S-A-L/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
+G05-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
+!@KEYATTRIB:F01 00000A10
+!@KEYATTRIB:G01 00000A10
+!@KEYATTRIB:G05 00000A10
+!@KEYLAYER:Shift-Layer,8A81,10
+!@KEYLAYER:Control-Layer,8A86,10
+!@KEYLAYER:StdKey-Layer,6AAA,514
+!@KEYLAYER:Fn-Layer,9AAA,11
