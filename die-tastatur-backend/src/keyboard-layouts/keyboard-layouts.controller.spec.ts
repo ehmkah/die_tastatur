@@ -24,6 +24,11 @@ describe('KeyboardLayoutsController', () => {
         expect(controller).toBeDefined();
     });
 
+    it('should return valid layout for intellij macosx', () => {
+        const actual = controller.getFile('macosx_intellij');
+        expect(actual).toEqual(`pp`);
+    });
+
     it('should return valid layout for MCI 128', () => {
         const actual = controller.getFile('2');
         expect(actual).toEqual(`TYPE MC128
