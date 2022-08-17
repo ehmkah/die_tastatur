@@ -24,13 +24,8 @@ describe('KeyboardLayoutsController', () => {
         expect(controller).toBeDefined();
     });
 
-    it('should return valid layout for intellij macosx', () => {
-        const actual = controller.getFile('macosx_intellij');
-        expect(actual).toEqual(`pp`);
-    });
-
     it('should return valid layout for MCI 128', () => {
-        const actual = controller.getFile('2');
+        const actual = controller.getFile('maxos_default_dev');
         expect(actual).toEqual(`TYPE MC128
 MEMORY 8000
 VERSION  CYPRESS  WINPROG 2.5.3.5
@@ -269,12 +264,6 @@ H09/P: "{ALT+p}"
 !@KEYATTRIB:H14 00000A11
 !@KEYATTRIB:H15 00000A11
 !@KEYLAYER:Normal-Layer,8A80,10
-F01-C-S-A-L/P: "git{SPACE}push{SPACE}origin{SPACE}HEAD{RETURN}"
-G01-C-S-A-L/P: "git{SPACE}fetch{SPACE}-p{RETURN}"
-G05-C-S-A-L/P: "git{SPACE}checkout{SPACE}master{RETURN}"
-!@KEYATTRIB:F01 00000A10
-!@KEYATTRIB:G01 00000A10
-!@KEYATTRIB:G05 00000A10
 !@KEYLAYER:Shift-Layer,8A81,10
 !@KEYLAYER:Control-Layer,8A86,10
 !@KEYLAYER:StdKey-Layer,6AAA,514
