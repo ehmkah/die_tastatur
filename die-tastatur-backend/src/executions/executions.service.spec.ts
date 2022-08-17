@@ -18,6 +18,18 @@ describe('ExecutionsService', () => {
         service = module.get<ExecutionsService>(ExecutionsService);
     });
 
+    it('check that parantheses are fine', () => {
+        const actual = service.findAll();
+        for (const execution of actual) {
+            const numberOfOpeningBrackets = execution.executor.split("{").length;
+            const numberOfClosingBrackets = execution.executor.split("}").length;
+            if(numberOfOpeningBrackets!=numberOfClosingBrackets) {
+                console.log(execution.id);
+                expect(numberOfOpeningBrackets).toEqual(numberOfClosingBrackets);
+            }
+        }
+    });
+
     it('should be defined', () => {
         expect(service).toBeDefined();
     });
@@ -29,11 +41,11 @@ describe('ExecutionsService', () => {
 
     it('findByCommandAndKeysetWorks2',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.RERUN_LAST, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX).executor).toBeDefined();
+            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.RUN_LAST, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX).executor).toBeDefined();
         })
 
     it('findByCommandAndKeysetWorksNotFound',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.RERUN_LAST, KeysetDefinitions.INTELLIJ_ECLIPSE_MACOSX)).toBeUndefined();
+            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.RUN_LAST, KeysetDefinitions.INTELLIJ_ECLIPSE_MACOSX)).toBeUndefined();
         })
 });

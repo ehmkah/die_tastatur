@@ -19,13 +19,13 @@ export function macosxIntellijKeyboardLayout(keyboard: Keyboard, keyboardLayouts
     board[0][6] = keyboardLayoutsService.createKeyDetails('0_6', CommandsDefinitions.IDE_DEBUG_STEP_OVER, keyset);
     board[0][7] = keyboardLayoutsService.createKeyDetails('0_7', CommandsDefinitions.IDE_DEBUG_STEP_INTO, keyset);
     board[0][8] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_SMART_STEP_INTO, keyset);
-    board[0][9] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_STEP_OUT, keyset);
-    board[0][10] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_RUN_TO_CURSOR, keyset);
-    board[0][11] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_EVALUATE_EXPRESSION, keyset);
-    board[0][12] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_RESUME, keyset);
-    board[0][13] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, keyset);
-    board[0][14] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, keyset);
-    board[0][15] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.RUN_LAST, keyset);
+    board[0][9] = keyboardLayoutsService.createKeyDetails('0_9', CommandsDefinitions.IDE_DEBUG_STEP_OUT, keyset);
+    board[0][10] = keyboardLayoutsService.createKeyDetails('0_10', CommandsDefinitions.IDE_DEBUG_RUN_TO_CURSOR, keyset);
+    board[0][11] = keyboardLayoutsService.createKeyDetails('0_11', CommandsDefinitions.IDE_DEBUG_EVALUATE_EXPRESSION, keyset);
+    board[0][12] = keyboardLayoutsService.createKeyDetails('0_12', CommandsDefinitions.IDE_DEBUG_RESUME, keyset);
+    board[0][13] = keyboardLayoutsService.createKeyDetails('0_13', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, keyset);
+    board[0][14] = keyboardLayoutsService.createKeyDetails('0_14', CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, keyset);
+    board[0][15] = keyboardLayoutsService.createKeyDetails('0_15', CommandsDefinitions.RUN_LAST, keyset);
 
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.DEBUG_LAST, keyset);
     board[1][1] = keyboardLayoutsService.createKeyDetails('1_1', CommandsDefinitions.SELECT_RUN, keyset);
