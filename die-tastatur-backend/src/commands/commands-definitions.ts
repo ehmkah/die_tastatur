@@ -6,7 +6,6 @@ export enum CommandsDefinitions {
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
     PUSH_2 = 'push_2',
-
     IDE_DEBUG_STEP_OVER = 'step_over',
     IDE_DEBUG_STEP_INTO = 'step_into',
     IDE_DEBUG_SMART_STEP_INTO = 'smart_step_into',
@@ -16,12 +15,10 @@ export enum CommandsDefinitions {
     IDE_DEBUG_RESUME = 'ide_debug_resume',
     IDE_DEBUG_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
     IDE_DEBUG_VIEW_BREAKPOINT = 'ide_toggle_view_breakpoint',
-
     RUN_LAST = 'run_last',
     DEBUG_LAST = 'debug_last',
     SELECT_RUN = 'select_run',
     SELECT_DEBUG = 'select_debug',
-
     IDE_NAVIGATION_GOTO_DECLARATION = 'goto_declaration',
     IDE_NAVIGATION_GOTO_CLASS = 'goto_class',
     IDE_NAVIGATION_GOTO_FILE = 'goto_file',
@@ -107,7 +104,6 @@ export enum CommandsDefinitions {
     IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME = 'ide_general_quick_switch_current_scheme',
     IDE_GENERAL_OPEN_PREFERENCES = 'ide_general_open_preferences',
     IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW = 'ide_general_switch_between_tab_and_tool_window',
-
     IDE_EDITING_GENERATE = 'ide_editing_generate',
     IDE_EDITING_SURROUND = 'ide_editing_surround',
     IDE_EDITING_INSERT_LIVE_TEMPLATE = 'ide_insert_live_template',
@@ -115,7 +111,6 @@ export enum CommandsDefinitions {
     IDE_EDITING_REFORMAT_CODE = 'ide_editing_reformat_code',
     IDE_EDITING_DUPLICATE_LINE = 'ide_editing_duplicate_line',
     IDE_EDITING_DELETE_LINE = 'ide_editing_delete_line',
-
     IDE_EDITING_BASIC_CODE_COMPLETION = 'IDE_EDITING_BASIC_CODE_COMPLETION',
     IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES = 'ide_editing_show_intention_action_quick_fixes',
     IDE_EDITING_PARAMETER_INFO = 'ide_editing_parameter_info',
@@ -144,12 +139,10 @@ export enum CommandsDefinitions {
     IDE_EDITING_EXPAND_ALL = 'ide_editing_expand_all',
     IDE_EDITING_COOLAPSE_ALL = 'ide_editing_coolapse_all',
     IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB = 'ide_editing_close_active_editor_tab',
-
     IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES = 'ide_multiple_carets_select_all_occurences',
     IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE = 'ide_multiple_carets_select_next_occurence',
     IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE = 'ide_multiple_carets_unselect_occurence',
     IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS = 'ide_multiple_carets_unselect_all_occurences_or_carets',
-
     IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN = 'ide_running_select_configuration_and_run',
     IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG = 'ide_running_select_configuration_and_debug',
     IDE_RUNNING_RUN = 'ide_running_run',

@@ -62,9 +62,9 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[6][3] = keyboardLayoutsService.createKeyDetails('6_3', CommandsDefinitions.KUBECTX, terminalDefaultKeyset);
 
     return <KeyboardLayout>{
-        id: '2',
+        id: 'maxos_default_dev',
         keyboard,
-        name: 'Linux Default Dev',
+        name: 'Maxos Default Dev',
         keys: board
     };
 
