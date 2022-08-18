@@ -143,7 +143,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_EDITING_MOVE_LINE_DOWN', CommandsDefinitions.IDE_EDITING_MOVE_LINE_DOWN, keyset, `{${SpecialKeys.ALT}{${SpecialKeys.SHIFT}${SpecialKeys.CURSOR_DOWN}}}`),
         executionService.createExecution('IDE_EDITING_JOIN_LINES', CommandsDefinitions.IDE_EDITING_JOIN_LINES, keyset, `{${SpecialKeys.CTRL}{${SpecialKeys.SHIFT}J}}`),
         executionService.createExecution('IDE_EDITING_SPLIT_LINES', CommandsDefinitions.IDE_EDITING_SPLIT_LINES, keyset, `{${SpecialKeys.LWIN}${SpecialKeys.RETURN}}`),
-        executionService.createExecution('IDE_EDITING_START_NEW_LINES', CommandsDefinitions.IDE_EDITING_START_NEW_LINES, keyset, `{${SpecialKeys.SHIFT} ${SpecialKeys.RETURN}}`),
+        executionService.createExecution('IDE_EDITING_START_NEW_LINES', CommandsDefinitions.IDE_EDITING_START_NEW_LINES, keyset, `{${SpecialKeys.SHIFT}${SpecialKeys.RETURN}}`),
         executionService.createExecution('IDE_EDITING_TOGGLE_CASE_WORD', CommandsDefinitions.IDE_EDITING_TOGGLE_CASE_WORD, keyset, `{${SpecialKeys.LWIN}{${SpecialKeys.SHIFT}U}}`),
         executionService.createExecution('IDE_EDITING_SELECT_TILL_CODE_BLOCK_END', CommandsDefinitions.IDE_EDITING_SELECT_TILL_CODE_BLOCK_END, keyset, `{${SpecialKeys.CTRL}{${SpecialKeys.LWIN}{${SpecialKeys.LWIN}{${SpecialKeys.SHIFT} ]}}}}`),
         executionService.createExecution('IDE_EDITING_SELECT_TILL_CODE_BLOCK_START', CommandsDefinitions.IDE_EDITING_SELECT_TILL_CODE_BLOCK_START, keyset, `{${SpecialKeys.CTRL}{${SpecialKeys.LWIN}{${SpecialKeys.LWIN}{${SpecialKeys.SHIFT} [}}}}`),
