@@ -5,7 +5,7 @@ export enum SpecialKeys {
     CTRL = '{CTRL}',
     LWIN = '{LWIN}',
     SPACE = '{SPACE}',
-    ESCAPE='{ESCAPE}',
+    ESCAPE='{ESC}',
     RETURN = '{RETURN}',
     CURSOR_UP='{UP}',
     CURSOR_DOWN='{DOWN}',
