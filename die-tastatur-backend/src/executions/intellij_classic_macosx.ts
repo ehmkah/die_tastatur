@@ -126,7 +126,7 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('24', CommandsDefinitions.IDE_EDITING_REFORMAT_CODE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+L}}`),
         executionService.createExecution('25', CommandsDefinitions.IDE_EDITING_DUPLICATE_LINE, keyset, `{${SpecialKeys.LWIN}+L}`),
         executionService.createExecution('26', CommandsDefinitions.IDE_EDITING_DELETE_LINE, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.BACKSPACE}}`),
-        executionService.createExecution('IDE_EDITING_BASIC_CODE_COMPLETION', CommandsDefinitions.IDE_EDITING_BASIC_CODE_COMPLETION, keyset, `{${SpecialKeys.CTRL}${SpecialKeys.SPACE}}`),
+        executionService.createExecution('IDE_EDITING_BASIC_CODE_COMPLETION', CommandsDefinitions.IDE_EDITING_BASIC_CODE_COMPLETION, keyset, `{${SpecialKeys.CTRL}+${SpecialKeys.SPACE}}`),
         executionService.createExecution('IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES', CommandsDefinitions.IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.RETURN}}`),
         executionService.createExecution('IDE_EDITING_PARAMETER_INFO', CommandsDefinitions.IDE_EDITING_PARAMETER_INFO, keyset, `{${SpecialKeys.LWIN}+P}`),
         executionService.createExecution('IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP', CommandsDefinitions.IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP, keyset, `{${SpecialKeys.CTRL}+J}`),
