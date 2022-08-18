@@ -11,7 +11,7 @@ export enum SpecialKeys {
     CURSOR_DOWN='{DOWN}',
     CURSOR_LEFT='{LEFT}',
     CURSOR_RIGHT='{RIGHT}',
-    BACK='{BACK}',
+    BACKSPACE='{BACKSPACE}',
     TAB='{TAB}',
     F1 = '{F1}',
     F2 = '{F2}',
