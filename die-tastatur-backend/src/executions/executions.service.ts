@@ -5,7 +5,7 @@ import {CommandsService} from "../commands/commands.service";
 import {Keyset} from "../keysets/keyset.interface";
 import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
-import {intellijClassicMaxosxExecutions} from "./intellij_classic_macosx";
+import {webstormDefaultMaxosxExecutions} from "./intellij_classic_macosx";
 import {git_default_macos} from "./git_default_macos";
 import {kubect_default_macos} from "./kubect_default_macos";
 import {kubens_default_macos} from "./kubens_default_macos";
@@ -25,7 +25,7 @@ export class ExecutionsService {
 
     findAll(): Array<Execution> {
 
-        const executions: Array<Execution> = intellijClassicMaxosxExecutions(this, this.keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX)).concat(
+        const executions: Array<Execution> = webstormDefaultMaxosxExecutions(this, this.keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX)).concat(
             git_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             kubect_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             kubens_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
