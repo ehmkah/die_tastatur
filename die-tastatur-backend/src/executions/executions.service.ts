@@ -45,7 +45,6 @@ export class ExecutionsService {
 
         return matchingExecutions[0];
     }
-dsdsdas
 
 
     createExecution(id: string, commandDefinition: CommandsDefinitions, keyset: Keyset, executor: string): Execution {
