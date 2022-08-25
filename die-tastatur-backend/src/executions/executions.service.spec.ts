@@ -41,11 +41,11 @@ describe('ExecutionsService', () => {
 
     it('findByCommandAndKeysetWorks2',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.RUN_LAST, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX).executor).toBeDefined();
+            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_RUN, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX).executor).toBeDefined();
         })
 
     it('findByCommandAndKeysetWorksNotFound',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.RUN_LAST, KeysetDefinitions.INTELLIJ_ECLIPSE_MACOSX)).toBeUndefined();
+            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_DEBUG, KeysetDefinitions.INTELLIJ_ECLIPSE_MACOSX)).toBeUndefined();
         })
 });
