@@ -212,11 +212,25 @@ export class CommandsService {
             // Other
             <Command>{id: 'yes', description: 'say yes', defaultKeyPrintText:'yes', name: CommandsDefinitions.YES},
             <Command>{id: 'no', description: 'say no', defaultKeyPrintText:'no', name: CommandsDefinitions.NO}
+
+
         ];
+
     }
 
     findByCommandDefintion(commandDefinition: CommandsDefinitions) {
-        return this.findAll().filter(command => command.name === commandDefinition)[0];
+
+
+    this.hhhhh('ll');
+
+
+    return this.findAll().filter(command => command.name === commandDefinition)[0];
     }
 
+
+    hhhhh(gug) {
+
+        console.log('hhh')
+
+    }
 }

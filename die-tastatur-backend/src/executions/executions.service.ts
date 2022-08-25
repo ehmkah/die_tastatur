@@ -5,7 +5,7 @@ import {CommandsService} from "../commands/commands.service";
 import {Keyset} from "../keysets/keyset.interface";
 import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
-import {webstormDefaultMaxosxExecutions} from "./intellij_classic_macosx";
+import {webstormDefaultMaxosxExecutions} from "./webstorm_classic_macosx";
 import {git_default_macos} from "./git_default_macos";
 import {kubect_default_macos} from "./kubect_default_macos";
 import {kubens_default_macos} from "./kubens_default_macos";
