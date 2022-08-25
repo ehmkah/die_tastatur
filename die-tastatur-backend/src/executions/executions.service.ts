@@ -63,7 +63,13 @@ export class ExecutionsService {
 class KrauTest extends ExecutionsService{
 
     findAll(): Array<Execution> {
+
+
         return super.findAll();
 
+    }
+
+    heuuL() {
+        const heud = 'ju';
     }
 }

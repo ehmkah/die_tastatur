@@ -92,7 +92,7 @@ MSR M3, : ""
 !@KEYPRINT:E13 "Find";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E14 "Replace";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:E15 "Find next";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:E16 "Replace next";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E16 "Find previous";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F01 "quick definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F02 "type definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F03 "goto supermethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -196,16 +196,16 @@ D03/P: "{ALT+{F7}}"
 D04/P: "{LWIN+{F7}}"
 D05/P: "{SHIFT+{LWIN+{F7}}}"
 D06/P: "{ALT+{LWIN+{F7}}}"
-D07/P: "{CTRL+T}"
+D07/P: "{CTRL+t}"
 D08/P: "{F5}"
 D09/P: "{F6}"
 D10/P: "{LWIN+{BACKSPACE}}"
 D11/P: "{SHIFT+{F6}}"
 D12/P: "{LWIN+{F6}}"
-D13/P: "{ALT+{LWIN+N}}"
-D14/P: "{ALT+{LWIN+V}}"
-D15/P: "{ALT+{LWIN+C}}"
-D16/P: "{ALT+{LWIN+P}}"
+D13/P: "{ALT+{LWIN+n}}"
+D14/P: "{ALT+{LWIN+v}}"
+D15/P: "{ALT+{LWIN+c}}"
+D16/P: "{ALT+{LWIN+p}}"
 E01/P: "{ALT+{F3}}"
 E02/P: "{CTRL+0}"
 E03/P: "{CTRL+{LWIN+{SHIFT+]}}}"
@@ -213,8 +213,8 @@ E04/P: "{CTRL+{LWIN+{SHIFT+[}}}"
 E05/P: "{ALT+{DEL}}"
 E06/P: "{ALT+{BACKSPACE}}"
 E07/P: "{LWIN+{PLUS}}"
-E08/P: "{LWIN+{MINUS}}"
-E09/P: "{LWIN+{PLUS}}"
+E08/P: "{SHIFT+{LWIN+{MINUS}}}"
+E09/P: "{SHIFT+{LWIN+{PLUS}}}"
 E10/P: "{SHIFT+{LWIN+{MINUS}}}"
 E11/P: "{LWIN+w}"
 E12/P: "{LWIN+{F3}}"
