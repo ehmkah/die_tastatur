@@ -15,10 +15,6 @@ export enum CommandsDefinitions {
     IDE_DEBUG_RESUME = 'ide_debug_resume',
     IDE_DEBUG_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
     IDE_DEBUG_VIEW_BREAKPOINT = 'ide_toggle_view_breakpoint',
-    RUN_LAST = 'run_last',
-    DEBUG_LAST = 'debug_last',
-    SELECT_RUN = 'select_run',
-    SELECT_DEBUG = 'select_debug',
     IDE_NAVIGATION_GOTO_DECLARATION = 'goto_declaration',
     IDE_NAVIGATION_GOTO_CLASS = 'goto_class',
     IDE_NAVIGATION_GOTO_FILE = 'goto_file',
@@ -139,10 +135,12 @@ export enum CommandsDefinitions {
     IDE_EDITING_EXPAND_ALL = 'ide_editing_expand_all',
     IDE_EDITING_COOLAPSE_ALL = 'ide_editing_coolapse_all',
     IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB = 'ide_editing_close_active_editor_tab',
+
     IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES = 'ide_multiple_carets_select_all_occurences',
     IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE = 'ide_multiple_carets_select_next_occurence',
     IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE = 'ide_multiple_carets_unselect_occurence',
     IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS = 'ide_multiple_carets_unselect_all_occurences_or_carets',
+
     IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN = 'ide_running_select_configuration_and_run',
     IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG = 'ide_running_select_configuration_and_debug',
     IDE_RUNNING_RUN = 'ide_running_run',

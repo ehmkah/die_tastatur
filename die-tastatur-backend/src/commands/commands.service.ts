@@ -11,10 +11,6 @@ export class CommandsService {
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
             <Command>{id: 'jump_to_git_view', description: 'Jump to git view', defaultKeyPrintText: 'git\nview', name: CommandsDefinitions.JUMP_TO_GIT_VIEW},
-            <Command>{id: 'run_last', description: 'Run last Runconfiguration', defaultKeyPrintText: 'run\nlast', name: CommandsDefinitions.RUN_LAST},
-            <Command>{id: 'debug_last', description: 'Debug last Runconfiguration', defaultKeyPrintText: 'debug\nlast', name: CommandsDefinitions.DEBUG_LAST},
-            <Command>{id: 'select_run', description: 'Open select menu to choose Runconfiguration', defaultKeyPrintText: 'select\nrun', name: CommandsDefinitions.SELECT_RUN},
-            <Command>{id: 'select_debug', description: 'Open select menu to choose Runconfiguration to debug', defaultKeyPrintText: 'select\ndebug', name: CommandsDefinitions.SELECT_DEBUG},
             <Command>{id: 'open_git_commit', description: 'Open commit dialog', defaultKeyPrintText: 'open\nCommit', name: CommandsDefinitions.OPEN_COMMIT_DIALOG},
             <Command>{id: 'git_commit', description: 'commit', defaultKeyPrintText: 'commit', name: CommandsDefinitions.COMMIT},
             <Command>{id: 'git_push', description: 'push', defaultKeyPrintText: 'push', name: CommandsDefinitions.PUSH_1},
