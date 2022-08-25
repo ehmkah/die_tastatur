@@ -18,7 +18,6 @@ import {ssh_agentDefaultMaxosx} from "./ssh_agent-default-maxosx";
 @Injectable()
 export class ExecutionsService {
 
-
     constructor(private keysetService: KeysetsService,
                 private commandService: CommandsService) {
     }
@@ -46,6 +45,8 @@ export class ExecutionsService {
 
         return matchingExecutions[0];
     }
+dsdsdas
+
 
     createExecution(id: string, commandDefinition: CommandsDefinitions, keyset: Keyset, executor: string): Execution {
         const command = this.commandService.findByCommandDefintion(commandDefinition);
@@ -58,4 +59,12 @@ export class ExecutionsService {
     }
 
 
+}
+
+class KrauTest extends ExecutionsService{
+
+    findAll(): Array<Execution> {
+        return super.findAll();
+
+    }
 }

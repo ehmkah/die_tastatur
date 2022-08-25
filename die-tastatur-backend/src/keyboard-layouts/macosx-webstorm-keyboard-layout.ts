@@ -42,7 +42,7 @@ export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayouts
     board[1][15] = keyboardLayoutsService.createKeyDetails('1_15', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_TO_LAST_EDIT_LOCATION, keyset);
 
     board[2][0] = keyboardLayoutsService.createKeyDetails('2_0', CommandsDefinitions.IDE_NAVIGATION_OPEN_QUICK_DEFINITION_LOOKUP, keyset);
-    board[2][1] = keyboardLayoutsService.createKeyDetails('2_1', CommandsDefinitions.IDE_NAVIGATION_GOTO_TYPE_DEFINITIAON, keyset);
+    board[2][1] = keyboardLayoutsService.createKeyDetails('2_1', CommandsDefinitions.IDE_NAVIGATION_GOTO_TYPE_DEFINITION, keyset);
     board[2][2] = keyboardLayoutsService.createKeyDetails('2_2', CommandsDefinitions.IDE_NAVIGATION_GOTO_SUPER_METHOD_SUPER_CLASS, keyset);
     board[2][3] = keyboardLayoutsService.createKeyDetails('2_3', CommandsDefinitions.IDE_NAVIGATION_GOTO_PREVIOUS_METHOD, keyset);
     board[2][4] = keyboardLayoutsService.createKeyDetails('2_4', CommandsDefinitions.IDE_NAVIGATION_GOTO_NEXT_METHOD, keyset);

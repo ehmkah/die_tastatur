@@ -31,7 +31,7 @@ export enum CommandsDefinitions {
     IDE_NAVIGATION_SELECT_CURRENT_FILE_IN_ANY_VIEW = 'ide_navigation_select_current_file_in_any_view',
     IDE_NAVIGATION_GOTO_IMPLEMENTATION = 'ide_navigation_goto_implementation',
     IDE_NAVIGATION_OPEN_QUICK_DEFINITION_LOOKUP = 'ide_navigation_open_quick_definition_lookup',
-    IDE_NAVIGATION_GOTO_TYPE_DEFINITIAON = 'ide_navigation_goto_type_definitiaon',
+    IDE_NAVIGATION_GOTO_TYPE_DEFINITION = 'ide_navigation_goto_type_definitiaon',
     IDE_NAVIGATION_GOTO_SUPER_METHOD_SUPER_CLASS = 'ide_navigation_goto_super_method_super_class',
     IDE_NAVIGATION_GOTO_PREVIOUS_METHOD = 'ide_navigation_goto_previous_method',
     IDE_NAVIGATION_GOTO_NEXT_METHOD = 'ide_navigation_goto_next_method',
