@@ -147,9 +147,9 @@ export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayouts
     board[7][15] = keyboardLayoutsService.createKeyDetails('7_15', CommandsDefinitions.IDE_EDITING_TOGGLE_CASE_WORD, keyset);
 
     return <KeyboardLayout>{
-        id: 'macosx_intellij',
+        id: 'macosx_webstorm',
         keyboard,
-        name: 'MacosX IntelliJ',
+        name: 'MacosX Webstorm⁄',
         keys: board
     };
 
