@@ -73,7 +73,7 @@ export class CommandsService {
             <Command>{id: 'ide_search_and_replace_find', description: 'Find', defaultKeyPrintText: 'Find', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND},
             <Command>{id: 'ide_search_and_replace_replace', description: 'Replace', defaultKeyPrintText: 'Replace', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE},
             <Command>{id: 'ide_search_and_replace_find_next', description: 'Find next', defaultKeyPrintText: 'Find next', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_NEXT},
-            <Command>{id: 'ide_search_and_replace_replace_next', description: 'Replace next', defaultKeyPrintText: 'Replace next', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_PREVIOUS},
+            <Command>{id: 'ide_search_and_replace_replace_next', description: 'Replace next', defaultKeyPrintText: 'Find previous', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_PREVIOUS},
             <Command>{id: 'ide_search_and_replace_find_in_path', description: 'Find in path', defaultKeyPrintText: 'Find in path', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_IN_PATH},
             <Command>{id: 'ide_search_and_replace_replace_in_path', description: 'Replace in path', defaultKeyPrintText: 'Replace in path', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE_IN_PATH},
             <Command>{id: 'ide_usage_search_find_usage', description: 'Find usage', defaultKeyPrintText: 'Find usage', name: CommandsDefinitions.IDE_USAGE_SEARCH_FIND_USAGE},
