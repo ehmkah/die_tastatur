@@ -216,10 +216,6 @@ export class CommandsService {
 
     findByCommandDefintion(commandDefinition: CommandsDefinitions) {
 
-
-    this.hhhhh('ll');
-
-
     return this.findAll().filter(command => command.name === commandDefinition)[0];
     }
 
