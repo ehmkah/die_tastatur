@@ -83,7 +83,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('ide_refactoring_refactor_this', CommandsDefinitions.IDE_REFACTORING_REFACTOR_THIS, keyset, `{${SpecialKeys.CTRL}+t}`),
         executionService.createExecution('ide_refactoring_copy', CommandsDefinitions.IDE_REFACTORING_COPY, keyset, `${SpecialKeys.F5}`),
         executionService.createExecution('ide_refactoring_move', CommandsDefinitions.IDE_REFACTORING_MOVE, keyset, `${SpecialKeys.F6}`),
-        executionService.createExecution('ide_refactoring_safe_delete', CommandsDefinitions.IDE_REFACTORING_SAFE_DELETE, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.BACKSPACE}}`),
+        executionService.createExecution('ide_refactoring_safe_delete', CommandsDefinitions.IDE_REFACTORING_SAFE_DELETE, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.DELETE}}`),
         executionService.createExecution('ide_refactoring_rename', CommandsDefinitions.IDE_REFACTORING_RENAME, keyset, `{${SpecialKeys.SHIFT}+${SpecialKeys.F6}}`),
         executionService.createExecution('ide_refactoring_change_function_signature', CommandsDefinitions.IDE_REFACTORING_CHANGE_FUNCTION_SIGNATURE, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F6}}`),
         executionService.createExecution('ide_refactoring_inline_variable', CommandsDefinitions.IDE_REFACTORING_INLINE_VARIABLE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+n}}`),
