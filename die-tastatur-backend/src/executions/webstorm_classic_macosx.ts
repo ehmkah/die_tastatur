@@ -150,9 +150,9 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_EDITING_EXPAND_ALL', CommandsDefinitions.IDE_EDITING_EXPAND_ALL, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.PLUS}}}`),
         executionService.createExecution('IDE_EDITING_COOLAPSE_ALL', CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.MINUS}}}`),
         executionService.createExecution('IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB', CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB, keyset, `{${SpecialKeys.LWIN}+w}`),
-        executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+}}`),
-        executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE, keyset, `{${SpecialKeys.ALT}+g}`),
-        executionService.createExecution('IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+g}}`),
+        executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.LWIN}+g}}`),
+        executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE, keyset, `{${SpecialKeys.CTRL}+g}`),
+        executionService.createExecution('IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+g}}`),
         executionService.createExecution('IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS', CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS, keyset, `???`),
 
         executionService.createExecution('IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN', CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+r}}`),
