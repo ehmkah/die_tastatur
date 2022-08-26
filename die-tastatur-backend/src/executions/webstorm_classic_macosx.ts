@@ -153,7 +153,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.LWIN}+g}}`),
         executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE, keyset, `{${SpecialKeys.CTRL}+g}`),
         executionService.createExecution('IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+g}}`),
-        executionService.createExecution('IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS', CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS, keyset, `???`),
+        executionService.createExecution('IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS', CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS, keyset, `${SpecialKeys.ESCAPE}`),
 
         executionService.createExecution('IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN', CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+r}}`),
         executionService.createExecution('IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG', CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+d}}`),
