@@ -116,7 +116,7 @@ export class CommandsService {
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
             <Command>{id: 'IDE_EDITING_SURROUND', description: 'Surround with if, try, for', defaultKeyPrintText: 'surround', name: CommandsDefinitions.IDE_EDITING_SURROUND},
             <Command>{id: 'IDE_EDITING_INSERT_LIVE_TEMPLATE', description: 'Insert live template', defaultKeyPrintText: 'live template', name: CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE},
-            <Command>{id: 'IDE_EDITING_COMMENT_OR_UNCOMMENT', description: 'Comment/uncomment with line command', defaultKeyPrintText: 'command', name: CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT},
+            <Command>{id: 'IDE_EDITING_COMMENT_OR_UNCOMMENT', description: 'Comment/uncomment with line command', defaultKeyPrintText: 'comment', name: CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT},
             <Command>{id: 'ide_editing_reformat_code', description: 'Reformat code', defaultKeyPrintText: 'reformat', name: CommandsDefinitions.IDE_EDITING_REFORMAT_CODE},
             <Command>{id: 'IDE_EDITING_DUPLICATE_LINE', description: 'Duplicate current line or selected block', defaultKeyPrintText: 'duplicate', name: CommandsDefinitions.IDE_EDITING_DUPLICATE_LINE},
             <Command>{id: 'IDE_EDITING_DELETE_LINE', description: 'Delete current line', defaultKeyPrintText: 'delete line', name: CommandsDefinitions.IDE_EDITING_DELETE_LINE},
@@ -219,10 +219,4 @@ export class CommandsService {
     return this.findAll().filter(command => command.name === commandDefinition)[0];
     }
 
-
-    hhhhh(gug) {
-
-        console.log('hhh')
-
-    }
 }

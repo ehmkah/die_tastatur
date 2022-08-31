@@ -38,7 +38,7 @@ MSR M3, : ""
 !@KEYPRINT:B07 "generate";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B08 "surround";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B09 "live template";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:B10 "command";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B10 "comment";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B11 "reformat";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B12 "duplicate";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B13 "delete line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -161,24 +161,24 @@ A16/P: "{LWIN+{SHIFT+u}}"
 B01/P: "{SHIFT+{LWIN+{F12}}}"
 B02/P: "{ALT+{SHIFT+F}}"
 B03/P: "{ALT+{SHIFT+I}}"
-B04/P: "{ALT}"
+B04/P: "{ALT+`}"
 B05/P: "{LWIN+,}"
-B06/P: "{ALT+{TAB}}"
-B07/P: "{LWIN+N}"
-B08/P: "{ALT+{LWIN+T}}"
-B09/P: "{LWIN+J}"
+B06/P: "{CTRL+{TAB}}"
+B07/P: "{LWIN+n}"
+B08/P: "{ALT+{LWIN+t}}"
+B09/P: "{LWIN+j}"
 B10/P: "{LWIN+/}"
-B11/P: "{ALT+{LWIN+L}}"
-B12/P: "{LWIN+L}"
+B11/P: "{ALT+{LWIN+l}}"
+B12/P: "{LWIN+l}"
 B13/P: "{LWIN+{BACKSPACE}}"
 B14/P: "{CTRL+SPACE}"
 B15/P: "{ALT+RETURN}"
-B16/P: "{LWIN+P}"
+B16/P: "{LWIN+p}"
 C01/P: "{ALT+v}"
 C02/P: "{LWIN+k}"
 C03/P: "{LWIN+t}"
 C04/P: "{ALT+{SHIFT+c}}"
-C05/P: "{SHIFT}+{SHIFT}"
+C05/P: "{SHIFT}{SHIFT}"
 C06/P: "{SHIFT+{LWIN+a}}"
 C07/P: "{LWIN+0}"
 C08/P: "{CTRL+{LWIN+g}}"
