@@ -14,6 +14,7 @@ export enum SpecialKeys {
     BACKSPACE='{BACKSPACE}',
     PLUS='{PLUS}',
     MINUS='{MINUS}',
+    DIV='{DIV}',
     DELETE='{DEL}',
     TAB='{TAB}',
     F1 = '{F1}',
