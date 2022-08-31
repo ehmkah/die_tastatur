@@ -109,7 +109,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('ide_general_toggle_maximize_window', CommandsDefinitions.IDE_GENERAL_TOGGLE_MAXIMIZE_WINDOW, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.F12}}}`),
         executionService.createExecution('ide_general_add_fo_favorites', CommandsDefinitions.IDE_GENERAL_ADD_FO_FAVORITES, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+F}}`),
         executionService.createExecution('ide_general_inspect_current_file', CommandsDefinitions.IDE_GENERAL_INSPECT_CURRENT_FILE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+I}}`),
-        executionService.createExecution('ide_general_quick_switch_current_scheme', CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME, keyset, `{${SpecialKeys.ALT}+\`}`),
+        executionService.createExecution('ide_general_quick_switch_current_scheme', CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME, keyset, `{${SpecialKeys.CTRL}+\`}`),
         executionService.createExecution('ide_general_open_preferences', CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES, keyset, `{${SpecialKeys.LWIN}+,}`),
         executionService.createExecution('ide_general_switch_between_tab_and_tool_window', CommandsDefinitions.IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW, keyset, `{${SpecialKeys.CTRL}+${SpecialKeys.TAB}}`),
         
