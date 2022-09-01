@@ -28,7 +28,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
 
         executionService.createExecution('16', CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION, keyset, `{${SpecialKeys.LWIN}+B}`),
         executionService.createExecution('17', CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS, keyset, `{${SpecialKeys.LWIN}+o}`),
-        executionService.createExecution('18', CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, keyset,  `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+o}}`),
+        executionService.createExecution('18', CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+o}}`),
         executionService.createExecution('19', CommandsDefinitions.IDE_NAVIGATION_GOTO_SYMBOL, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+o}}`),
         executionService.createExecution('ide_navigation_goto_next_editor_tab', CommandsDefinitions.IDE_NAVIGATION_GOTO_NEXT_EDITOR_TAB, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+]}}`),
         executionService.createExecution('ide_navigation_goto_previous_editor_tab', CommandsDefinitions.IDE_NAVIGATION_GOTO_PREVIOUS_EDITOR_TAB, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+[}}`),
@@ -112,9 +112,8 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('ide_general_quick_switch_current_scheme', CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME, keyset, `{${SpecialKeys.CTRL}+\`}`),
         executionService.createExecution('ide_general_open_preferences', CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES, keyset, `{${SpecialKeys.LWIN}+,}`),
         executionService.createExecution('ide_general_switch_between_tab_and_tool_window', CommandsDefinitions.IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW, keyset, `{${SpecialKeys.CTRL}+${SpecialKeys.TAB}}`),
-        
 
-        
+
         executionService.createExecution('20', CommandsDefinitions.IDE_EDITING_GENERATE, keyset, `{${SpecialKeys.LWIN}+n}`),
         executionService.createExecution('21', CommandsDefinitions.IDE_EDITING_SURROUND, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+t}}`),
         executionService.createExecution('22', CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE, keyset, `{${SpecialKeys.LWIN}+j}`),
@@ -125,13 +124,13 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_EDITING_BASIC_CODE_COMPLETION', CommandsDefinitions.IDE_EDITING_BASIC_CODE_COMPLETION, keyset, `{${SpecialKeys.CTRL}+${SpecialKeys.SPACE}}`),
         executionService.createExecution('IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES', CommandsDefinitions.IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.RETURN}}`),
         executionService.createExecution('IDE_EDITING_PARAMETER_INFO', CommandsDefinitions.IDE_EDITING_PARAMETER_INFO, keyset, `{${SpecialKeys.LWIN}+p}`),
-        executionService.createExecution('IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP', CommandsDefinitions.IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP, keyset, `{${SpecialKeys.CTRL}+J}`),
+        executionService.createExecution('IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP', CommandsDefinitions.IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP, keyset, `{${SpecialKeys.CTRL}+j}`),
         executionService.createExecution('IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET', CommandsDefinitions.IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F1}}`),
-        executionService.createExecution('IDE_EDITING_COMMENT_WITH_BLOCK', CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK, keyset, `{${SpecialKeys.LWIN}+{${SpecialKeys.SHIFT}+/}}`),
+        executionService.createExecution('IDE_EDITING_COMMENT_WITH_BLOCK', CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK, keyset, `{${SpecialKeys.LWIN}+{${SpecialKeys.SHIFT}+${SpecialKeys.DIV}}`),
         executionService.createExecution('IDE_EDITING_SELECT_SUCCESSIVLY', CommandsDefinitions.IDE_EDITING_SELECT_SUCCESSIVLY, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_UP}}`),
         executionService.createExecution('IDE_EDITING_DECREASE_CURRENT_SELECTION', CommandsDefinitions.IDE_EDITING_DECREASE_CURRENT_SELECTION, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_DOWN}}`),
-        executionService.createExecution('IDE_EDITING_CONTEXT_INFO', CommandsDefinitions.IDE_EDITING_CONTEXT_INFO, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+q}}`),
-        executionService.createExecution('IDE_EDITING_AUTO_INDENT_LINE', CommandsDefinitions.IDE_EDITING_AUTO_INDENT_LINE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.LWIN}+i}}`),
+        executionService.createExecution('IDE_EDITING_CONTEXT_INFO', CommandsDefinitions.IDE_EDITING_CONTEXT_INFO, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+q}}`),
+        executionService.createExecution('IDE_EDITING_AUTO_INDENT_LINE', CommandsDefinitions.IDE_EDITING_AUTO_INDENT_LINE, keyset, `{${SpecialKeys.ALT}+{${SpecialKeys.CTRL}+i}}`),
         executionService.createExecution('IDE_EDITING_INDENT_SELECTED_LINES', CommandsDefinitions.IDE_EDITING_INDENT_SELECTED_LINES, keyset, `${SpecialKeys.TAB}`),
         executionService.createExecution('IDE_EDITING_UNINDENT_SELECTED_LINES', CommandsDefinitions.IDE_EDITING_UNINDENT_SELECTED_LINES, keyset, `{${SpecialKeys.SHIFT}+${SpecialKeys.TAB}}`),
         executionService.createExecution('IDE_EDITING_PASTE_FROM_RECENT_BUFFER', CommandsDefinitions.IDE_EDITING_PASTE_FROM_RECENT_BUFFER, keyset, `{${SpecialKeys.LWIN}+{${SpecialKeys.SHIFT}+V}}`),

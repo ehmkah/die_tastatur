@@ -109,9 +109,9 @@ MSR M3, : ""
 !@KEYPRINT:F14 "jump to source";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F15 "jump nav bar";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F16 "toggle bookmark";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G01 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G02 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G03 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G01 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G02 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G04 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G05 "goto\\lineclass";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G06 "goto\\linefile";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -140,15 +140,15 @@ MSR M3, : ""
 !@KEYPRINT:H13 "resume";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H14 "toggle\\linebreakpoint";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H15 "view breakpoints";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H16 "";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H16 "view breakpoints";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYLAYER:AlwaysActive,AAAA,11
-A01/P: "{CTRL+J}"
+A01/P: "{CTRL+j}"
 A02/P: "{LWIN+{F1}}"
-A03/P: "{LWIN+{SHIFT+/}}"
+A03/P: "{LWIN+{SHIFT+{DIV}}"
 A04/P: "{ALT+{UP}}"
 A05/P: "{ALT+{DOWN}}"
-A06/P: "{CTRL+{ALT+q}}"
-A07/P: "{ALT+{LWIN+i}}"
+A06/P: "{CTRL+{SHIFT+q}}"
+A07/P: "{ALT+{CTRL+i}}"
 A08/P: "{TAB}"
 A09/P: "{SHIFT+{TAB}}"
 A10/P: "{LWIN+{SHIFT+V}}"
@@ -238,6 +238,9 @@ F13/P: "{SHIFT+{F2}}"
 F14/P: "{F4}"
 F15/P: "{LWIN+{UP}}"
 F16/P: "{F3}"
+G01/P: "{LWIN+B}"
+G02/P: "{LWIN+B}"
+G03/P: "{LWIN+B}"
 G04/P: "{LWIN+B}"
 G05/P: "{LWIN+o}"
 G06/P: "{SHIFT+{LWIN+o}}"
@@ -266,6 +269,7 @@ H12/P: "{ALT+{F8}}"
 H13/P: "{ALT+{LWIN+r}}"
 H14/P: "{LWIN+{F8}}"
 H15/P: "{SHIFT+{LWIN+{F8}}}"
+H16/P: "{SHIFT+{LWIN+{F8}}}"
 !@KEYATTRIB:A12 00000A11
 !@KEYATTRIB:A16 00000A10
 !@KEYATTRIB:B01 00000A10
