@@ -1,4 +1,8 @@
 export enum CommandsDefinitions {
+
+    // Empty command, allows explicitly to define empty keys
+    EMPTY_COMMAND = 'empty',
+
     // IDE Commands
     JUMP_TO_PROJECT_VIEW = 'project_view',
     JUMP_TO_GIT_VIEW = 'git_view',

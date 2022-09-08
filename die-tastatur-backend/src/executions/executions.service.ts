@@ -14,6 +14,7 @@ import {docker_default_macos} from "./docker_default_macosx";
 import {docker_compose_default_macosx} from "./docker_compose_default_macosx";
 import {shellDefaultMacosx} from "./shell-default-macosx";
 import {ssh_agentDefaultMaxosx} from "./ssh_agent-default-maxosx";
+import {otherDefaultAll} from "./other-default-all";
 
 @Injectable()
 export class ExecutionsService {
@@ -32,7 +33,9 @@ export class ExecutionsService {
             docker_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             docker_compose_default_macosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
-            ssh_agentDefaultMaxosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX)));
+            ssh_agentDefaultMaxosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
+            otherDefaultAll(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))
+        );
 
         return executions;
     }

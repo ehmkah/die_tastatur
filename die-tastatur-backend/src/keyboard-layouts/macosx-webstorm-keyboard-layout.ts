@@ -27,7 +27,6 @@ export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayouts
     board[0][14] = keyboardLayoutsService.createKeyDetails('0_14', CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, keyset);
     board[0][15] = keyboardLayoutsService.createKeyDetails('0_15', CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, keyset);
 
-
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_3', CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION, keyset);
     board[1][1] = keyboardLayoutsService.createKeyDetails('1_3', CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION, keyset);
     board[1][2] = keyboardLayoutsService.createKeyDetails('1_3', CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION, keyset);

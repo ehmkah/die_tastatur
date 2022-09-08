@@ -8,6 +8,9 @@ export class CommandsService {
     // All commands which are supported at the moment
     findAll(): Array<Command> {
         return [
+            // Empty command
+            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '__________\n__________\n__________', name: CommandsDefinitions.EMPTY_COMMAND},
+
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
             <Command>{id: 'jump_to_git_view', description: 'Jump to git view', defaultKeyPrintText: 'git\nview', name: CommandsDefinitions.JUMP_TO_GIT_VIEW},
