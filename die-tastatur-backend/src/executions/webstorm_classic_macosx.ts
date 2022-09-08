@@ -126,7 +126,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_EDITING_PARAMETER_INFO', CommandsDefinitions.IDE_EDITING_PARAMETER_INFO, keyset, `{${SpecialKeys.LWIN}+p}`),
         executionService.createExecution('IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP', CommandsDefinitions.IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP, keyset, `{${SpecialKeys.CTRL}+j}`),
         executionService.createExecution('IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET', CommandsDefinitions.IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F1}}`),
-        executionService.createExecution('IDE_EDITING_COMMENT_WITH_BLOCK', CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK, keyset, `{${SpecialKeys.LWIN}+{${SpecialKeys.SHIFT}+${SpecialKeys.DIV}}`),
+        executionService.createExecution('IDE_EDITING_COMMENT_WITH_BLOCK', CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK, keyset, `{${SpecialKeys.LWIN}+{${SpecialKeys.SHIFT}+${SpecialKeys.DIV}}}`),
         executionService.createExecution('IDE_EDITING_SELECT_SUCCESSIVLY', CommandsDefinitions.IDE_EDITING_SELECT_SUCCESSIVLY, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_UP}}`),
         executionService.createExecution('IDE_EDITING_DECREASE_CURRENT_SELECTION', CommandsDefinitions.IDE_EDITING_DECREASE_CURRENT_SELECTION, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_DOWN}}`),
         executionService.createExecution('IDE_EDITING_CONTEXT_INFO', CommandsDefinitions.IDE_EDITING_CONTEXT_INFO, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+q}}`),
