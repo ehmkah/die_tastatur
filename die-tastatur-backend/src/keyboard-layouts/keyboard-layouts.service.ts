@@ -8,6 +8,7 @@ import {KeysetDefinitions} from "../keysets/keyset-definitions";
 import {KeyboardLayoutDetail} from "./keyboard-layout-detail.interface";
 import {macosxWebstormKeyboardTestExecutionLayout} from "./macosx-webstorm-keyboard-test-execution-layout";
 import {emptyKeyboardLayout} from "./empty-keyboard-layout";
+import {macosxWebstormDeveloperLayout} from "./macos-webstorm-developer";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -20,6 +21,7 @@ export class KeyboardLayoutsService {
         return [
             macosxDefaultDevKeyboardLayout(keyboards[0], this),
             macosxWebstormKeyboardTestExecutionLayout(keyboards[0],this),
+            macosxWebstormDeveloperLayout(keyboards[0], this),
             emptyKeyboardLayout(keyboards[0], this)
         ];
     }

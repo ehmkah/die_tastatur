@@ -54,9 +54,11 @@ export class KeyboardLayoutsController {
             result = result + '<tr style="border: 1px solid black;border-collapse: collapse;">';
             result = result + `<td>${rowCounter}</td>`
             for (const key of row) {
+
                 result = result + '<td style="border: 1px solid black;border-collapse: collapse;">';
                 result = result + key.execution.command.defaultKeyPrintText;
                 result = result + "</td>";
+                console.log(key.execution);
             }
             result = result + `<td>${letters[rowCounter]}</td>`;
             result = result + "</tr>";
