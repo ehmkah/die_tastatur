@@ -5,7 +5,7 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
 
-export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
+export function macosxWebstormKeyboardTestExecutionLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
 
     let keyset = KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX;
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
@@ -150,6 +150,7 @@ export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayouts
         id: 'macosx_webstorm',
         keyboard,
         name: 'MacosX Webstorm⁄',
+        description: 'Test that the executions are working on a real pre-128 keyboard',
         keys: board
     };
 

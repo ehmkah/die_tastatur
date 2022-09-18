@@ -68,7 +68,7 @@ Your contributions are always welcome.
 
 == Howto define your own keyboard-layout?
 
-* See `macosx-webstorm-keyboard-layout.ts` as an example and how its used in `keyboard-layouts.service.ts`
+* See `macosx-webstorm-keyboard-test-execution-layout.ts` as an example and how its used in `keyboard-layouts.service.ts`
 
 == Howto add a new execution to die tastatur?
 
