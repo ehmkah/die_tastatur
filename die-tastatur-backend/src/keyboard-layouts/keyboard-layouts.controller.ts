@@ -38,6 +38,7 @@ export class KeyboardLayoutsController {
 
     // wokrs only on chrome
     mapToHTML(keyboardLayout: KeyboardLayout) {
+        const widthInMillimeter = 5;
         let result = '<table style="border: 1px solid black;border-collapse: collapse;">';
         //result = result + `<tr><td>0</td></tr>
         const letters=['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
@@ -51,11 +52,10 @@ export class KeyboardLayoutsController {
         }
         result = result + '</tr>';
         for (const row of keyboardLayout.keys) {
-            result = result + '<tr style="border: 1px solid black;border-collapse: collapse;">';
-            result = result + `<td>${rowCounter}</td>`
+            result = result + `'<tr style="border: 1px solid black;border-collapse: collapse;height:${widthInMillimeter}mm; max-height: ${widthInMillimeter}mm;">`;
+            result = result + `<td style="width: ${widthInMillimeter}mm;max-width: ${widthInMillimeter}mm;height: ${widthInMillimeter}mm; max-height: ${widthInMillimeter}mm;">${rowCounter}</td>`
             for (const key of row) {
-
-                result = result + '<td style="border: 1px solid black;border-collapse: collapse;">';
+                result = result + `<td style="border: 1px solid black;border-collapse: collapse;width: ${widthInMillimeter}mm;max-width: ${widthInMillimeter}mm;height: ${widthInMillimeter}mm; max-height: ${widthInMillimeter}mm;padding: 0;">`;
                 result = result + key.execution.command.defaultKeyPrintText;
                 result = result + "</td>";
                 console.log(key.execution);
@@ -70,9 +70,9 @@ export class KeyboardLayoutsController {
             result = result + `<td style="border: 1px solid black;border-collapse: collapse;">${columnCounter}</td>`
             columnCounter--;
         }
-
-
         result = result + '</table>';
+
+        result = result + `Keysize ${widthInMillimeter}mm`;
         return result;
     }
 
