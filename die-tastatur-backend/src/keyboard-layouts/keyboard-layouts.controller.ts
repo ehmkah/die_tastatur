@@ -38,41 +38,35 @@ export class KeyboardLayoutsController {
 
     // wokrs only on chrome
     mapToHTML(keyboardLayout: KeyboardLayout) {
-        const widthInMillimeter = 5;
-        let result = '<table style="border: 1px solid black;border-collapse: collapse;">';
-        //result = result + `<tr><td>0</td></tr>
-        const letters=['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
+        // good sice for prehkeytech-keyboard cabs
+        const widthInMillimeter = 13;
+        let result = "<html>";
+        const letters = ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
         let rowCounter = 0;
         const constColumNumber = keyboardLayout.keys[0].length;
         let columnCounter = 0;
-        result = result + '<tr style="border: 1px solid black;border-collapse: collapse;"><td></td>';
-        while(columnCounter < constColumNumber) {
-            result = result + `<td style="border: 1px solid black;border-collapse: collapse;">${columnCounter}</td>`
+        while (columnCounter < constColumNumber) {
+            result = result + `<span style="width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter++;
         }
-        result = result + '</tr>';
         for (const row of keyboardLayout.keys) {
-            result = result + `'<tr style="border: 1px solid black;border-collapse: collapse;height:${widthInMillimeter}mm; max-height: ${widthInMillimeter}mm;">`;
-            result = result + `<td style="width: ${widthInMillimeter}mm;max-width: ${widthInMillimeter}mm;height: ${widthInMillimeter}mm; max-height: ${widthInMillimeter}mm;">${rowCounter}</td>`
+            result = result + "<div/>";
             for (const key of row) {
-                result = result + `<td style="border: 1px solid black;border-collapse: collapse;width: ${widthInMillimeter}mm;max-width: ${widthInMillimeter}mm;height: ${widthInMillimeter}mm; max-height: ${widthInMillimeter}mm;padding: 0;">`;
-                result = result + key.execution.command.defaultKeyPrintText;
-                result = result + "</td>";
+                result = result + `<span style="width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
                 console.log(key.execution);
             }
-            result = result + `<td>${letters[rowCounter]}</td>`;
-            result = result + "</tr>";
+            result = result + `<span style="height: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${letters[rowCounter]}</span>`
             rowCounter++;
         }
         columnCounter = columnCounter;
-        result = result + '<tr style="border: 1px solid black;border-collapse: collapse;"><td></td>';
-        while(columnCounter > 0) {
-            result = result + `<td style="border: 1px solid black;border-collapse: collapse;">${columnCounter}</td>`
+        result = result + "<div/>";
+        while (columnCounter > 0) {
+            result = result + `<span style="width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter--;
         }
-        result = result + '</table>';
 
-        result = result + `Keysize ${widthInMillimeter}mm`;
+        result = result + `<div>Keysize ${widthInMillimeter}mm</div>`;
+        result = result + "</html>";
         return result;
     }
 

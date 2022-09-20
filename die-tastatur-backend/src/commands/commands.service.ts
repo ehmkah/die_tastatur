@@ -9,7 +9,7 @@ export class CommandsService {
     findAll(): Array<Command> {
         return [
             // Empty command
-            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '__________\n__________\n__________', name: CommandsDefinitions.EMPTY_COMMAND},
+            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '............\n............\n............', name: CommandsDefinitions.EMPTY_COMMAND},
 
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
