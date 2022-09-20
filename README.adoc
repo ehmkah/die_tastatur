@@ -74,6 +74,13 @@ Your contributions are always welcome.
 
 * See `webstorm_classic_macosx.ts` as an example and how its used in `executions.service.ts`
 
+== External links AKA bookmarks
+
+* Configure, design programmable keyboards - https://www.caniusevia.com/ 
+* Configure your own keyboard - https://github.com/ijprest/keyboard-layout-editor
+* Individual keyboards for tuxedcomputer - https://github.com/tuxedocomputers/keyboard-layouts
+* programable keyboard - https://oblotzky.industries/products/rama-works-gmk-metropolis-m6-c
+
 == Thanks for reading
 
 Congratulations for reading.
