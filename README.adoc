@@ -82,6 +82,7 @@ Your contributions are always welcome.
 * programable keyboard - https://oblotzky.industries/products/rama-works-gmk-metropolis-m6-c
 * a banana as keyboard - <https://hackaday.com/2022/09/18/banana-split-macropad-is-dessert-for-your-desk/
 * controller for usb-keyboard - https://nicekeyboards.com/nice-nano/
+* workshops building your own keyboard - https://ckeys.org/workshops/
 
 == Thanks for reading
 

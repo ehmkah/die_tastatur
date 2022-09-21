@@ -18,8 +18,8 @@ export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayou
     board[0][4] = keyboardLayoutsService.createKeyDetails('0_4', CommandsDefinitions.COMMIT, intelliJClassicKeyset);
     board[0][5] = keyboardLayoutsService.createKeyDetails('0_5', CommandsDefinitions.PUSH_1, intelliJClassicKeyset);
     board[0][6] = keyboardLayoutsService.createKeyDetails('0_6', CommandsDefinitions.PUSH_1, intelliJClassicKeyset);
-    board[0][7] = keyboardLayoutsService.createKeyDetails('0_7', CommandsDefinitions.PUSH_2, intelliJClassicKeyset);
-    board[0][8] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.PUSH_2, intelliJClassicKeyset);
+    board[0][7] = keyboardLayoutsService.createKeyDetails('0_7', CommandsDefinitions.GIT_COMMIT_AND_PUSH, intelliJClassicKeyset);
+    board[0][8] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.GIT_COMMIT_AND_PUSH, intelliJClassicKeyset);
 
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.GIT_FETCH, terminalDefaultKeyset);
     board[1][1] = keyboardLayoutsService.createKeyDetails('1_1', CommandsDefinitions.GIT_PULL, terminalDefaultKeyset);

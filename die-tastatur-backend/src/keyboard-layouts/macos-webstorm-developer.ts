@@ -80,10 +80,10 @@ export function macosxWebstormDeveloperLayout(keyboard: Keyboard, keyboardLayout
     board[3][15] = keyboardLayoutsService.createKeyDetails('3_15', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
 
     board[4][0] = keyboardLayoutsService.createKeyDetails('4_0', CommandsDefinitions.IDE_VCS_QUICK_POPUP, keysetWebstorm);
-    board[4][1] = keyboardLayoutsService.createKeyDetails('4_1', CommandsDefinitions.COMMIT, keysetWebstorm);
-    board[4][2] = keyboardLayoutsService.createKeyDetails('4_2', CommandsDefinitions.IDE_VCS_UPDATE_PROJECCT_FROM_VCS, keysetWebstorm);
-    board[4][3] = keyboardLayoutsService.createKeyDetails('4_3', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
-    board[4][4] = keyboardLayoutsService.createKeyDetails('4_4', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
+    board[4][1] = keyboardLayoutsService.createKeyDetails('4_1', CommandsDefinitions.OPEN_COMMIT_DIALOG, keysetWebstorm);
+    board[4][2] = keyboardLayoutsService.createKeyDetails('4_3', CommandsDefinitions.COMMIT, keysetWebstorm);
+    board[4][3] = keyboardLayoutsService.createKeyDetails('4_4', CommandsDefinitions.GIT_COMMIT_AND_PUSH, keysetWebstorm);
+    board[4][4] = keyboardLayoutsService.createKeyDetails('4_2', CommandsDefinitions.IDE_VCS_UPDATE_PROJECCT_FROM_VCS, keysetWebstorm);
     board[4][5] = keyboardLayoutsService.createKeyDetails('4_5', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[4][6] = keyboardLayoutsService.createKeyDetails('4_6', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[4][7] = keyboardLayoutsService.createKeyDetails('4_7', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);

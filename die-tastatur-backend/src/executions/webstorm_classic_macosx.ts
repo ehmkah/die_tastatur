@@ -13,7 +13,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('7', CommandsDefinitions.OPEN_COMMIT_DIALOG, keyset, `{${SpecialKeys.CTRL}+k}`),
         executionService.createExecution('8', CommandsDefinitions.COMMIT, keyset, `{${SpecialKeys.ALT}+i}`),
         executionService.createExecution('9', CommandsDefinitions.PUSH_1, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+k}}`),
-        executionService.createExecution('10', CommandsDefinitions.PUSH_2, keyset, `{${SpecialKeys.ALT}+p}`),
+        executionService.createExecution('10', CommandsDefinitions.GIT_COMMIT_AND_PUSH, keyset, `{${SpecialKeys.ALT}+p}`),
 
         executionService.createExecution('12', CommandsDefinitions.IDE_DEBUG_STEP_OVER, keyset, `${SpecialKeys.F8}`),
         executionService.createExecution('11', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F8}}`),

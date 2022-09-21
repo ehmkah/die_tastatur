@@ -9,7 +9,7 @@ export enum CommandsDefinitions {
     OPEN_COMMIT_DIALOG = 'open_commit_dialog',
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
-    PUSH_2 = 'push_2',
+    GIT_COMMIT_AND_PUSH = 'push_2',
     IDE_DEBUG_STEP_OVER = 'step_over',
     IDE_DEBUG_STEP_INTO = 'step_into',
     IDE_DEBUG_SMART_STEP_INTO = 'smart_step_into',
