@@ -39,29 +39,30 @@ export class KeyboardLayoutsController {
     // wokrs only on chrome
     mapToHTML(keyboardLayout: KeyboardLayout) {
         // good sice for prehkeytech-keyboard cabs
-        const widthInMillimeter = 13;
+        const widthInMillimeter = 12;
+        const paddingInMillimeter=0.5;
         let result = "<html>";
         const letters = ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
         let rowCounter = 0;
         const constColumNumber = keyboardLayout.keys[0].length;
         let columnCounter = 0;
         while (columnCounter < constColumNumber) {
-            result = result + `<span style="width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
+            result = result + `<span style="padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter++;
         }
         for (const row of keyboardLayout.keys) {
             result = result + "<div/>";
             for (const key of row) {
-                result = result + `<span style="width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
+                result = result + `<span style="padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
                 console.log(key.execution);
             }
-            result = result + `<span style="height: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${letters[rowCounter]}</span>`
+            result = result + `<span style="padding: ${paddingInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${letters[rowCounter]}</span>`
             rowCounter++;
         }
         columnCounter = columnCounter;
         result = result + "<div/>";
         while (columnCounter > 0) {
-            result = result + `<span style="width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
+            result = result + `<span style="padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter--;
         }
 
