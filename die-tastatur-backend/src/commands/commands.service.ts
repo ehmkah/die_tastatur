@@ -28,7 +28,7 @@ export class CommandsService {
             <Command>{id: 'ide_toggle_view_breakpoint', description: 'View breakpoints', defaultKeyPrintText: 'view breakpoints', name: CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT},
             <Command>{id: 'ide_debug_smart_step_into', description: 'Smart step into', defaultKeyPrintText: 'stepinto smart', name: CommandsDefinitions.IDE_DEBUG_SMART_STEP_INTO},
 
-            <Command>{id: 'ide_navigation_goto_declaration', description: 'Goto declaration', defaultKeyPrintText: 'declaration', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION},
+            <Command>{id: 'ide_navigation_goto_declaration', description: 'Goto declaration', defaultKeyPrintText: 'goto\ndeclaration', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION},
             <Command>{id: 'ide_navigation_goto_class', description: 'Goto class', defaultKeyPrintText: 'goto\nclass', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS},
             <Command>{id: 'ide_navigation_goto_file', description: 'Goto file', defaultKeyPrintText: 'goto\nfile', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE},
             <Command>{id: 'ide_navigation_goto_symbol', description: 'Goto symbo', defaultKeyPrintText: 'goto\nsymbol', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_SYMBOL},
@@ -164,6 +164,9 @@ export class CommandsService {
             <Command>{id: 'ide_runningrun_context_configuration_from_editor',description: 'Run context configuration from editor', defaultKeyPrintText: 'run context', name: CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR},
             <Command>{id: 'ide_running_rerun__tests',description: 'Rerun tests', defaultKeyPrintText: 'rerun tests', name: CommandsDefinitions.IDE_RUNNING_RERUN__TESTS},
             <Command>{id: 'ide_running_run_gulp_npm_grunt',description: 'Run Gulp7Grun/npm tasks', defaultKeyPrintText: 'run npm', name: CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT},
+
+            <Command>{id: 'column_selection_mode',description: 'Toggle column selection mode', defaultKeyPrintText: 'toggle column selection mode', name: CommandsDefinitions.COLUMN_SELECTION_MODE},
+            <Command>{id: 'breakpoints_toggle_on_off',description: 'Toggle mute breakpoints', defaultKeyPrintText: 'toggle mute breakpoints',      name: CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},

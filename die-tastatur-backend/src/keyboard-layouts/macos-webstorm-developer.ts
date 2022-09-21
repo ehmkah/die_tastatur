@@ -103,7 +103,7 @@ export function macosxWebstormDeveloperLayout(keyboard: Keyboard, keyboardLayout
     board[5][4] = keyboardLayoutsService.createKeyDetails('5_4', CommandsDefinitions.IDE_EDITING_JOIN_LINES, keysetWebstorm);
     board[5][5] = keyboardLayoutsService.createKeyDetails('5_5', CommandsDefinitions.IDE_EDITING_START_NEW_LINES, keysetWebstorm);
     board[5][6] = keyboardLayoutsService.createKeyDetails('5_6', CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT, keysetWebstorm);
-    board[5][7] = keyboardLayoutsService.createKeyDetails('5_7', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
+    board[5][7] = keyboardLayoutsService.createKeyDetails('5_7', CommandsDefinitions.IDE_EDITING_TOGGLE_CASE_WORD, keysetWebstorm);
     board[5][8] = keyboardLayoutsService.createKeyDetails('5_8', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][9] = keyboardLayoutsService.createKeyDetails('5_9', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][10] = keyboardLayoutsService.createKeyDetails('5_10', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
@@ -111,7 +111,7 @@ export function macosxWebstormDeveloperLayout(keyboard: Keyboard, keyboardLayout
     board[5][12] = keyboardLayoutsService.createKeyDetails('5_12', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][13] = keyboardLayoutsService.createKeyDetails('5_13', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][14] = keyboardLayoutsService.createKeyDetails('5_14', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
-    board[5][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
+    board[5][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.COLUMN_SELECTION_MODE, keysetWebstorm);
 
     board[6][0] = keyboardLayoutsService.createKeyDetails('6_0', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[6][1] = keyboardLayoutsService.createKeyDetails('6_1', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);

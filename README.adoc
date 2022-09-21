@@ -74,6 +74,12 @@ Your contributions are always welcome.
 
 * See `webstorm_classic_macosx.ts` as an example and how its used in `executions.service.ts`
 
+== Thinking about
+
+* Howto handle an shortcut which is not defined by default?
+** no support
+** Define own keyboard mapping - reduces use everywhere approach
+
 == External links AKA bookmarks
 
 * Configure, design programmable keyboards - https://www.caniusevia.com/ 

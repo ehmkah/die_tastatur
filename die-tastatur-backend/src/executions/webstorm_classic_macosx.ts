@@ -7,6 +7,7 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 export function webstormDefaultMaxosxExecutions(executionService: ExecutionsService, keyset: Keyset): Array<Execution> {
 
     return [
+        // verified
         executionService.createExecution('1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset, `{${SpecialKeys.LWIN}+1}`),
         executionService.createExecution('git_view', CommandsDefinitions.JUMP_TO_GIT_VIEW, keyset, `{${SpecialKeys.LWIN}+9}`),
         executionService.createExecution('6', CommandsDefinitions.GRADLE_RELOAD_CHANGES, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+O}}`),
@@ -162,6 +163,11 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_RUNNING_RERUN__TESTS', CommandsDefinitions.IDE_RUNNING_RERUN__TESTS, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.LWIN}+r}}`),
         executionService.createExecution('IDE_RUNNING_RUN_GULP_NPM_GRUNT', CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.F11}}`),
 
+        // need verification
+        executionService.createExecution('column_selection_mode', CommandsDefinitions.COLUMN_SELECTION_MODE, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+8}}`),
+
+        // not supported
+        executionService.createExecution('ide_debug_toggle_breakpoints_on_off', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF, keyset, `UNDEFINED`),
 
     ];
 
