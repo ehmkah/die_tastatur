@@ -9,7 +9,7 @@ export class CommandsService {
     findAll(): Array<Command> {
         return [
             // Empty command
-            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '............\n............\n............', name: CommandsDefinitions.EMPTY_COMMAND},
+            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '..........\n..........', name: CommandsDefinitions.EMPTY_COMMAND},
 
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
@@ -113,7 +113,7 @@ export class CommandsService {
             <Command>{id: 'ide_general_add_fo_favorites', description: 'Add to favorites', defaultKeyPrintText: 'Add favorites', name: CommandsDefinitions.IDE_GENERAL_ADD_FO_FAVORITES},
             <Command>{id: 'ide_general_inspect_current_file', description: 'Inspect current file with current profile', defaultKeyPrintText: 'Inspect file', name: CommandsDefinitions.IDE_GENERAL_INSPECT_CURRENT_FILE},
             <Command>{id: 'ide_general_quick_switch_current_scheme', description: 'Quick switch current scheme', defaultKeyPrintText: 'Change scheme', name: CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME},
-            <Command>{id: 'ide_general_open_preferences', description: 'Open preferences', defaultKeyPrintText: 'Open preferences', name: CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES},
+            <Command>{id: 'ide_general_open_preferences', description: 'Open preferences', defaultKeyPrintText: 'Open settings', name: CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES},
             <Command>{id: 'ide_general_switch_between_tab_and_tool_window', description: 'Switch between tabs and tool windows', defaultKeyPrintText: 'Switch tab tool', name: CommandsDefinitions.IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW},
 
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
@@ -157,8 +157,8 @@ export class CommandsService {
             <Command>{id: 'ide_multiple_carets_unselect_occurence',description: 'Unselect occurence', defaultKeyPrintText: 'unselect occurence', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE},
             <Command>{id: 'ide_multiple_carets_unselect_all_occurences_or_carets',description: 'Unselect all occurences or carets', defaultKeyPrintText: 'unselect all occurences', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS},
 
-            <Command>{id: 'ide_running_select_configuration_and_run',description: 'Select configuration and run', defaultKeyPrintText: 'select and run', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN},
-            <Command>{id: 'ide_running_select_configuration_and_debug',description: 'Select configuration and debug', defaultKeyPrintText: 'select and debug', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG},
+            <Command>{id: 'ide_running_select_configuration_and_run',description: 'Select configuration and run', defaultKeyPrintText: 'select run', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN},
+            <Command>{id: 'ide_running_select_configuration_and_debug',description: 'Select configuration and debug', defaultKeyPrintText: 'select debug', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG},
             <Command>{id: 'ide_running_run',description: 'Run', defaultKeyPrintText: 'run', name: CommandsDefinitions.IDE_RUNNING_RUN},
             <Command>{id: 'ide_running_debug',description: 'Debug', defaultKeyPrintText: 'debug', name: CommandsDefinitions.IDE_RUNNING_DEBUG},
             <Command>{id: 'ide_runningrun_context_configuration_from_editor',description: 'Run context configuration from editor', defaultKeyPrintText: 'run context', name: CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR},
