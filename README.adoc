@@ -1,5 +1,15 @@
 == Die Tastatur
 
+=== Legal notice
+
+Everything you do with this program you do it on your own risk.
+Wrongly used it could harm your hardware.
+I am using the names of tools to tell you how _Die Tastatur_ might be used.
+I am not owening any rights in using those tool-names and I am not connected to any tool provider mentioned in _Die tastatur_.
+All shortcuts have been extracted from public available documentation.
+
+=== Overview
+
 Sometimes useful shortcurts are cryptical to enter or to remember.
 For example how do you undo last git commit locally?
 Normally I search the internet, find the answer in stackoverflow and copy the shortcut.
