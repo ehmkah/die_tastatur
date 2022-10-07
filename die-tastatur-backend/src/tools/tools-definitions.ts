@@ -1,6 +1,12 @@
+/**
+ * A tool can execute something.
+ *
+ * Might be renamed ExecutionEnvironment or similar.
+ */
 export enum ToolsDefinitions {
 
-    Intellij = 'IntelliJ',
+    IntelliJ = 'Intellij',
+    Webstorm = 'Webstorm',
     Terminal = 'Terminal'
 
 }

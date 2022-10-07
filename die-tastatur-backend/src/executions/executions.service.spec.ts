@@ -8,22 +8,22 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
 
 describe('ExecutionsService', () => {
-    let service: ExecutionsService;
+    let sut: ExecutionsService;
 
     beforeEach(async () => {
         const module: TestingModule = await Test.createTestingModule({
             providers: [ExecutionsService, KeysetsService, CommandsService, ToolsService, OperatingSystemsService],
         }).compile();
 
-        service = module.get<ExecutionsService>(ExecutionsService);
+        sut = module.get<ExecutionsService>(ExecutionsService);
     });
 
     it('check that parantheses are fine', () => {
-        const actual = service.findAll();
+        const actual = sut.findAll();
         for (const execution of actual) {
             const numberOfOpeningBrackets = execution.executor.split("{").length;
             const numberOfClosingBrackets = execution.executor.split("}").length;
-            if(numberOfOpeningBrackets!=numberOfClosingBrackets) {
+            if (numberOfOpeningBrackets != numberOfClosingBrackets) {
                 console.log(execution.id);
                 expect(numberOfOpeningBrackets).toEqual(numberOfClosingBrackets);
             }
@@ -31,21 +31,26 @@ describe('ExecutionsService', () => {
     });
 
     it('should be defined', () => {
-        expect(service).toBeDefined();
+        expect(sut).toBeDefined();
     });
 
     it('findByCommandAndKeysetWorks',
         () => {
-            expect(service.findByCommandIDAndKeysetId(null, null)).toBeUndefined();
+            expect(sut.findByCommandIDAndKeysetId(null, null)).toBeUndefined();
         });
 
     it('findByCommandAndKeysetWorks2',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_RUN, KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX).executor).toBeDefined();
+            expect(sut.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_RUN, KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX).executor).toBeDefined();
         })
 
     it('findByCommandAndKeysetWorksNotFound',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_DEBUG, KeysetDefinitions.INTELLIJ_ECLIPSE_MACOSX)).toBeUndefined();
+            expect(sut.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_DEBUG, KeysetDefinitions.INTELLIJ_ECLIPSE_MACOSX)).toBeUndefined();
         })
+
+    it('testOneIntellijShortcuts', () => {
+        const actual = sut.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX );
+        expect(actual.command.name).toEqual('ide_search_and_replace_find');
+    })
 });

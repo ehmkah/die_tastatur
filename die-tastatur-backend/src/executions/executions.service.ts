@@ -25,7 +25,6 @@ export class ExecutionsService {
     }
 
     findAll(): Array<Execution> {
-
         const executions: Array<Execution> = webstormDefaultMaxosxExecutions(this, this.keysetService.findByName(KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX)).concat(
             git_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             kubect_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
@@ -35,10 +34,8 @@ export class ExecutionsService {
             docker_compose_default_macosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             ssh_agentDefaultMaxosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
-            otherDefaultAll(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX)).concat(
-                intellijClassicMaxosxExecutions(this, this.keysetService.findByName(KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX))
-            )
-        );
+            otherDefaultAll(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
+            intellijClassicMaxosxExecutions(this, this.keysetService));
 
         return executions;
     }
@@ -66,7 +63,7 @@ export class ExecutionsService {
 
 }
 
-class KrauTest extends ExecutionsService{
+class KrauTest extends ExecutionsService {
 
     findAll(): Array<Execution> {
 
