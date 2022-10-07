@@ -5,7 +5,7 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
 
-export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
+export function macosxWebstormKeyboardTestExecutionLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
 
     let keyset = KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX;
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
@@ -15,7 +15,7 @@ export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayouts
     board[0][2] = keyboardLayoutsService.createKeyDetails('0_2', CommandsDefinitions.OPEN_COMMIT_DIALOG, keyset);
     board[0][3] = keyboardLayoutsService.createKeyDetails('0_3', CommandsDefinitions.COMMIT, keyset);
     board[0][4] = keyboardLayoutsService.createKeyDetails('0_4', CommandsDefinitions.PUSH_1, keyset);
-    board[0][5] = keyboardLayoutsService.createKeyDetails('0_5', CommandsDefinitions.PUSH_2, keyset);
+    board[0][5] = keyboardLayoutsService.createKeyDetails('0_5', CommandsDefinitions.GIT_COMMIT_AND_PUSH, keyset);
     board[0][6] = keyboardLayoutsService.createKeyDetails('0_6', CommandsDefinitions.IDE_DEBUG_STEP_OVER, keyset);
     board[0][7] = keyboardLayoutsService.createKeyDetails('0_7', CommandsDefinitions.IDE_DEBUG_STEP_INTO, keyset);
     board[0][8] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_SMART_STEP_INTO, keyset);
@@ -150,6 +150,7 @@ export function macosxWebstormKeyboardLayout(keyboard: Keyboard, keyboardLayouts
         id: 'macosx_webstorm',
         keyboard,
         name: 'MacosX Webstorm⁄',
+        description: 'Test that the executions are working on a real pre-128 keyboard',
         keys: board
     };
 

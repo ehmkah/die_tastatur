@@ -38,39 +38,40 @@ export class KeyboardLayoutsController {
 
     // wokrs only on chrome
     mapToHTML(keyboardLayout: KeyboardLayout) {
-        let result = '<table style="border: 1px solid black;border-collapse: collapse;">';
-        //result = result + `<tr><td>0</td></tr>
-        const letters=['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
+        // good sice for prehkeytech-keyboard cabs
+        const widthInMillimeter = 12;
+        const paddingInMillimeter=0.5;
+        const fontSize='10px';
+        let result = "<html>";
+        const letters = ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
         let rowCounter = 0;
         const constColumNumber = keyboardLayout.keys[0].length;
         let columnCounter = 0;
-        result = result + '<tr style="border: 1px solid black;border-collapse: collapse;"><td></td>';
-        while(columnCounter < constColumNumber) {
-            result = result + `<td style="border: 1px solid black;border-collapse: collapse;">${columnCounter}</td>`
+        while (columnCounter < constColumNumber) {
+            result = result + `<span style="font-size: ${fontSize}; padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter++;
         }
-        result = result + '</tr>';
         for (const row of keyboardLayout.keys) {
-            result = result + '<tr style="border: 1px solid black;border-collapse: collapse;">';
-            result = result + `<td>${rowCounter}</td>`
+            result = result + "<div/>";
+            result = result + "<div/>";
             for (const key of row) {
-                result = result + '<td style="border: 1px solid black;border-collapse: collapse;">';
-                result = result + key.execution.command.defaultKeyPrintText;
-                result = result + "</td>";
+                result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
+                console.log(key.execution);
             }
-            result = result + `<td>${letters[rowCounter]}</td>`;
-            result = result + "</tr>";
+            result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${letters[rowCounter]}</span>`
             rowCounter++;
         }
         columnCounter = columnCounter;
-        result = result + '<tr style="border: 1px solid black;border-collapse: collapse;"><td></td>';
-        while(columnCounter > 0) {
-            result = result + `<td style="border: 1px solid black;border-collapse: collapse;">${columnCounter}</td>`
+        result = result + "<div/>";
+        while (columnCounter > 0) {
+            result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter--;
         }
 
-
-        result = result + '</table>';
+        result = result + `<div>Keysize ${widthInMillimeter+ paddingInMillimeter}mm</div>`;
+        result = result + `<div>Fontsize ${fontSize}</div>`;
+        result = result + `<div>Coypright Michael Krauße - die Tastatur 2022</div>`;
+        result = result + "</html>";
         return result;
     }
 

@@ -68,11 +68,17 @@ Your contributions are always welcome.
 
 == Howto define your own keyboard-layout?
 
-* See `macosx-webstorm-keyboard-layout.ts` as an example and how its used in `keyboard-layouts.service.ts`
+* See `macosx-webstorm-keyboard-test-execution-layout.ts` as an example and how its used in `keyboard-layouts.service.ts`
 
 == Howto add a new execution to die tastatur?
 
 * See `webstorm_classic_macosx.ts` as an example and how its used in `executions.service.ts`
+
+== Thinking about
+
+* Howto handle an shortcut which is not defined by default?
+** no support
+** Define own keyboard mapping - reduces use everywhere approach
 
 == External links AKA bookmarks
 
@@ -80,6 +86,9 @@ Your contributions are always welcome.
 * Configure your own keyboard - https://github.com/ijprest/keyboard-layout-editor
 * Individual keyboards for tuxedcomputer - https://github.com/tuxedocomputers/keyboard-layouts
 * programable keyboard - https://oblotzky.industries/products/rama-works-gmk-metropolis-m6-c
+* a banana as keyboard - <https://hackaday.com/2022/09/18/banana-split-macropad-is-dessert-for-your-desk/
+* controller for usb-keyboard - https://nicekeyboards.com/nice-nano/
+* workshops building your own keyboard - https://ckeys.org/workshops/
 
 == Thanks for reading
 

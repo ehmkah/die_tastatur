@@ -7,13 +7,14 @@ import {CommandsDefinitions} from "../commands/commands-definitions";
 export function webstormDefaultMaxosxExecutions(executionService: ExecutionsService, keyset: Keyset): Array<Execution> {
 
     return [
+        // verified
         executionService.createExecution('1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset, `{${SpecialKeys.LWIN}+1}`),
         executionService.createExecution('git_view', CommandsDefinitions.JUMP_TO_GIT_VIEW, keyset, `{${SpecialKeys.LWIN}+9}`),
         executionService.createExecution('6', CommandsDefinitions.GRADLE_RELOAD_CHANGES, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+O}}`),
         executionService.createExecution('7', CommandsDefinitions.OPEN_COMMIT_DIALOG, keyset, `{${SpecialKeys.CTRL}+k}`),
         executionService.createExecution('8', CommandsDefinitions.COMMIT, keyset, `{${SpecialKeys.ALT}+i}`),
         executionService.createExecution('9', CommandsDefinitions.PUSH_1, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+k}}`),
-        executionService.createExecution('10', CommandsDefinitions.PUSH_2, keyset, `{${SpecialKeys.ALT}+p}`),
+        executionService.createExecution('10', CommandsDefinitions.GIT_COMMIT_AND_PUSH, keyset, `{${SpecialKeys.ALT}+p}`),
 
         executionService.createExecution('12', CommandsDefinitions.IDE_DEBUG_STEP_OVER, keyset, `${SpecialKeys.F8}`),
         executionService.createExecution('11', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.F8}}`),
@@ -162,6 +163,11 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_RUNNING_RERUN__TESTS', CommandsDefinitions.IDE_RUNNING_RERUN__TESTS, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.LWIN}+r}}`),
         executionService.createExecution('IDE_RUNNING_RUN_GULP_NPM_GRUNT', CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT, keyset, `{${SpecialKeys.ALT}+${SpecialKeys.F11}}`),
 
+        // need verification
+        executionService.createExecution('column_selection_mode', CommandsDefinitions.COLUMN_SELECTION_MODE, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+8}}`),
+
+        // not supported
+        executionService.createExecution('ide_debug_toggle_breakpoints_on_off', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF, keyset, `UNDEFINED`),
 
     ];
 

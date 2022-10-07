@@ -6,8 +6,9 @@ import {ExecutionsService} from "../executions/executions.service";
 import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
 import {KeyboardLayoutDetail} from "./keyboard-layout-detail.interface";
-import {macosxWebstormKeyboardLayout} from "./macosx-webstorm-keyboard-layout";
+import {macosxWebstormKeyboardTestExecutionLayout} from "./macosx-webstorm-keyboard-test-execution-layout";
 import {emptyKeyboardLayout} from "./empty-keyboard-layout";
+import {macosxWebstormDeveloperLayout} from "./macos-webstorm-developer";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -19,7 +20,8 @@ export class KeyboardLayoutsService {
         const keyboards = this.keyboardsService.findAll();
         return [
             macosxDefaultDevKeyboardLayout(keyboards[0], this),
-            macosxWebstormKeyboardLayout(keyboards[0],this),
+            macosxWebstormKeyboardTestExecutionLayout(keyboards[0],this),
+            macosxWebstormDeveloperLayout(keyboards[0], this),
             emptyKeyboardLayout(keyboards[0], this)
         ];
     }

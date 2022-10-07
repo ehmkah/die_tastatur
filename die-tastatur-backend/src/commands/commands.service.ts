@@ -9,7 +9,7 @@ export class CommandsService {
     findAll(): Array<Command> {
         return [
             // Empty command
-            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '__________\n__________\n__________', name: CommandsDefinitions.EMPTY_COMMAND},
+            <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '..........\n..........', name: CommandsDefinitions.EMPTY_COMMAND},
 
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
@@ -17,7 +17,7 @@ export class CommandsService {
             <Command>{id: 'open_git_commit', description: 'Open commit dialog', defaultKeyPrintText: 'open\nCommit', name: CommandsDefinitions.OPEN_COMMIT_DIALOG},
             <Command>{id: 'git_commit', description: 'commit', defaultKeyPrintText: 'commit', name: CommandsDefinitions.COMMIT},
             <Command>{id: 'git_push', description: 'push', defaultKeyPrintText: 'push', name: CommandsDefinitions.PUSH_1},
-            <Command>{id: 'git_push_2', description: 'push2', defaultKeyPrintText: 'push2', name: CommandsDefinitions.PUSH_2},
+            <Command>{id: 'git_push_2', description: 'push2', defaultKeyPrintText: 'commit+push', name: CommandsDefinitions.GIT_COMMIT_AND_PUSH},
             <Command>{id: 'toggle_breakpoint', description: 'Toggle breakpoint', defaultKeyPrintText: 'toggle\nbreakpoint', name: CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT},
             <Command>{id: 'ide_debug_stepover', description: 'Step over', defaultKeyPrintText: 'step-over', name: CommandsDefinitions.IDE_DEBUG_STEP_OVER},
             <Command>{id: 'ide_debug_stepinto', description: 'Step into', defaultKeyPrintText: 'step-into', name: CommandsDefinitions.IDE_DEBUG_STEP_INTO},
@@ -28,7 +28,7 @@ export class CommandsService {
             <Command>{id: 'ide_toggle_view_breakpoint', description: 'View breakpoints', defaultKeyPrintText: 'view breakpoints', name: CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT},
             <Command>{id: 'ide_debug_smart_step_into', description: 'Smart step into', defaultKeyPrintText: 'stepinto smart', name: CommandsDefinitions.IDE_DEBUG_SMART_STEP_INTO},
 
-            <Command>{id: 'ide_navigation_goto_declaration', description: 'Goto declaration', defaultKeyPrintText: 'declaration', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION},
+            <Command>{id: 'ide_navigation_goto_declaration', description: 'Goto declaration', defaultKeyPrintText: 'goto\ndeclaration', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION},
             <Command>{id: 'ide_navigation_goto_class', description: 'Goto class', defaultKeyPrintText: 'goto\nclass', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS},
             <Command>{id: 'ide_navigation_goto_file', description: 'Goto file', defaultKeyPrintText: 'goto\nfile', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE},
             <Command>{id: 'ide_navigation_goto_symbol', description: 'Goto symbo', defaultKeyPrintText: 'goto\nsymbol', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_SYMBOL},
@@ -113,7 +113,7 @@ export class CommandsService {
             <Command>{id: 'ide_general_add_fo_favorites', description: 'Add to favorites', defaultKeyPrintText: 'Add favorites', name: CommandsDefinitions.IDE_GENERAL_ADD_FO_FAVORITES},
             <Command>{id: 'ide_general_inspect_current_file', description: 'Inspect current file with current profile', defaultKeyPrintText: 'Inspect file', name: CommandsDefinitions.IDE_GENERAL_INSPECT_CURRENT_FILE},
             <Command>{id: 'ide_general_quick_switch_current_scheme', description: 'Quick switch current scheme', defaultKeyPrintText: 'Change scheme', name: CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME},
-            <Command>{id: 'ide_general_open_preferences', description: 'Open preferences', defaultKeyPrintText: 'Open preferences', name: CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES},
+            <Command>{id: 'ide_general_open_preferences', description: 'Open preferences', defaultKeyPrintText: 'Open settings', name: CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES},
             <Command>{id: 'ide_general_switch_between_tab_and_tool_window', description: 'Switch between tabs and tool windows', defaultKeyPrintText: 'Switch tab tool', name: CommandsDefinitions.IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW},
 
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
@@ -157,13 +157,16 @@ export class CommandsService {
             <Command>{id: 'ide_multiple_carets_unselect_occurence',description: 'Unselect occurence', defaultKeyPrintText: 'unselect occurence', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE},
             <Command>{id: 'ide_multiple_carets_unselect_all_occurences_or_carets',description: 'Unselect all occurences or carets', defaultKeyPrintText: 'unselect all occurences', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_ALL_OCCURENCES_OR_CARETS},
 
-            <Command>{id: 'ide_running_select_configuration_and_run',description: 'Select configuration and run', defaultKeyPrintText: 'select and run', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN},
-            <Command>{id: 'ide_running_select_configuration_and_debug',description: 'Select configuration and debug', defaultKeyPrintText: 'select and debug', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG},
+            <Command>{id: 'ide_running_select_configuration_and_run',description: 'Select configuration and run', defaultKeyPrintText: 'select run', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN},
+            <Command>{id: 'ide_running_select_configuration_and_debug',description: 'Select configuration and debug', defaultKeyPrintText: 'select debug', name: CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG},
             <Command>{id: 'ide_running_run',description: 'Run', defaultKeyPrintText: 'run', name: CommandsDefinitions.IDE_RUNNING_RUN},
             <Command>{id: 'ide_running_debug',description: 'Debug', defaultKeyPrintText: 'debug', name: CommandsDefinitions.IDE_RUNNING_DEBUG},
             <Command>{id: 'ide_runningrun_context_configuration_from_editor',description: 'Run context configuration from editor', defaultKeyPrintText: 'run context', name: CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR},
             <Command>{id: 'ide_running_rerun__tests',description: 'Rerun tests', defaultKeyPrintText: 'rerun tests', name: CommandsDefinitions.IDE_RUNNING_RERUN__TESTS},
             <Command>{id: 'ide_running_run_gulp_npm_grunt',description: 'Run Gulp7Grun/npm tasks', defaultKeyPrintText: 'run npm', name: CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT},
+
+            <Command>{id: 'column_selection_mode',description: 'Toggle column selection mode', defaultKeyPrintText: 'toggle column selection mode', name: CommandsDefinitions.COLUMN_SELECTION_MODE},
+            <Command>{id: 'breakpoints_toggle_on_off',description: 'Toggle mute breakpoints', defaultKeyPrintText: 'toggle mute breakpoints',      name: CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF},
 
             // docker
             <Command>{id: 'docker_ls', description: 'Docker show all running containers', defaultKeyPrintText: 'docker\nls', name: CommandsDefinitions.DOCKER_LS},

@@ -33,7 +33,7 @@ MSR M3, : ""
 !@KEYPRINT:B02 "Add favorites";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B03 "Inspect file";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B04 "Change scheme";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:B05 "Open preferences";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B05 "Open settings";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B06 "Switch tab tool";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B07 "generate";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:B08 "surround";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -56,8 +56,8 @@ MSR M3, : ""
 !@KEYPRINT:C09 "select next occurence";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C10 "unselect occurence";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C11 "unselect all occurences";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C12 "select and run";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C13 "select and debug";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C12 "select run";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C13 "select debug";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C14 "run";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C15 "debug";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C16 "run context";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -109,10 +109,10 @@ MSR M3, : ""
 !@KEYPRINT:F14 "jump to source";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F15 "jump nav bar";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F16 "toggle bookmark";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G01 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G02 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G03 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G04 "declaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G01 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G02 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G05 "goto\\lineclass";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G06 "goto\\linefile";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G07 "goto\\linesymbol";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -130,7 +130,7 @@ MSR M3, : ""
 !@KEYPRINT:H03 "open\\lineCommit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H04 "commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H05 "push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H06 "push2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H06 "commit+push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H07 "step-over";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H08 "step-into";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:H09 "stepinto smart";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -144,7 +144,7 @@ MSR M3, : ""
 !@KEYLAYER:AlwaysActive,AAAA,11
 A01/P: "{CTRL+j}"
 A02/P: "{LWIN+{F1}}"
-A03/P: "{LWIN+{SHIFT+{DIV}}"
+A03/P: "{LWIN+{SHIFT+{DIV}}}"
 A04/P: "{ALT+{UP}}"
 A05/P: "{ALT+{DOWN}}"
 A06/P: "{CTRL+{SHIFT+q}}"

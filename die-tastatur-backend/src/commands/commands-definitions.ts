@@ -9,7 +9,7 @@ export enum CommandsDefinitions {
     OPEN_COMMIT_DIALOG = 'open_commit_dialog',
     COMMIT = 'commit_taken',
     PUSH_1 = 'push_1',
-    PUSH_2 = 'push_2',
+    GIT_COMMIT_AND_PUSH = 'push_2',
     IDE_DEBUG_STEP_OVER = 'step_over',
     IDE_DEBUG_STEP_INTO = 'step_into',
     IDE_DEBUG_SMART_STEP_INTO = 'smart_step_into',
@@ -19,6 +19,8 @@ export enum CommandsDefinitions {
     IDE_DEBUG_RESUME = 'ide_debug_resume',
     IDE_DEBUG_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
     IDE_DEBUG_VIEW_BREAKPOINT = 'ide_toggle_view_breakpoint',
+    IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF = 'breakpoints_toggle_on_off',
+
     IDE_NAVIGATION_GOTO_DECLARATION = 'goto_declaration',
     IDE_NAVIGATION_GOTO_CLASS = 'goto_class',
     IDE_NAVIGATION_GOTO_FILE = 'goto_file',
@@ -82,10 +84,12 @@ export enum CommandsDefinitions {
     IDE_REFACTORING_EXTRACT_VARIABLE = 'ide_refactoring_extract_variable',
     IDE_REFACTORING_EXTRACT_CONSTANT = 'ide_refactoring_extract_constant',
     IDE_REFACTORING_EXTRACT_PARAMETER = 'ide_refactoring_extract_parameter',
+
     IDE_VCS_QUICK_POPUP = 'ide_vcs_quick_popup',
     IDE_VCS_COMMIT_TO_VCS = 'ide_vcs_commit_to_vcs',
     IDE_VCS_UPDATE_PROJECCT_FROM_VCS = 'ide_vcs_update_projecct_from_vcs',
     IDE_VCS_VIEW_RECENT_CHANGES = 'ide_vcs_view_recent_changes',
+
     IDE_GENERAL_SEARCH_EVERYWHERE = 'ide_general_search_everywhere',
     IDE_GENERAL_FIND_ACTION = 'ide_general_find_action',
     IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_0 = 'ide_general_open_corresponding_tool_window_0',
@@ -104,6 +108,7 @@ export enum CommandsDefinitions {
     IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME = 'ide_general_quick_switch_current_scheme',
     IDE_GENERAL_OPEN_PREFERENCES = 'ide_general_open_preferences',
     IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW = 'ide_general_switch_between_tab_and_tool_window',
+
     IDE_EDITING_GENERATE = 'ide_editing_generate',
     IDE_EDITING_SURROUND = 'ide_editing_surround',
     IDE_EDITING_INSERT_LIVE_TEMPLATE = 'ide_insert_live_template',
@@ -153,9 +158,10 @@ export enum CommandsDefinitions {
     IDE_RUNNING_RERUN__TESTS = 'ide_running_rerun__tests',
     IDE_RUNNING_RUN_GULP_NPM_GRUNT = 'ide_running_run_gulp_npm_grunt',
 
-    /**COLUMN_SELECTION_MODE
-     BREAKPOINTS_TOGGLE_ON_OFF
-     **/
+    COLUMN_SELECTION_MODE = 'column_selection_mode',
+
+
+
 // Docker commands
     DOCKER_LS = 'dockerls',
     DOCKER_STOP = 'docker_stop',

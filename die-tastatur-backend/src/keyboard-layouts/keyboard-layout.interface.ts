@@ -6,6 +6,7 @@ export interface KeyboardLayout {
     id: string;
     keyboard: Keyboard;
     name: string;
+    description: string;
 
     keys: Array<Array<KeyboardLayoutDetail>>;
 
