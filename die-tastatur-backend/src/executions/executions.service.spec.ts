@@ -41,7 +41,7 @@ describe('ExecutionsService', () => {
 
     it('findByCommandAndKeysetWorks2',
         () => {
-            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_RUN, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX).executor).toBeDefined();
+            expect(service.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_RUNNING_RUN, KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX).executor).toBeDefined();
         })
 
     it('findByCommandAndKeysetWorksNotFound',

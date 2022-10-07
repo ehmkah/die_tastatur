@@ -7,7 +7,7 @@ import {KeysetDefinitions} from "../keysets/keyset-definitions";
 
 export function macosxWebstormKeyboardTestExecutionLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
 
-    let keyset = KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX;
+    let keyset = KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX;
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
 
     board[0][0] = keyboardLayoutsService.createKeyDetails('0_0', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset);

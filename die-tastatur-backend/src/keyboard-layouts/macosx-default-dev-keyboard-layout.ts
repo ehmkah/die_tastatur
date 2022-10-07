@@ -7,7 +7,7 @@ import {KeysetDefinitions} from "../keysets/keyset-definitions";
 
 export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
 
-    let intelliJClassicKeyset = KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX;
+    let intelliJClassicKeyset = KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX;
     let terminalDefaultKeyset = KeysetDefinitions.TERMINAL_MACOSX;
     let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
 

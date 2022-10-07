@@ -89,6 +89,8 @@ Your contributions are always welcome.
 * a banana as keyboard - <https://hackaday.com/2022/09/18/banana-split-macropad-is-dessert-for-your-desk/
 * controller for usb-keyboard - https://nicekeyboards.com/nice-nano/
 * workshops building your own keyboard - https://ckeys.org/workshops/
+* Collection of shortcuts - https://technastic.com/mac-keyboard-shortcuts-symbols-pdf/
+
 
 == Thanks for reading
 

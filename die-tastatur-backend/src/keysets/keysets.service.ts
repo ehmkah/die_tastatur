@@ -20,7 +20,7 @@ export class KeysetsService {
                 tool: this.toolsService.findByName(ToolsDefinitions.Intellij),
                 operatingSystem: operatingSystems[0],
                 description: 'IntelliJ Classic',
-                name: KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX
+                name: KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX
             },
             <Keyset>{
                 id: '2',
