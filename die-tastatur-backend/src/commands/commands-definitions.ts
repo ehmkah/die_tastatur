@@ -108,6 +108,7 @@ export enum CommandsDefinitions {
     IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME = 'ide_general_quick_switch_current_scheme',
     IDE_GENERAL_OPEN_PREFERENCES = 'ide_general_open_preferences',
     IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW = 'ide_general_switch_between_tab_and_tool_window',
+    IDE_GENERAL_SAVE_ALL = 'IDE_GENERAL_SAVE_ALL',
 
     IDE_EDITING_GENERATE = 'ide_editing_generate',
     IDE_EDITING_SURROUND = 'ide_editing_surround',

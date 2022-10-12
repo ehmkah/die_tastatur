@@ -25,6 +25,8 @@ describe('ExecutionsService', () => {
             const numberOfClosingBrackets = execution.executor.split("}").length;
             if (numberOfOpeningBrackets != numberOfClosingBrackets) {
                 console.log(execution.id);
+                console.log(execution.keyset.name);
+                console.log(execution.command.name);
                 expect(numberOfOpeningBrackets).toEqual(numberOfClosingBrackets);
             }
         }

@@ -115,6 +115,7 @@ export class CommandsService {
             <Command>{id: 'ide_general_quick_switch_current_scheme', description: 'Quick switch current scheme', defaultKeyPrintText: 'Change scheme', name: CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME},
             <Command>{id: 'ide_general_open_preferences', description: 'Open preferences', defaultKeyPrintText: 'Open settings', name: CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES},
             <Command>{id: 'ide_general_switch_between_tab_and_tool_window', description: 'Switch between tabs and tool windows', defaultKeyPrintText: 'Switch tab tool', name: CommandsDefinitions.IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW},
+            <Command>{id: 'ide_general_save_all', description: 'Save all', defaultKeyPrintText: 'Save all', name: CommandsDefinitions.IDE_GENERAL_SAVE_ALL},
 
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
             <Command>{id: 'IDE_EDITING_SURROUND', description: 'Surround with if, try, for', defaultKeyPrintText: 'surround', name: CommandsDefinitions.IDE_EDITING_SURROUND},
