@@ -51,39 +51,19 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_INSPECT_CURRENT_FILE,`{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+i}}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME,`{${SpecialKeys.CTRL}+\`}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+s}}`),
+        new InternalExecution(CommandsDefinitions.IDE_GENERAL_FIND_ACTION,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+a}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STEP_OVER,`${SpecialKeys.F8}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STEP_INTO,`${SpecialKeys.F7}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_SMART_STEP_INTO,`{${SpecialKeys.SHIFT}+${SpecialKeys.F7}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STEP_OUT,`{${SpecialKeys.SHIFT}+${SpecialKeys.F8}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_RUN_TO_CURSOR,`{${SpecialKeys.ALT}+${SpecialKeys.F9}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_EVALUATE_EXPRESSION,`{${SpecialKeys.ALT}+${SpecialKeys.F8}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_RESUME,`${SpecialKeys.F9}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT,`{${SpecialKeys.CTRL}+${SpecialKeys.F8}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.F8}}}`),
 
 
         /**
-         *
-         * Open Project Structure dialog
-         * Ctrl + Alt + Shift + S
-         *
-         * Find Action
-         * Ctrl + Shift + A
-         *
-         * DEBUGGING
-         *
-         * Step over / into
-         * F8 / F7
-         *
-         * Smart step into /Step out
-         * Shift + F7 / Shift + F8
-         *
-         * Run to cursor
-         * Alt + F9
-         *
-         * Evaluate expression
-         * Alt + F8
-         *
-         * Resume program
-         * F9
-         *
-         * Toggle breakpoint
-         * Ctrl + F8
-         *
-         * View breakpoints
-         * Ctrl + Shift + F8
-         *
          * SEARCH / REPLACE
          *
          * Search everywhere
@@ -417,8 +397,13 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
          * Insert Live Template
          * Ctrl +
          *
+         * neue Commandos
+         *
          * Synchronize
          * Ctrl + Alt + Y
+         *
+         * Open Project Structure dialog
+         * Ctrl + Alt + Shift + S
          */
 
     ];
