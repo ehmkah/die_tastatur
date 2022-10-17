@@ -71,51 +71,17 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE,`{${SpecialKeys.ALT}+j}`),
         new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES,`{${SpecialKeys.ALT}+{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+j}}}`),
         new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE,`{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}++j}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_BASIC_CODE_COMPLETION,`{${SpecialKeys.CTRL}+${SpecialKeys.SPACE}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_PARAMETER_INFO,`{${SpecialKeys.CTRL}+p}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP,`{${SpecialKeys.CTRL}+q}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET,`{${SpecialKeys.CTRL}+${SpecialKeys.F1}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SURROUND,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+t}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT,`{${SpecialKeys.CTRL}+${SpecialKeys.DIV}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.DIV}}}`),
+
+
 
         /**
-         * EDITING
-         *
-         * Basic code completion
-         * Ctrl + Space
-         *
-         * Smart code completion
-         * Ctrl + Shift + Space
-         *
-         * Complete statement
-         * Ctrl + Shift + Enter
-         *
-         * Parameter info
-         * Ctrl + P
-         *
-         * Quick documentation lookup
-         * Ctrl + Q
-         *
-         * External Doc
-         * Shift + F1
-         *
-         * Brief Info
-         * Ctrl + mouse
-         *
-         * Show descriptions of error at caret
-         * Ctrl + F1
-         *
-         * Generate code...
-         * Alt + Insert
-         *
-         * Override methods
-         * Ctrl + O
-         *
-         * Implement methods
-         * Ctrl + I
-         *
-         * Surround with...
-         * Ctrl + Alt + T
-         *
-         * Comment / uncomment with line comment
-         * Ctrl + /
-         *
-         * Comment / uncomment with block comment
-         * Ctrl + Shift + /
          *
          * Extend selection
          * Ctrl + W
@@ -384,6 +350,27 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
          *
          * Open Project Structure dialog
          * Ctrl + Alt + Shift + S
+         *
+         * Smart code completion
+         * Ctrl + Shift + Space
+         *
+         * Complete statement
+         * Ctrl + Shift + Enter
+         *
+         * External Doc
+         * Shift + F1
+         *
+         * Brief Info
+         * Ctrl + mouse
+         *
+         * Generate code...
+         * Alt + Insert
+         *
+         * Generate code...
+         * Alt + Insert
+         *
+         * Implement methods
+         * Ctrl + I
          */
 
     ];
