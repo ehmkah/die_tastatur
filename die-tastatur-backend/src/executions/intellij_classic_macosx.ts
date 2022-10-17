@@ -61,38 +61,18 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_RESUME,`${SpecialKeys.F9}`),
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT,`{${SpecialKeys.CTRL}+${SpecialKeys.F8}}`),
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.F8}}}`),
-
+        new InternalExecution(CommandsDefinitions.IDE_GENERAL_SEARCH_EVERYWHERE,`{${SpecialKeys.SHIFT}+${SpecialKeys.SHIFT}}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND,`{${SpecialKeys.CTRL}+f}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_NEXT,`${SpecialKeys.F3}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_PREVIOUS,`{${SpecialKeys.SHIFT}+${SpecialKeys.F3}}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE,`{${SpecialKeys.CTRL}+r}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_IN_PATH,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+f}}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE_IN_PATH,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+r}}`),
+        new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE,`{${SpecialKeys.ALT}+j}`),
+        new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES,`{${SpecialKeys.ALT}+{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+j}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_UNSELECT_OCCURENCE,`{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}++j}}`),
 
         /**
-         * SEARCH / REPLACE
-         *
-         * Search everywhere
-         * Double Shift
-         *
-         * Find
-         * Ctrl + F
-         *
-         * Find next / previous
-         * F3 / Shift + F3
-         *
-         * Replace
-         * Ctrl + R
-         *
-         * Find in path
-         * Ctrl + Shift + F
-         *
-         * Replace in path
-         * Ctrl + Shift + R
-         *
-         * Select next occurrence
-         * Alt + J
-         *
-         * Select all occurrences
-         * Ctrl + Alt + Shift + J
-         *
-         * Unselect occurrence
-         * Alt + Shift + J
-         *
          * EDITING
          *
          * Basic code completion
