@@ -78,84 +78,28 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_EDITING_SURROUND,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+t}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT,`{${SpecialKeys.CTRL}+${SpecialKeys.DIV}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.DIV}}}`),
-
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_CONTEXT_INFO,`{${SpecialKeys.ALT}+q}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES,`{${SpecialKeys.ALT}+${SpecialKeys.RETURN}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_REFORMAT_CODE,`{${SpecialKeys.ALT}+{${SpecialKeys.CTRL}+l}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_AUTO_INDENT_LINE,`{${SpecialKeys.ALT}+{${SpecialKeys.CTRL}+i}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_INDENT_SELECTED_LINES,`${SpecialKeys.TAB}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_UNINDENT_SELECTED_LINES,`{${SpecialKeys.SHIFT}+${SpecialKeys.TAB}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_PASTE_FROM_RECENT_BUFFER,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+v}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_DUPLICATE_LINE,`{${SpecialKeys.CTRL}+d}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_START_NEW_LINES,`{${SpecialKeys.SHIFT}+${SpecialKeys.RETURN}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_TOGGLE_CASE_WORD,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+u}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SELECT_TILL_CODE_BLOCK_END,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+]}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SELECT_TILL_CODE_BLOCK_START,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+[}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_DELETE_WORD_END,`{${SpecialKeys.CTRL}+${SpecialKeys.DELETE}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_DELETE_WORD_START,`{${SpecialKeys.CTRL}+${SpecialKeys.BACKSPACE}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_EXPAND_CODE_BLOCK,`{${SpecialKeys.CTRL}+${SpecialKeys.PLUS}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COLLAPSE_CODE_BLOCK,`{${SpecialKeys.CTRL}+${SpecialKeys.MINUS}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_EXPAND_ALL,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.PLUS}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.MINUS}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB,`{${SpecialKeys.CTRL}+${SpecialKeys.F4}}`),
 
 
         /**
-         *
-         * Extend selection
-         * Ctrl + W
-         *
-         * Shrink selection
-         * Ctrl + Shift + W
-         *
-         * Context info
-         * Alt + Q
-         *
-         * Show intention actions and quick-fixes
-         * Alt + Enter
-         *
-         * Reformat code
-         * Ctrl + Alt + L
-         *
-         * Optimize imports
-         * Ctrl + Alt + O
-         *
-         * Auto-indent line(s)
-         * Ctrl + Alt + I
-         *
-         * Indent /unindent selected lines
-         * Tab / Shift + Tab
-         *
-         * Cut current line to clipboard
-         * Ctrl+X, Shift+Delete
-         *
-         * Copy current line to clipboard
-         * Ctrl + C , Ctrl + Insert
-         *
-         * Paste from clipboard
-         * Ctrl+V, Shift+Insert
-         *
-         * Paste from recent buffers...
-         * Ctrl + Shift + V
-         *
-         * Duplicate current line
-         * Ctrl + D
-         *
-         * Delete line at caret
-         * Ctrl + Y
-         *
-         * Smart line join
-         * Ctrl + Shift + J
-         *
-         * Smart line split
-         * Ctrl + Enter
-         *
-         * Start new line
-         * Shift + Enter
-         *
-         * Toggle case for word at caret or selected block Ctrl + Shift + U
-         *
-         * Select till code block end / start
-         * Ctrl + Shift + ] / [
-         *
-         * Delete to word end
-         * Ctrl + Delete
-         *
-         * Delete to word start
-         * Ctrl + Backspace
-         *
-         * Expand /collapse code block
-         * Ctrl + NumPad+ / -
-         *
-         * Expand al
-         * Ctrl + Shift + NumPad+
-         *
-         * Collapse all
-         * Ctrl + Shift + NumPad-
-         *
-         * Close active editor tab
-         * Ctrl + F4
          *
          * REFACTORING
          *
@@ -371,6 +315,33 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
          *
          * Implement methods
          * Ctrl + I
+         *
+         * Extend selection
+         * Ctrl + W
+         *
+         * Shrink selection
+         * Ctrl + Shift + W
+         *
+         * Optimize imports
+         * Ctrl + Alt + O
+         *
+         * Cut current line to clipboard
+         * Ctrl+X, Shift+Delete
+         *
+         * Copy current line to clipboard
+         * Ctrl + C , Ctrl + Insert
+         *
+         * Paste from clipboard
+         * Ctrl+V, Shift+Insert
+
+         Delete line at caret
+         Ctrl + Y
+
+         Smart line join
+         Ctrl + Shift + J
+
+         Smart line split
+         Ctrl + Enter
          */
 
     ];
@@ -390,12 +361,6 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         }
     );
 
-
     return result;
 
-    //[
-    //   executionService.createExecution('1', CommandsDefinitions.JUMP_TO_PROJECT_VIEW, keyset, `{${SpecialKeys.LWIN}+1}`),
-
-
-    //];
 }
