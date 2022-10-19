@@ -97,47 +97,20 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_EDITING_EXPAND_ALL,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.PLUS}}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL,`{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.MINUS}}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB,`{${SpecialKeys.CTRL}+${SpecialKeys.F4}}`),
-
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_COPY,`${SpecialKeys.F5}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_MOVE,`${SpecialKeys.F6}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_SAFE_DELETE,`{${SpecialKeys.ALT}+${SpecialKeys.DELETE}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_RENAME,`{${SpecialKeys.SHIFT}+${SpecialKeys.F6}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_REFACTOR_THIS,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+t}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_CHANGE_FUNCTION_SIGNATURE,`{${SpecialKeys.CTRL}+${SpecialKeys.F6}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_INLINE_VARIABLE,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+n}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_METHOD,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+m}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_VARIABLE,`{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+v}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_FIELD, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+f}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_CONSTANT, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+c}}`),
+        new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_PARAMETER, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+p}}`),
 
         /**
-         *
-         * REFACTORING
-         *
-         * Copy
-         * F5
-         *
-         * Move
-         * F6
-         *
-         * Safe Delete
-         * Alt + Delete
-         *
-         * Rename
-         * Shift + F6
-         *
-         * Refactor this
-         * Ctrl + Alt + Shift + T
-         *
-         * Change Signature
-         * Ctrl + F6
-         *
-         * Inline
-         * Ctrl + Alt + N
-         *
-         * Extract Method
-         * Ctrl + Alt + M
-         *
-         * Extract Variable
-         * Ctrl + Alt + V
-         *
-         * Extract Field
-         * Ctrl + Alt + F
-         *
-         * Extract Constant
-         * Ctrl + Alt + C
-         *
-         * Extract Parameter
-         * Ctrl + Alt + P
          *
          * NAVIGATION
          *

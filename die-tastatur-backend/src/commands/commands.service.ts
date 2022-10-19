@@ -93,6 +93,8 @@ export class CommandsService {
             <Command>{id: 'ide_refactoring_extract_variable', description: 'Extract variable', defaultKeyPrintText: 'Extract variable', name: CommandsDefinitions.IDE_REFACTORING_EXTRACT_VARIABLE},
             <Command>{id: 'ide_refactoring_extract_constant', description: 'Extract constant', defaultKeyPrintText: 'extract constant', name: CommandsDefinitions.IDE_REFACTORING_EXTRACT_CONSTANT},
             <Command>{id: 'ide_refactoring_extract_parameter', description: 'Extract parameter', defaultKeyPrintText: 'Extract parameter', name: CommandsDefinitions.IDE_REFACTORING_EXTRACT_PARAMETER},
+            <Command>{id: 'IDE_REFACTORING_EXTRACT_METHOD', description: 'Extract method', defaultKeyPrintText: 'Extract method', name: CommandsDefinitions.IDE_REFACTORING_EXTRACT_METHOD},
+            <Command>{id: 'IDE_REFACTORING_EXTRACT_FIELD', description: 'Extract field', defaultKeyPrintText: 'Extract field', name: CommandsDefinitions.IDE_REFACTORING_EXTRACT_FIELD},
             <Command>{id: 'ide_vcs_quick_popup', description: 'Qvcs quick popup', defaultKeyPrintText: 'VCS popup', name: CommandsDefinitions.IDE_VCS_QUICK_POPUP},
             <Command>{id: 'ide_vcs_commit_to_vcs', description: 'Commit project to VCS', defaultKeyPrintText: 'Commit', name: CommandsDefinitions.IDE_VCS_COMMIT_TO_VCS},
             <Command>{id: 'ide_vcs_update_projecct_from_vcs', description: 'Update project from VCS', defaultKeyPrintText: 'Update', name: CommandsDefinitions.IDE_VCS_UPDATE_PROJECCT_FROM_VCS},

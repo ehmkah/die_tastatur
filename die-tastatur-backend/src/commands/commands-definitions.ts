@@ -84,6 +84,8 @@ export enum CommandsDefinitions {
     IDE_REFACTORING_EXTRACT_VARIABLE = 'ide_refactoring_extract_variable',
     IDE_REFACTORING_EXTRACT_CONSTANT = 'ide_refactoring_extract_constant',
     IDE_REFACTORING_EXTRACT_PARAMETER = 'ide_refactoring_extract_parameter',
+    IDE_REFACTORING_EXTRACT_METHOD = 'IDE_REFACTORING_EXTRACT_METHOD',
+    IDE_REFACTORING_EXTRACT_FIELD = 'IDE_REFACTORING_EXTRACT_FIELD',
 
     IDE_VCS_QUICK_POPUP = 'ide_vcs_quick_popup',
     IDE_VCS_COMMIT_TO_VCS = 'ide_vcs_commit_to_vcs',
