@@ -51,7 +51,7 @@ export enum CommandsDefinitions {
     IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR = 'ide_navigation_previous_highlighted_error',
     IDE_NAVIGATION_JUMP_TO_SOURCE = 'ide_navigation_jump_to_source',
     IDE_NAVIGATION__JUMP_TO_NAVIGATION_BAR = 'ide_navigation__jump_to_navigation_bar',
-    IDE_NAVIGATION_TOGGLE_BOOOMARI = 'ide_navigation_toggle_booomari',
+    IDE_NAVIGATION_TOGGLE_BOOOMARK = 'IDE_NAVIGATION_TOGGLE_BOOOMARK',
     IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC = 'ide_navigation_toggle_bookmark_with_mnemoconic',
     IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_0 = 'ide_navigation_goto_numbered_bookmark_0',
     IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_1 = 'ide_navigation_goto_numbered_bookmark_1',

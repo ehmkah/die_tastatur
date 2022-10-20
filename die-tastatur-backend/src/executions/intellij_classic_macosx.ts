@@ -109,97 +109,35 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_FIELD, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+f}}`),
         new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_CONSTANT, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+c}}`),
         new InternalExecution(CommandsDefinitions.IDE_REFACTORING_EXTRACT_PARAMETER, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+p}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS, `{${SpecialKeys.CTRL}+n}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+n}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_SYMBOL, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.ALT}+n}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NEXT_EDITOR_TAB, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_RIGHT}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_PREVIOUS_EDITOR_TAB, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_LEFT}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION__GO_BACK_TO_PREVIOUS_TOOL_WINDOW, `${SpecialKeys.F12}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GO_TO_EDITOR, `${SpecialKeys.ESCAPE}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GO_TO_LINE, `{${SpecialKeys.CTRL}+g}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_RECENT_FILES_POPUP, `{${SpecialKeys.CTRL}+e}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_BACK, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.CURSOR_LEFT}}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_FORWARD, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.CURSOR_RIGHT}}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_TO_LAST_EDIT_LOCATION, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.BACKSPACE}}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION, `{${SpecialKeys.CTRL}+b}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+b}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_OPEN_QUICK_DEFINITION_LOOKUP, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+i}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_SUPER_METHOD_SUPER_CLASS, `{${SpecialKeys.CTRL}+u}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NEXT_METHOD, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_UP}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_PREVIOUS_METHOD, `{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_DOWN}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_MOVE_CODE_BLOCK_END, `{${SpecialKeys.CTRL}+]}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_MOVE_CODEBLOCK_START, `{${SpecialKeys.CTRL}+[}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_FILE_STRUCTURE_PIOPUP, `{${SpecialKeys.CTRL}+${SpecialKeys.F12}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_TYPE_HIERACHIY, `{${SpecialKeys.CTRL}+h}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_CALL_HIERACHY, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+h}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NEXT_HIGHLIGHTED_ERROR, `{${SpecialKeys.F2}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR, `{${SpecialKeys.SHIFT}+${SpecialKeys.F2}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOOMARK, `${SpecialKeys.F11}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC, `{${SpecialKeys.CTRL}+${SpecialKeys.F11}}`),
 
         /**
-         *
-         * NAVIGATION
-         *
-         * Go to class
-         * Ctrl + N
-         *
-         * Go to file
-         * Ctrl + Shift + N
-         *
-         * Go to symbol
-         * Ctrl + Alt + Shift + N
-         *
-         * Go to next /previous editor tab
-         * Alt + Right / Left
-         *
-         * Go back to previous tool window
-         * F12
-         *
-         * Go to editor (from tool window)
-         * Esc
-         *
-         * Hide active or last active window
-         * Shift + Esc
-         *
-         * Go to line
-         * Ctrl + G
-         *
-         * Recent files popup
-         * Ctrl + E
-         *
-         * Recent locations popup
-         * Ctrl + Shift + E
-         *
-         * Navigate back / forward
-         * Ctrl + Alt + Left / Right
-         *
-         * Navigate to last edit location
-         * Ctrl + Shift + Backspace
-         *
-         * Select current file or symbol in any view
-         * Alt + F1
-         *
-         * Go to declaration
-         * Ctrl+B, Ctrl+Click
-         *
-         * Go to implementation(s)
-         * Ctrl + Alt + B
-         *
-         * Open quick definition lookup
-         * Ctrl + Shift + I
-         *
-         * Go to type declaration
-         * Ctrl + Shift + B
-         *
-         * Go to super-method / super-class
-         * Ctrl + U
-         *
-         * Go to previous /next method
-         * Alt + Up / Down
-         *
-         * Move to code block end / start
-         * Ctrl + ] / [
-         *
-         * File structure popup
-         * Ctrl + F12
-         *
-         * Type hierarchy
-         * Ctrl + H
-         *
-         * Method hierarchy
-         * Ctrl + Shift + H
-         *
-         * Call hierarchy
-         * Ctrl + Alt + H
-         *
-         * Next /Previous highlighted error
-         * F2 / Shift + F2
-         *
-         * Edit source /View source
-         * F4 / Ctrl + Enter
-         *
-         * Show navigation bar
-         * Alt + Home
-         *
-         * Toggle bookmark
-         * F11
-         *
-         * Toggle bookmark with mnemonic
-         * Ctrl + F11
          *
          * Go to numbered bookmark
          * Ctrl + #[0-9]
@@ -315,6 +253,27 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
 
          Smart line split
          Ctrl + Enter
+
+         Hide active or last active window
+         Shift + Esc
+
+         Recent locations popup
+         Ctrl + Shift + E
+
+         Select current file or symbol in any view
+         Alt + F1
+
+         Go to type declaration
+         Ctrl + Shift + B
+
+         Method hierarchy
+         Ctrl + Shift + H
+
+         Edit source /View source
+         F4 / Ctrl + Enter
+
+         Show navigation bar
+         Alt + Home
          */
 
     ];

@@ -59,7 +59,7 @@ export class CommandsService {
             <Command>{id: 'ide_navigation_previous_highlighted_error', description: 'Previous hightlighted error', defaultKeyPrintText: 'previous error', name: CommandsDefinitions.IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR},
             <Command>{id: 'ide_navigation_jump_to_source', description: 'Jump to source', defaultKeyPrintText: 'jump to source', name: CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_SOURCE},
             <Command>{id: 'ide_navigation__jump_to_navigation_bar', description: 'Jump to navigation bar', defaultKeyPrintText: 'jump nav bar', name: CommandsDefinitions.IDE_NAVIGATION__JUMP_TO_NAVIGATION_BAR},
-            <Command>{id: 'ide_navigation_toggle_booomari', description: 'Toggle bookmark', defaultKeyPrintText: 'toggle bookmark', name: CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOOMARI},
+            <Command>{id: 'ide_navigation_toggle_booomari', description: 'Toggle bookmark', defaultKeyPrintText: 'toggle bookmark', name: CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOOMARK},
             <Command>{id: 'ide_navigation_toggle_bookmark_with_mnemoconic', description: 'Toggle bookmark with mneomic', defaultKeyPrintText: 'toggle bookmark mnemoic', name: CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC},
             <Command>{id: 'ide_navigation_goto_numbered_bookmark_0', description: 'Goto numbered 0 bookmark', defaultKeyPrintText: 'goto bookmark 0', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_0},
             <Command>{id: 'ide_navigation_goto_numbered_bookmark_1', description: 'Goto numbered 1 bookmark', defaultKeyPrintText: 'goto bookmark 1', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_1},
