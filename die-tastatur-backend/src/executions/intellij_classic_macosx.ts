@@ -136,145 +136,143 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR, `{${SpecialKeys.SHIFT}+${SpecialKeys.F2}}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOOMARK, `${SpecialKeys.F11}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC, `{${SpecialKeys.CTRL}+${SpecialKeys.F11}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_0,`{${SpecialKeys.CTRL} + 0}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_1,`{${SpecialKeys.CTRL} + 1}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_2,`{${SpecialKeys.CTRL} + 2}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_3,`{${SpecialKeys.CTRL} + 3}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_4,`{${SpecialKeys.CTRL} + 4}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_5,`{${SpecialKeys.CTRL} + 5}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_6,`{${SpecialKeys.CTRL} + 6}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_7,`{${SpecialKeys.CTRL} + 7}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_8,`{${SpecialKeys.CTRL} + 8}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_9,`{${SpecialKeys.CTRL} + 9}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_SHOW_BOOKMARK,`{${SpecialKeys.SHIFT} + ${SpecialKeys.F11}}`),
+        //new InternalExecution(CommandsDefinitions.Build project,`{${SpecialKeys.CTRL} + ${SpecialKeys.F9}}`),
+        //new InternalExecution(CommandsDefinitions.Compile selected file, package or module,`Compile selected file, package or module`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F9}}},`{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F9}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+        new InternalExecution(CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN,`{${SpecialKeys.ALT} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F10}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG,`{${SpecialKeys.ALT} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F9}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_RUNNING_RUN,`{${SpecialKeys.SHIFT} + ${SpecialKeys.F10} }`),
+        new InternalExecution(CommandsDefinitions.IDE_RUNNING_DEBUG,`{${SpecialKeys.SHIFT} +  ${SpecialKeys.F9}}`),
+//new InternalExecution(CommandsDefinitions.Run context configuration from editor,`Run context configuration from editor`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F10}}},`{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F10}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Run anything,`Run anything`)
+//new InternalExecution(CommandsDefinitions.${SpecialKeys.CTRL} ${SpecialKeys.CTRL},`${SpecialKeys.CTRL} ${SpecialKeys.CTRL}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Find usages /Find usages in file,`Find usages /Find usages in file`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.ALT} + ${SpecialKeys.F7} },`{${SpecialKeys.ALT} + ${SpecialKeys.F7} }`),
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + ${SpecialKeys.F7}},`{${SpecialKeys.CTRL} + ${SpecialKeys.F7}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Highlight usages in file,`Highlight usages in file`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F7}}},`{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F7}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Show usages,`Show usages`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + ${SpecialKeys.F7}}},`{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + ${SpecialKeys.F7}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.VCS / LOCAL HISTORY,`VCS / LOCAL HISTORY`)
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Commit project to VCS,`Commit project to VCS`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + K   },`{${SpecialKeys.CTRL} + K   }`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Update project from VCS,`Update project from VCS`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + T},`{${SpecialKeys.CTRL} + T}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Push commits,`Push commits`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + K}},`{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + K}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.‘VCS’ quick popup,`‘VCS’ quick popup`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.ALT}+BackQuote (`)  },`{${SpecialKeys.ALT}+BackQuote (`)  }`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.LIVE TEMPLATES,`LIVE TEMPLATES`)
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Surround with Live Template,`Surround with Live Template`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + J } },`{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + J } }`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Insert Live Template,`Insert Live Template`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} +     },`{${SpecialKeys.CTRL} +     }`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.neue Commandos,`neue Commandos`)
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Synchronize,`Synchronize`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + Y}},`{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + Y}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Open Project Structure dialog,`Open Project Structure dialog`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + {${SpecialKeys.SHIFT} + S}}},`{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + {${SpecialKeys.SHIFT} + S}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Smart code completion,`Smart code completion`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} +{ ${SpecialKeys.SHIFT} + ${SpecialKeys.SPACE}}},`{${SpecialKeys.CTRL} +{ ${SpecialKeys.SHIFT} + ${SpecialKeys.SPACE}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Complete statement,`Complete statement`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.RETURN}}},`{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.RETURN}}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.External Doc,`External Doc`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.SHIFT} + ${SpecialKeys.F1}},`{${SpecialKeys.SHIFT} + ${SpecialKeys.F1}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Brief Info,`Brief Info`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + mouse},`{${SpecialKeys.CTRL} + mouse}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Generate code...,`Generate code...`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.ALT} + ${SpecialKeys.INS}},`{${SpecialKeys.ALT} + ${SpecialKeys.INS}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Generate code...,`Generate code...`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.ALT} + ${SpecialKeys.INS}},`{${SpecialKeys.ALT} + ${SpecialKeys.INS}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Implement methods,`Implement methods`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + I},`{${SpecialKeys.CTRL} + I}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Extend selection,`Extend selection`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + W},`{${SpecialKeys.CTRL} + W}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Shrink selection,`Shrink selection`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} +{ ${SpecialKeys.SHIFT} + W}},`{${SpecialKeys.CTRL} +{ ${SpecialKeys.SHIFT} + W}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Optimize imports,`Optimize imports`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + O}},`{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + O}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Cut current line to clipboard,`Cut current line to clipboard`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL}+X},`{${SpecialKeys.CTRL}+X}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Copy current line to clipboard,`Copy current line to clipboard`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + C },`{${SpecialKeys.CTRL} + C }`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.Paste from clipboard,`Paste from clipboard`)
+//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL}+V},`{${SpecialKeys.CTRL}+V}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Delete line at caret,`         Delete line at caret`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.CTRL} + Y},`{         ${SpecialKeys.CTRL} + Y}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Smart line join,`         Smart line join`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + J}},`{         ${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + J}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Smart line split,`         Smart line split`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.CTRL} + ${SpecialKeys.RETURN}},`{         ${SpecialKeys.CTRL} + ${SpecialKeys.RETURN}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Hide active or last active window,`         Hide active or last active window`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.SHIFT} + Esc},`{         ${SpecialKeys.SHIFT} + Esc}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Recent locations popup,`         Recent locations popup`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + E}},`{         ${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + E}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Select current file or symbol in any view,`         Select current file or symbol in any view`)
+//new InternalExecution(CommandsDefinitions.         {${SpecialKeys.ALT} + ${SpecialKeys.F1}},`         {${SpecialKeys.ALT} + ${SpecialKeys.F1}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Go to type declaration,`         Go to type declaration`)
+//new InternalExecution(CommandsDefinitions.         {${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + B}},`         {${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + B}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Method hierarchy,`         Method hierarchy`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + H}},`{         ${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + H}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Edit source ,`         Edit source`)
+//new InternalExecution(CommandsDefinitions.         ${SpecialKeys.F4},`         ${SpecialKeys.F4}`),
+//new InternalExecution(CommandsDefinitions.         ,``)
+//new InternalExecution(CommandsDefinitions.         View source,`         View source`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.CTRL} + ${SpecialKeys.RETURN}},`{         ${SpecialKeys.CTRL} + ${SpecialKeys.RETURN}}`),
+//new InternalExecution(CommandsDefinitions.,``)
+//new InternalExecution(CommandsDefinitions.         Show navigation bar,`         Show navigation bar`)
+//new InternalExecution(CommandsDefinitions.{         ${SpecialKeys.ALT} + Home},`{         ${SpecialKeys.ALT} + Home}`),
 
-        /**
-         *
-         * Go to numbered bookmark
-         * Ctrl + #[0-9]
-         *
-         * Show bookmarks
-         * Shift + F11
-         *
-         * COMPILE AND RUN
-         *
-         * Build project
-         * Ctrl + F9
-         *
-         * Compile selected file, package or module
-         * Ctrl + Shift + F9
-         *
-         * Select configuration and run / debug
-         * Alt + Shift + F10 / F9
-         *
-         * Run /Debug
-         * Shift + F10 / F9
-         *
-         * Run context configuration from editor
-         * Ctrl + Shift + F10
-         *
-         * Run anything
-         * Double Ctrl
-         *
-         * USAGE SEARCH
-         *
-         * Find usages /Find usages in file
-         * Alt + F7 / Ctrl + F7
-         *
-         * Highlight usages in file
-         * Ctrl + Shift + F7
-         *
-         * Show usages
-         * Ctrl + Alt + F7
-         *
-         * VCS / LOCAL HISTORY
-         *
-         * Commit project to VCS
-         * Ctrl + K
-         *
-         * Update project from VCS
-         * Ctrl + T
-         *
-         * Push commits
-         * Ctrl + Shift + K
-         *
-         * ‘VCS’ quick popup
-         * Alt+BackQuote (`)
-         *
-         * LIVE TEMPLATES
-         *
-         * Surround with Live Template
-         * Ctrl + Alt + J
-         *
-         * Insert Live Template
-         * Ctrl +
-         *
-         * neue Commandos
-         *
-         * Synchronize
-         * Ctrl + Alt + Y
-         *
-         * Open Project Structure dialog
-         * Ctrl + Alt + Shift + S
-         *
-         * Smart code completion
-         * Ctrl + Shift + Space
-         *
-         * Complete statement
-         * Ctrl + Shift + Enter
-         *
-         * External Doc
-         * Shift + F1
-         *
-         * Brief Info
-         * Ctrl + mouse
-         *
-         * Generate code...
-         * Alt + Insert
-         *
-         * Generate code...
-         * Alt + Insert
-         *
-         * Implement methods
-         * Ctrl + I
-         *
-         * Extend selection
-         * Ctrl + W
-         *
-         * Shrink selection
-         * Ctrl + Shift + W
-         *
-         * Optimize imports
-         * Ctrl + Alt + O
-         *
-         * Cut current line to clipboard
-         * Ctrl+X, Shift+Delete
-         *
-         * Copy current line to clipboard
-         * Ctrl + C , Ctrl + Insert
-         *
-         * Paste from clipboard
-         * Ctrl+V, Shift+Insert
-
-         Delete line at caret
-         Ctrl + Y
-
-         Smart line join
-         Ctrl + Shift + J
-
-         Smart line split
-         Ctrl + Enter
-
-         Hide active or last active window
-         Shift + Esc
-
-         Recent locations popup
-         Ctrl + Shift + E
-
-         Select current file or symbol in any view
-         Alt + F1
-
-         Go to type declaration
-         Ctrl + Shift + B
-
-         Method hierarchy
-         Ctrl + Shift + H
-
-         Edit source /View source
-         F4 / Ctrl + Enter
-
-         Show navigation bar
-         Alt + Home
-         */
 
     ];
 
