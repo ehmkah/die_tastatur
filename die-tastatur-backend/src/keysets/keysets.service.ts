@@ -35,6 +35,13 @@ export class KeysetsService {
                 operatingSystem: operatingSystems[0],
                 description: 'Intellij classic',
                 name: KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX
+            },
+            <Keyset>{
+                id: '4',
+                tool: this.toolsService.findByName(ToolsDefinitions.IntelliJ),
+                operatingSystem: operatingSystems[1],
+                description: 'Intellij classic',
+                name: KeysetDefinitions.INTELLIJ_CLASSIC_LINUX
             }
         ];
     }

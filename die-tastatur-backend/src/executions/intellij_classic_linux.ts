@@ -25,7 +25,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         }
     }
 
-    let keyset = keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX);
+    let keyset = keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_LINUX);
 
     const executions = [
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, `{${SpecialKeys.LWIN}+f}`),
