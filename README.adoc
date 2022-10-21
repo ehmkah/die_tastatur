@@ -35,7 +35,7 @@ Your contributions are always welcome.
 
 == Supported programs
 
-* E.g. Webstorm, git, kubectl, docker, kubens, docker-compose, shell
+* E.g. Webstorm, IntelliJ, git, kubectl, docker, kubens, docker-compose, shell
 * See `executions.service.ts` for a complete list
 
 == Supported Operating systems
@@ -83,6 +83,12 @@ Your contributions are always welcome.
 == Howto add a new execution to die tastatur?
 
 * See `webstorm_classic_macosx.ts` as an example and how its used in `executions.service.ts`
+* If you want to a have a test keyboard layout for you generated use method `generateKeyboardLayoutForExecutionSet` and call it with your executions
+** It generates as many layouts as needed on the keyboard you define
+* You will find it under http://localhost:3000/keyboard-layouts/ with an id like `testkeyboardlayout<number>`
+** number is at least 0 and depends on how many executions you added
+** e.g. `testkeyboardlayout0.Intellij classic Linux` for testing an intelliJ linux setup
+* If you are happy with your executions go to <<_howto_define_your_own_keyboard_layout>> and put it to something useful
 
 == Thinking about
 
