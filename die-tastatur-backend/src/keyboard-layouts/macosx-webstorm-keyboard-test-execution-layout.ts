@@ -58,7 +58,7 @@ export function macosxWebstormKeyboardTestExecutionLayout(keyboard: Keyboard, ke
     board[2][11] = keyboardLayoutsService.createKeyDetails('2_11', CommandsDefinitions.IDE_NAVIGATION_NEXT_HIGHLIGHTED_ERROR, keyset);
     board[2][12] = keyboardLayoutsService.createKeyDetails('2_12', CommandsDefinitions.IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR, keyset);
     board[2][13] = keyboardLayoutsService.createKeyDetails('2_13', CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_SOURCE, keyset);
-    board[2][14] = keyboardLayoutsService.createKeyDetails('2_14', CommandsDefinitions.IDE_NAVIGATION__JUMP_TO_NAVIGATION_BAR, keyset);
+    board[2][14] = keyboardLayoutsService.createKeyDetails('2_14', CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_NAVIGATION_BAR, keyset);
     board[2][15] = keyboardLayoutsService.createKeyDetails('2_15', CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOOMARK, keyset);
 
     board[3][0] = keyboardLayoutsService.createKeyDetails('3_0', CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC, keyset);

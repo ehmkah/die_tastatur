@@ -12,7 +12,7 @@ import {KeysetDefinitions} from "../keysets/keyset-definitions";
  * @param executionService
  * @param keyset
  */
-export function intellijClassicMaxosxExecutions(executionService: ExecutionsService, keysetService: KeysetsService): Array<Execution> {
+export function intellijClassicLinuxExecutions(executionService: ExecutionsService, keysetService: KeysetsService): Array<Execution> {
 
     class InternalExecution {
         command: CommandsDefinitions;
@@ -182,8 +182,6 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_METHOD_HIERACHIY, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+h}}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_SOURCE, `${SpecialKeys.F4}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_NAVIGATION_BAR, `{${SpecialKeys.ALT}+${SpecialKeys.HOME}}`),
-
-
     ];
 
 
