@@ -14,6 +14,7 @@ import {Keyboard} from "../keyboards/keyboard.interface";
 import {intellijClassicLinuxExecutions} from "../executions/intellij_classic_linux";
 import {Key} from "readline";
 import {KeysetsService} from "../keysets/keysets.service";
+import {webstormDefaultMaxosxExecutions} from "../executions/webstorm_classic_macosx";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -28,7 +29,9 @@ export class KeyboardLayoutsService {
             macosxWebstormKeyboardTestExecutionLayout(keyboards[0], this),
             macosxWebstormDeveloperLayout(keyboards[0], this),
             emptyKeyboardLayout(keyboards[0], this)
-        ].concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0]));
+        ].
+        concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0])).
+            concat(this.generateKeyboardLayoutForExecutionSet(webstormDefaultMaxosxExecutions(this.executionService, this.keysetService.findByName(KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX)), keyboards[0]));
     }
 
     createKeyDetails(id: string, commandName: CommandsDefinitions, keyset: KeysetDefinitions) {
@@ -54,6 +57,7 @@ export class KeyboardLayoutsService {
         for (let i = 0; i < requiredTestboards; i++) {
             let keyboardLayout = emptyKeyboardLayout(keyboard, this);
             keyboardLayout.id = `testkeyboardlayout${i}.${executions[0].keyset.name}`;
+            keyboardLayout.name = `testkeyboardlayout${i}.${executions[0].keyset.name}`;
             result.push(keyboardLayout);
         }
 
