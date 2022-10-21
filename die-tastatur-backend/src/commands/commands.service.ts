@@ -11,6 +11,9 @@ export class CommandsService {
             // Empty command
             <Command>{id: 'EMPTY_COMMAND', description: 'Empty command', defaultKeyPrintText: '..........\n..........', name: CommandsDefinitions.EMPTY_COMMAND},
 
+            // Window manager commands
+            <Command>{id: 'GENERAL_CUT', description: 'Cut', defaultKeyPrintText: 'Cut', name: CommandsDefinitions.GENERAL_CUT},
+
             // IDEs
             <Command>{id: 'jump_to_project_view', description: 'Jump to project view', defaultKeyPrintText: 'to projectview', name: CommandsDefinitions.JUMP_TO_PROJECT_VIEW},
             <Command>{id: 'jump_to_git_view', description: 'Jump to git view', defaultKeyPrintText: 'git\nview', name: CommandsDefinitions.JUMP_TO_GIT_VIEW},
@@ -54,11 +57,12 @@ export class CommandsService {
             <Command>{id: 'ide_navigation_move_caret_matching_brace', description: 'Move caret to mmatching brace', defaultKeyPrintText: 'mv carret match brace', name: CommandsDefinitions.IDE_NAVIGATION_MOVE_CARET_MATCHING_BRACE},
             <Command>{id: 'ide_navigation_file_structure_piopup', description: 'File structure popup', defaultKeyPrintText: 'filestructure', name: CommandsDefinitions.IDE_NAVIGATION_FILE_STRUCTURE_PIOPUP},
             <Command>{id: 'ide_navigation_type_hierachiy', description: 'Type hierachy', defaultKeyPrintText: 'type hierachy', name: CommandsDefinitions.IDE_NAVIGATION_TYPE_HIERACHIY},
+            <Command>{id: 'IDE_NAVIGATION_METHOD_HIERACHIY', description: 'method hierachy', defaultKeyPrintText: 'method hierachy', name: CommandsDefinitions.IDE_NAVIGATION_METHOD_HIERACHIY},
             <Command>{id: 'ide_navigation_call_hierachy', description: 'Call hierachy', defaultKeyPrintText: 'call hierachy', name: CommandsDefinitions.IDE_NAVIGATION_CALL_HIERACHY},
             <Command>{id: 'ide_navigation_next_highlighted_error', description: 'Next highlighted error', defaultKeyPrintText: 'next error', name: CommandsDefinitions.IDE_NAVIGATION_NEXT_HIGHLIGHTED_ERROR},
             <Command>{id: 'ide_navigation_previous_highlighted_error', description: 'Previous hightlighted error', defaultKeyPrintText: 'previous error', name: CommandsDefinitions.IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR},
             <Command>{id: 'ide_navigation_jump_to_source', description: 'Jump to source', defaultKeyPrintText: 'jump to source', name: CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_SOURCE},
-            <Command>{id: 'ide_navigation__jump_to_navigation_bar', description: 'Jump to navigation bar', defaultKeyPrintText: 'jump nav bar', name: CommandsDefinitions.IDE_NAVIGATION__JUMP_TO_NAVIGATION_BAR},
+            <Command>{id: 'ide_navigation__jump_to_navigation_bar', description: 'Jump to navigation bar', defaultKeyPrintText: 'jump nav bar', name: CommandsDefinitions.IDE_NAVIGATION_JUMP_TO_NAVIGATION_BAR},
             <Command>{id: 'ide_navigation_toggle_booomari', description: 'Toggle bookmark', defaultKeyPrintText: 'toggle bookmark', name: CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOOMARK},
             <Command>{id: 'ide_navigation_toggle_bookmark_with_mnemoconic', description: 'Toggle bookmark with mneomic', defaultKeyPrintText: 'toggle bookmark mnemoic', name: CommandsDefinitions.IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC},
             <Command>{id: 'ide_navigation_goto_numbered_bookmark_0', description: 'Goto numbered 0 bookmark', defaultKeyPrintText: 'goto bookmark 0', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_0},
@@ -120,8 +124,12 @@ export class CommandsService {
             <Command>{id: 'ide_general_inspect_current_file', description: 'Inspect current file with current profile', defaultKeyPrintText: 'Inspect file', name: CommandsDefinitions.IDE_GENERAL_INSPECT_CURRENT_FILE},
             <Command>{id: 'ide_general_quick_switch_current_scheme', description: 'Quick switch current scheme', defaultKeyPrintText: 'Change scheme', name: CommandsDefinitions.IDE_GENERAL_QUICK_SWITCH_CURRENT_SCHEME},
             <Command>{id: 'ide_general_open_preferences', description: 'Open preferences', defaultKeyPrintText: 'Open settings', name: CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES},
+            <Command>{id: 'IDE_GENERAL_OPEN_PROJECT_STRUCTURE', description: 'Open project structure', defaultKeyPrintText: 'project structure', name: CommandsDefinitions.IDE_GENERAL_OPEN_PROJECT_STRUCTURE},
             <Command>{id: 'ide_general_switch_between_tab_and_tool_window', description: 'Switch between tabs and tool windows', defaultKeyPrintText: 'Switch tab tool', name: CommandsDefinitions.IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW},
             <Command>{id: 'ide_general_save_all', description: 'Save all', defaultKeyPrintText: 'Save all', name: CommandsDefinitions.IDE_GENERAL_SAVE_ALL},
+            <Command>{id: 'IDE_GENERAL_SYNCHRONIZE', description: 'synchronize with filesystem', defaultKeyPrintText: 'synchronize', name: CommandsDefinitions.IDE_GENERAL_SYNCHRONIZE},
+            <Command>{id: 'IDE_GENERAL_HIDE_ACTIVE_TOOL', description: 'Hide active or last active tool window', defaultKeyPrintText: 'hide tool', name: CommandsDefinitions.IDE_GENERAL_HIDE_ACTIVE_VIEW},
+            <Command>{id: 'IDE_GENERAL_SELECT_CURRENT_FILE_IN_ANY_VIEW', description: 'Select current file in any view', defaultKeyPrintText: 'select in view', name: CommandsDefinitions.IDE_GENERAL_SELECT_CURRENT_FILE_IN_ANY_VIEW},
 
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
             <Command>{id: 'IDE_EDITING_SURROUND', description: 'Surround with if, try, for', defaultKeyPrintText: 'surround', name: CommandsDefinitions.IDE_EDITING_SURROUND},
@@ -129,13 +137,20 @@ export class CommandsService {
             <Command>{id: 'IDE_EDITING_SURROUND_LIVE_TEMPLATE', description: 'Surround live template', defaultKeyPrintText: 'surround template', name: CommandsDefinitions.IDE_EDITING_SURROUND_LIVE_TEMPLATE},
             <Command>{id: 'IDE_EDITING_COMMENT_OR_UNCOMMENT', description: 'Comment/uncomment with line command', defaultKeyPrintText: 'comment', name: CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT},
             <Command>{id: 'ide_editing_reformat_code', description: 'Reformat code', defaultKeyPrintText: 'reformat', name: CommandsDefinitions.IDE_EDITING_REFORMAT_CODE},
+            <Command>{id: 'IDE_EDITING_OPTIMISE_IMPORTS', description: 'Optimise imports', defaultKeyPrintText: 'optimise import', name: CommandsDefinitions.IDE_EDITING_OPTIMISE_IMPORTS},
             <Command>{id: 'IDE_EDITING_DUPLICATE_LINE', description: 'Duplicate current line or selected block', defaultKeyPrintText: 'duplicate', name: CommandsDefinitions.IDE_EDITING_DUPLICATE_LINE},
+            <Command>{id: 'IDE_EDITING_COPY_LINE', description: 'copy complete line to clipboard', defaultKeyPrintText: 'copy line', name: CommandsDefinitions.IDE_EDITING_COPY_LINE},
             <Command>{id: 'IDE_EDITING_DELETE_LINE', description: 'Delete current line', defaultKeyPrintText: 'delete line', name: CommandsDefinitions.IDE_EDITING_DELETE_LINE},
 
             <Command>{id: 'ide_editing_basic_code_completion', description: 'Basic code completion', defaultKeyPrintText: 'code complete', name: CommandsDefinitions.IDE_EDITING_BASIC_CODE_COMPLETION},
+            <Command>{id: 'ide_editing_smart_code_completion', description: 'smart code completion', defaultKeyPrintText: 'smart code complete', name: CommandsDefinitions.IDE_EDITING_SMART_CODE_COMPLETION},
+            <Command>{id: 'IDE_EDITING_COMPLETE_STATEMENT', description: 'Complete statement', defaultKeyPrintText: 'complete statement', name: CommandsDefinitions.IDE_EDITING_COMPLETE_STATEMENT},
+            <Command>{id: 'IDE_EDITING_GENERATE_CODE', description: 'Generate code', defaultKeyPrintText: 'generate code', name: CommandsDefinitions.IDE_EDITING_GENERATE_CODE},
+            <Command>{id: 'IDE_EDITING_IMPLEMENT_METHODS', description: 'Implement methods', defaultKeyPrintText: 'Implement methods', name: CommandsDefinitions.IDE_EDITING_IMPLEMENT_METHODS},
             <Command>{id: 'ide_editing_show_intention_action_quick_fixes', description: 'Show intention action and quick-fixes', defaultKeyPrintText: 'quick fixes', name: CommandsDefinitions.IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES},
             <Command>{id: 'ide_editing_parameter_info', description: 'Parameter info (within method call argument)', defaultKeyPrintText: 'parameter info', name: CommandsDefinitions.IDE_EDITING_PARAMETER_INFO},
             <Command>{id: 'ide_editing_quick_documentation_lookup', description: 'Quick documentation lookup', defaultKeyPrintText: 'docu lookup', name: CommandsDefinitions.IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP},
+            <Command>{id: 'IDE_EDITING_OPEN_EXTERNAL_DOCUMENTATION', description: 'External documentation lookup', defaultKeyPrintText: 'external docu', name: CommandsDefinitions.IDE_EDITING_OPEN_EXTERNAL_DOCUMENTATION},
             <Command>{id: 'ide_editing_show_description_error_or_warning_at_carret', description: 'Show description or error or warning at caret', defaultKeyPrintText: 'error description', name: CommandsDefinitions.IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET},
             <Command>{id: 'ide_editing_comment_with_block', description: 'Comment/ uncomment with block comment', defaultKeyPrintText: 'comment block', name: CommandsDefinitions.IDE_EDITING_COMMENT_WITH_BLOCK},
             <Command>{id: 'ide_editing_select_successivly', description: 'Select successively increasing code blocks', defaultKeyPrintText: 'increase select', name: CommandsDefinitions.IDE_EDITING_SELECT_SUCCESSIVLY},
@@ -148,6 +163,7 @@ export class CommandsService {
             <Command>{id: 'ide_editing_move_line_up', description: 'Move line up', defaultKeyPrintText: 'line up', name: CommandsDefinitions.IDE_EDITING_MOVE_LINE_UP},
             <Command>{id: 'ide_editing_move_line_down', description: 'Move line down', defaultKeyPrintText: 'line down', name: CommandsDefinitions.IDE_EDITING_MOVE_LINE_DOWN},
             <Command>{id: 'ide_editing_join_lines', description: 'Join lines', defaultKeyPrintText: 'line join', name: CommandsDefinitions.IDE_EDITING_JOIN_LINES},
+            <Command>{id: 'ide_editing_split_lines', description: 'Split line', defaultKeyPrintText: 'line split', name: CommandsDefinitions.IDE_EDITING_SPLIT_LINES},
             <Command>{id: 'ide_editing_split_lines', description: 'Split line', defaultKeyPrintText: 'line split', name: CommandsDefinitions.IDE_EDITING_SPLIT_LINES},
             <Command>{id: 'ide_editing_start_new_lines', description: 'Start new line', defaultKeyPrintText: 'new line', name: CommandsDefinitions.IDE_EDITING_START_NEW_LINES},
             <Command>{id: 'ide_editing_toggle_case_word', description: 'Toggle case for word at caret or selection', defaultKeyPrintText: 'toggle word case', name: CommandsDefinitions.IDE_EDITING_TOGGLE_CASE_WORD},
@@ -172,6 +188,7 @@ export class CommandsService {
             <Command>{id: 'ide_runningrun_context_configuration_from_editor',description: 'Run context configuration from editor', defaultKeyPrintText: 'run context', name: CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR},
             <Command>{id: 'ide_running_rerun__tests',description: 'Rerun tests', defaultKeyPrintText: 'rerun tests', name: CommandsDefinitions.IDE_RUNNING_RERUN__TESTS},
             <Command>{id: 'ide_running_run_gulp_npm_grunt',description: 'Run Gulp7Grun/npm tasks', defaultKeyPrintText: 'run npm', name: CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT},
+            <Command>{id: 'IDE_RUNNING_BUILD_PROJECT',description: 'Build project', defaultKeyPrintText: 'build project', name: CommandsDefinitions.IDE_RUNNING_BUILD_PROJECT},
 
             <Command>{id: 'column_selection_mode',description: 'Toggle column selection mode', defaultKeyPrintText: 'toggle column selection mode', name: CommandsDefinitions.COLUMN_SELECTION_MODE},
             <Command>{id: 'breakpoints_toggle_on_off',description: 'Toggle mute breakpoints', defaultKeyPrintText: 'toggle mute breakpoints',      name: CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF},

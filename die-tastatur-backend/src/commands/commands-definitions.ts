@@ -3,6 +3,10 @@ export enum CommandsDefinitions {
     // Empty command, allows explicitly to define empty keys
     EMPTY_COMMAND = 'empty',
 
+    // WINDOW Manager available in early all applications
+    GENERAL_CUT = 'GENERAL_CUT',
+
+
     // IDE Commands
     JUMP_TO_PROJECT_VIEW = 'project_view',
     JUMP_TO_GIT_VIEW = 'git_view',
@@ -46,11 +50,12 @@ export enum CommandsDefinitions {
     IDE_NAVIGATION_MOVE_CARET_MATCHING_BRACE = 'ide_navigation_move_caret_matching_brace',
     IDE_NAVIGATION_FILE_STRUCTURE_PIOPUP = 'ide_navigation_file_structure_piopup',
     IDE_NAVIGATION_TYPE_HIERACHIY = 'ide_navigation_type_hierachiy',
+    IDE_NAVIGATION_METHOD_HIERACHIY = 'IDE_NAVIGATION_METHOD_HIERACHIY',
     IDE_NAVIGATION_CALL_HIERACHY = 'ide_navigation_call_hierachy',
     IDE_NAVIGATION_NEXT_HIGHLIGHTED_ERROR = 'ide_navigation_next_highlighted_error',
     IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR = 'ide_navigation_previous_highlighted_error',
     IDE_NAVIGATION_JUMP_TO_SOURCE = 'ide_navigation_jump_to_source',
-    IDE_NAVIGATION__JUMP_TO_NAVIGATION_BAR = 'ide_navigation__jump_to_navigation_bar',
+    IDE_NAVIGATION_JUMP_TO_NAVIGATION_BAR = 'ide_navigation__jump_to_navigation_bar',
     IDE_NAVIGATION_TOGGLE_BOOOMARK = 'IDE_NAVIGATION_TOGGLE_BOOOMARK',
     IDE_NAVIGATION_TOGGLE_BOOKMARK_WITH_MNEMOCONIC = 'ide_navigation_toggle_bookmark_with_mnemoconic',
     IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_0 = 'ide_navigation_goto_numbered_bookmark_0',
@@ -113,6 +118,10 @@ export enum CommandsDefinitions {
     IDE_GENERAL_OPEN_PREFERENCES = 'ide_general_open_preferences',
     IDE_GENERAL_SWITCH_BETWEEN_TAB_AND_TOOL_WINDOW = 'ide_general_switch_between_tab_and_tool_window',
     IDE_GENERAL_SAVE_ALL = 'IDE_GENERAL_SAVE_ALL',
+    IDE_GENERAL_SYNCHRONIZE = 'IDE_GENERAL_SYNCHRONIZE',
+    IDE_GENERAL_OPEN_PROJECT_STRUCTURE = 'IDE_GENERAL_OPEN_PROJECT_STRUCTURE',
+    IDE_GENERAL_HIDE_ACTIVE_VIEW = 'IDE_GENERAL_HIDE_ACTIVE_VIEW',
+    IDE_GENERAL_SELECT_CURRENT_FILE_IN_ANY_VIEW = 'IDE_GENERAL_SELECT_CURRENT_FILE_IN_ANY_VIEW',
 
     IDE_EDITING_GENERATE = 'ide_editing_generate',
     IDE_EDITING_SURROUND = 'ide_editing_surround',
@@ -120,12 +129,19 @@ export enum CommandsDefinitions {
     IDE_EDITING_SURROUND_LIVE_TEMPLATE = 'IDE_EDITING_SURROUND_LIVE_TEMPLATE',
     IDE_EDITING_COMMENT_OR_UNCOMMENT = 'ide_editing_comment_or_uncomment',
     IDE_EDITING_REFORMAT_CODE = 'ide_editing_reformat_code',
+    IDE_EDITING_OPTIMISE_IMPORTS = 'IDE_EDITING_OPTIMISE_IMPORTS',
     IDE_EDITING_DUPLICATE_LINE = 'ide_editing_duplicate_line',
+    IDE_EDITING_COPY_LINE = 'IDE_EDITING_COPY_LINE',
     IDE_EDITING_DELETE_LINE = 'ide_editing_delete_line',
     IDE_EDITING_BASIC_CODE_COMPLETION = 'IDE_EDITING_BASIC_CODE_COMPLETION',
+    IDE_EDITING_SMART_CODE_COMPLETION = 'IDE_EDITING_SMART_CODE_COMPLETION',
+    IDE_EDITING_COMPLETE_STATEMENT = 'IDE_EDITING_COMPLETE_STATEMENT',
+    IDE_EDITING_GENERATE_CODE = 'IDE_EDITING_GENERATE_CODE',
+    IDE_EDITING_IMPLEMENT_METHODS = 'IDE_EDITING_IMPLEMENT_METHODS',
     IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES = 'ide_editing_show_intention_action_quick_fixes',
     IDE_EDITING_PARAMETER_INFO = 'ide_editing_parameter_info',
     IDE_EDITING_QUICK_DOCUMENTATION_LOOKUP = 'ide_editing_quick_documentation_lookup',
+    IDE_EDITING_OPEN_EXTERNAL_DOCUMENTATION = 'IDE_EDITING_OPEN_EXTERNAL_DOCUMENTATION',
     IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET = 'ide_editing_show_description_error_or_warning_at_carret',
     IDE_EDITING_COMMENT_WITH_BLOCK = 'ide_editing_comment_with_block',
     IDE_EDITING_SELECT_SUCCESSIVLY = 'ide_editing_select_successivly',
@@ -164,6 +180,7 @@ export enum CommandsDefinitions {
     IDE_RUNNINGRUN_RUN_ANYTHING = 'IDE_RUNNINGRUN_RUN_ANYTHING',
     IDE_RUNNING_RERUN__TESTS = 'ide_running_rerun__tests',
     IDE_RUNNING_RUN_GULP_NPM_GRUNT = 'ide_running_run_gulp_npm_grunt',
+    IDE_RUNNING_BUILD_PROJECT = 'IDE_RUNNING_BUILD_PROJECT',
 
     COLUMN_SELECTION_MODE = 'column_selection_mode',
 
