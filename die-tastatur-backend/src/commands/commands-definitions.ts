@@ -89,6 +89,8 @@ export enum CommandsDefinitions {
 
     IDE_VCS_QUICK_POPUP = 'ide_vcs_quick_popup',
     IDE_VCS_COMMIT_TO_VCS = 'ide_vcs_commit_to_vcs',
+    IDE_VCS_UPDATE_TO_VCS = 'IDE_VCS_UPDATE_TO_VCS',
+    IDE_VCS_PUSH_TO_VCS = 'IDE_VCS_PUSH_TO_VCS',
     IDE_VCS_UPDATE_PROJECCT_FROM_VCS = 'ide_vcs_update_projecct_from_vcs',
     IDE_VCS_VIEW_RECENT_CHANGES = 'ide_vcs_view_recent_changes',
 
@@ -115,6 +117,7 @@ export enum CommandsDefinitions {
     IDE_EDITING_GENERATE = 'ide_editing_generate',
     IDE_EDITING_SURROUND = 'ide_editing_surround',
     IDE_EDITING_INSERT_LIVE_TEMPLATE = 'ide_insert_live_template',
+    IDE_EDITING_SURROUND_LIVE_TEMPLATE = 'IDE_EDITING_SURROUND_LIVE_TEMPLATE',
     IDE_EDITING_COMMENT_OR_UNCOMMENT = 'ide_editing_comment_or_uncomment',
     IDE_EDITING_REFORMAT_CODE = 'ide_editing_reformat_code',
     IDE_EDITING_DUPLICATE_LINE = 'ide_editing_duplicate_line',
@@ -158,6 +161,7 @@ export enum CommandsDefinitions {
     IDE_RUNNING_RUN = 'ide_running_run',
     IDE_RUNNING_DEBUG = 'ide_running_debug',
     IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR = 'ide_runningrun_context_configuration_from_editor',
+    IDE_RUNNINGRUN_RUN_ANYTHING = 'IDE_RUNNINGRUN_RUN_ANYTHING',
     IDE_RUNNING_RERUN__TESTS = 'ide_running_rerun__tests',
     IDE_RUNNING_RUN_GULP_NPM_GRUNT = 'ide_running_run_gulp_npm_grunt',
 

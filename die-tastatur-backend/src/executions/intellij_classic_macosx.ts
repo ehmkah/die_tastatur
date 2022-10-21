@@ -156,33 +156,17 @@ export function intellijClassicMaxosxExecutions(executionService: ExecutionsServ
         new InternalExecution(CommandsDefinitions.IDE_RUNNING_RUN, `{${SpecialKeys.SHIFT} + ${SpecialKeys.F10} }`),
         new InternalExecution(CommandsDefinitions.IDE_RUNNING_DEBUG, `{${SpecialKeys.SHIFT} +  ${SpecialKeys.F9}}`),
         new InternalExecution(CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR, `{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F10}}}`),
-//new InternalExecution(CommandsDefinitions.Run anything,`Run anything`)
-//new InternalExecution(CommandsDefinitions.${SpecialKeys.CTRL} ${SpecialKeys.CTRL},`${SpecialKeys.CTRL} ${SpecialKeys.CTRL}`),
-//new InternalExecution(CommandsDefinitions.,``)
+        new InternalExecution(CommandsDefinitions.IDE_RUNNINGRUN_RUN_ANYTHING, `${SpecialKeys.CTRL} ${SpecialKeys.CTRL}`),
         new InternalExecution(CommandsDefinitions.IDE_USAGE_SEARCH_FIND_USAGE, `{${SpecialKeys.ALT} + ${SpecialKeys.F7} }`),
         new InternalExecution(CommandsDefinitions.IDE_USAGE_SEARCH_FIND_USAGE_IN_FILE, `{${SpecialKeys.CTRL} + ${SpecialKeys.F7}}`),
         new InternalExecution(CommandsDefinitions.IDE_USAGE_SEARCH_HIGHLIGHT_USAGE_IN_FILE, `{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + ${SpecialKeys.F7}}}`),
         new InternalExecution(CommandsDefinitions.IDE_USAGE_SEARCH_SHOW_USAGE, `{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + ${SpecialKeys.F7}}}`),
-//new InternalExecution(CommandsDefinitions.Commit project to VCS,`Commit project to VCS`)
-//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + K   },`{${SpecialKeys.CTRL} + K   }`),
-//new InternalExecution(CommandsDefinitions.,``)
-//new InternalExecution(CommandsDefinitions.Update project from VCS,`Update project from VCS`)
-//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + T},`{${SpecialKeys.CTRL} + T}`),
-//new InternalExecution(CommandsDefinitions.,``)
-//new InternalExecution(CommandsDefinitions.Push commits,`Push commits`)
-//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + K}},`{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + K}}`),
-//new InternalExecution(CommandsDefinitions.,``)
-//new InternalExecution(CommandsDefinitions.‘VCS’ quick popup,`‘VCS’ quick popup`)
-//new InternalExecution(CommandsDefinitions.{${SpecialKeys.ALT}+BackQuote (`)  },`{${SpecialKeys.ALT}+BackQuote (`)  }`),
-//new InternalExecution(CommandsDefinitions.,``)
-//new InternalExecution(CommandsDefinitions.LIVE TEMPLATES,`LIVE TEMPLATES`)
-//new InternalExecution(CommandsDefinitions.,``)
-//new InternalExecution(CommandsDefinitions.Surround with Live Template,`Surround with Live Template`)
-//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + J } },`{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + J } }`),
-//new InternalExecution(CommandsDefinitions.,``)
-//new InternalExecution(CommandsDefinitions.Insert Live Template,`Insert Live Template`)
-//new InternalExecution(CommandsDefinitions.{${SpecialKeys.CTRL} +     },`{${SpecialKeys.CTRL} +     }`),
-//new InternalExecution(CommandsDefinitions.,``)
+        new InternalExecution(CommandsDefinitions.IDE_VCS_COMMIT_TO_VCS, `{${SpecialKeys.CTRL} + k}`),
+        new InternalExecution(CommandsDefinitions.IDE_VCS_UPDATE_TO_VCS, `{${SpecialKeys.CTRL} + t}`),
+        new InternalExecution(CommandsDefinitions.IDE_VCS_PUSH_TO_VCS, `{${SpecialKeys.CTRL} + {${SpecialKeys.SHIFT} + k}}`),
+        new InternalExecution(CommandsDefinitions.IDE_VCS_QUICK_POPUP, `{${SpecialKeys.ALT}+BackQuote (}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SURROUND_LIVE_TEMPLATE, `{${SpecialKeys.CTRL} + {${SpecialKeys.ALT} + J } }`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE, `{${SpecialKeys.CTRL} +     }`),
 //new InternalExecution(CommandsDefinitions.neue Commandos,`neue Commandos`)
 //new InternalExecution(CommandsDefinitions.,``)
 //new InternalExecution(CommandsDefinitions.Synchronize,`Synchronize`)
