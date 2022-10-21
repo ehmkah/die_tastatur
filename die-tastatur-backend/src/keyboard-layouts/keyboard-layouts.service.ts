@@ -67,10 +67,9 @@ export class KeyboardLayoutsService {
             xCounter = xCounter + 1;
             if (xCounter == X_SIZE) {
                 xCounter = 0;
-                if (yCounter == Y_SIZE - 1) {
+                yCounter = yCounter + 1;
+                if (yCounter == Y_SIZE) {
                     yCounter = 0;
-                } else {
-                    yCounter = yCounter + 1;
                 }
             }
 
