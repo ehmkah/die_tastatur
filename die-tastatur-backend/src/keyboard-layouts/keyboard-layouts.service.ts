@@ -52,10 +52,8 @@ export class KeyboardLayoutsService {
         const NUMBER_OF_KEYS = X_SIZE * Y_SIZE;
         const requiredTestboards = executions.length / NUMBER_OF_KEYS;
         for (let i = 0; i < requiredTestboards; i++) {
-            let keyboardLayout = <KeyboardLayout>{
-                id: `testkeyboardlayout${i}.${executions[0].keyset.name}`,
-                keys: new Array(Y_SIZE)
-            };
+            let keyboardLayout = emptyKeyboardLayout(keyboard, this);
+            keyboardLayout.id = `testkeyboardlayout${i}.${executions[0].keyset.name}`;
             result.push(keyboardLayout);
         }
 
@@ -64,9 +62,6 @@ export class KeyboardLayoutsService {
         let xCounter = 0;
         for (const execution of executions) {
             const keyboardId = Math.floor(keyCounter / NUMBER_OF_KEYS);
-            if (xCounter == 0) {
-                result[keyboardId].keys[yCounter] = new Array(X_SIZE);
-            }
             result[keyboardId].keys[yCounter][xCounter] = this.createKeyDetails(`${yCounter}{${xCounter}`, execution.command.name, execution.keyset.name);
 
             xCounter = xCounter + 1;

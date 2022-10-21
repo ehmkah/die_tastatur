@@ -41,6 +41,7 @@ describe('KeyboardLayoutsService', () => {
     expect(actual[0].keys[7][15].execution.command.name).toEqual('ide_usage_search_find_usage_in_file');
     expect(actual[1].id).toEqual("testkeyboardlayout1.Intellij classic Linux");
     expect(actual[1].keys[0][0].execution.command.name).toEqual('ide_usage_search_highlight_usage_in_file');
+    expect(actual[1].keys[7][15].execution.command.name).toEqual('empty');
   });
 
 });
