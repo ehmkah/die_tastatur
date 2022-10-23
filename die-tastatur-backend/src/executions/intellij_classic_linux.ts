@@ -151,7 +151,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_RUN, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+${SpecialKeys.F10}}}`),
         new InternalExecution(CommandsDefinitions.IDE_RUNNING_SELECT_CONFIGURATION_AND_DEBUG, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+${SpecialKeys.F9}}}`),
         new InternalExecution(CommandsDefinitions.IDE_RUNNING_RUN, `{${SpecialKeys.SHIFT}+${SpecialKeys.F10}}`),
-        new InternalExecution(CommandsDefinitions.IDE_RUNNING_DEBUG, `{${SpecialKeys.SHIFT}+ ${SpecialKeys.F9}}`),
+        new InternalExecution(CommandsDefinitions.IDE_RUNNING_DEBUG, `{${SpecialKeys.SHIFT}+${SpecialKeys.F9}}`),
         new InternalExecution(CommandsDefinitions.IDE_RUNNINGRUN_CONTEXT_CONFIGURATION_FROM_EDITOR, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.F10}}}`),
         new InternalExecution(CommandsDefinitions.IDE_RUNNINGRUN_RUN_ANYTHING, `${SpecialKeys.CTRL} ${SpecialKeys.CTRL}`),
         new InternalExecution(CommandsDefinitions.IDE_USAGE_SEARCH_FIND_USAGE, `{${SpecialKeys.ALT}+${SpecialKeys.F7}}`),
