@@ -1,0 +1,326 @@
+TYPE MC128
+MEMORY 8000
+VERSION  CYPRESS  WINPROG 2.5.3.5
+INTERFACE AT
+SOUND 33,40,100,400
+RATE 10,500,FAST
+LANGUAGE GR,C
+HOTKEY0 : "{EMPTY}"
+HOTKEY1 : "{EMPTY}"
+MODE -BCR-FCR+BA1
+MSR M3, : ""
+!@KEYCAP:12.00
+!@KEYBOARDTYPESTRING:MCI 128
+!@KEYGLOBALPRINT:1.00;0.20;0.00;4.80;  FFFFFF;       0;190;0;0;0;0;Arial
+!@KEYBOARDSIZE:364.00;207.00
+!@KEYPRINT:A01 "goto bookmark 4";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A02 "goto bookmark 5";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A03 "goto bookmark 6";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A04 "goto bookmark 7";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A05 "goto bookmark 8";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A06 "goto bookmark 9";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A07 "show bookmark";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A08 "build project";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A09 "select run";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A10 "select debug";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A11 "run";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A12 "debug";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A13 "run context";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A14 "Run anything";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A15 "Find usage";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:A16 "Find usage in file";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B01 "goto supermethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B02 "goto next method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B03 "goto previous method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B04 "mv code end";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B05 "mv code start";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B06 "filestructure";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B07 "type hierachy";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B08 "call hierachy";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B09 "next error";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B10 "previous error";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B11 "toggle bookmark";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B12 "toggle bookmark mnemoic";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B13 "goto bookmark 0";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B14 "goto bookmark 1";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B15 "goto bookmark 2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:B16 "goto bookmark 3";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C01 "Extract parameter";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C02 "goto\\lineclass";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C03 "goto\\linefile";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C04 "goto\\linesymbol";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C05 "next tab";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C06 "previous tab";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C07 "previous tool window";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C08 "goto editor";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C09 "goto line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C10 "recent files";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C11 "navigate back";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C12 "navigate forward";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C13 "navigate last edit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C14 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C15 "goto\\linefile";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C16 "quick definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D01 "expand code block";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D02 "collapse code block";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D03 "expand all";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D04 "collapse all";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D05 "close tab";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D06 "Refactor Copy";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D07 "Refactor move";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D08 "Refactor safe delete";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D09 "Rename";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D10 "Refactor this";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D11 "Change function signature";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D12 "Inline variable";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D13 "Extract method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D14 "Extract variable";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D15 "Extract field";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:D16 "extract constant";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E01 "comment";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E02 "comment block";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E03 "context info";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E04 "quick fixes";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E05 "reformat";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E06 "auto indent";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E07 "indent line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E08 "unindent line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E09 "paste from buffers";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E10 "duplicate";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E11 "new line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E12 "toggle word case";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E13 "select code end";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E14 "select code start";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E15 "delete word end";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:E16 "delete word start";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F01 "view breakpoints";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F02 "Search everywhere";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F03 "Find";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F04 "Find next";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F05 "Find previous";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F06 "Replace";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F07 "Find in path";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F08 "Replace in path";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F09 "select next occurence";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F10 "select all occurences";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F11 "unselect occurence";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F12 "code complete";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F13 "parameter info";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F14 "docu lookup";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F15 "error description";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F16 "surround";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G01 "toolwindow 8";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G02 "toolwindow 9";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "Save all";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "Max editor";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G05 "Inspect file";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "Change scheme";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G07 "Open settings";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "Find Action";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 "step-over";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G10 "step-into";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G11 "stepinto smart";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G12 "step-out";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G13 "runto cursor";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G14 "evaluate";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G15 "resume";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G16 "toggle\\linebreakpoint";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H01 "Find";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H02 "Search everywhere";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H03 "quick fixes";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H04 "generate";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H05 "parameter info";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H06 "increase select";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H07 "decrease select";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H08 "Rename";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H09 "toolwindow 0";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H10 "toolwindow 1";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H11 "toolwindow 2";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H12 "toolwindow 3";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H13 "toolwindow 4";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H14 "toolwindow 5";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H15 "toolwindow 6";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H16 "toolwindow 7";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYLAYER:AlwaysActive,AAAA,11
+A01/P: "{CTRL+4}"
+A02/P: "{CTRL+5}"
+A03/P: "{CTRL+6}"
+A04/P: "{CTRL+7}"
+A05/P: "{CTRL+8}"
+A06/P: "{CTRL+9}"
+A07/P: "{SHIFT+{F11}}"
+A08/P: "{CTRL+{F9}}"
+A09/P: "{ALT+{SHIFT+{F10}}}"
+A10/P: "{ALT+{SHIFT+{F9}}}"
+A11/P: "{SHIFT+{F10}}"
+A12/P: "{SHIFT+ {F9}}"
+A13/P: "{CTRL+{SHIFT+{F10}}}"
+A14/P: "CTRL CTRL"
+A15/P: "{ALT+{F7}}"
+A16/P: "{CTRL+{F7}}"
+B01/P: "{CTRL+u}"
+B02/P: "{ALT+{UP}}"
+B03/P: "{ALT+{DOWN}}"
+B04/P: "{CTRL+]}"
+B05/P: "{CTRL+[}"
+B06/P: "{CTRL+{F12}}"
+B07/P: "{CTRL+h}"
+B08/P: "{CTRL+{ALT+h}}"
+B09/P: "{{F2}}"
+B10/P: "{SHIFT+{F2}}"
+B11/P: "{F11}"
+B12/P: "{CTRL+{F11}}"
+B13/P: "{CTRL+0}"
+B14/P: "{CTRL+1}"
+B15/P: "{CTRL+2}"
+B16/P: "{CTRL+3}"
+C01/P: "{CTRL+{ALT+p}}"
+C02/P: "{CTRL+n}"
+C03/P: "{CTRL+{SHIFT+n}}"
+C04/P: "{CTRL+{SHIFT+{ALT+n}}}"
+C05/P: "{ALT+{RIGHT}}"
+C06/P: "{ALT+{LEFT}}"
+C07/P: "{F12}"
+C08/P: "{ESC}"
+C09/P: "{CTRL+g}"
+C10/P: "{CTRL+e}"
+C11/P: "{CTRL+{SHIFT+{{LEFT}}}}"
+C12/P: "{CTRL+{SHIFT+{{RIGHT}}}}"
+C13/P: "{CTRL+{SHIFT+{{BACKSPACE}}}}"
+C14/P: "{CTRL+b}"
+C15/P: "{CTRL+{SHIFT+n}}"
+C16/P: "{CTRL+{SHIFT+i}}"
+D01/P: "{CTRL+{PLUS}}"
+D02/P: "{CTRL+{MINUS}}"
+D03/P: "{CTRL+{SHIFT+{PLUS}}}"
+D04/P: "{CTRL+{SHIFT+{MINUS}}}"
+D05/P: "{CTRL+{F4}}"
+D06/P: "{F5}"
+D07/P: "{F6}"
+D08/P: "{ALT+{DEL}}"
+D09/P: "{SHIFT+{F6}}"
+D10/P: "{CTRL+{ALT+{SHIFT+t}}}"
+D11/P: "{CTRL+{F6}}"
+D12/P: "{CTRL+{ALT+n}}"
+D13/P: "{CTRL+{ALT+m}}"
+D14/P: "{CTRL+{ALT+v}}"
+D15/P: "{CTRL+{ALT+f}}"
+D16/P: "{CTRL+{ALT+c}}"
+E01/P: "{CTRL+{DIV}}"
+E02/P: "{CTRL+{SHIFT+{DIV}}}"
+E03/P: "{ALT+q}"
+E04/P: "{ALT+RETURN}"
+E05/P: "{ALT+{CTRL+l}}"
+E06/P: "{ALT+{CTRL+i}}"
+E07/P: "{TAB}"
+E08/P: "{SHIFT+{TAB}}"
+E09/P: "{CTRL+{SHIFT+v}}"
+E10/P: "{CTRL+d}"
+E11/P: "{SHIFT+RETURN}"
+E12/P: "{CTRL+{SHIFT+u}}"
+E13/P: "{CTRL+{SHIFT+]}}"
+E14/P: "{CTRL+{SHIFT+[}}"
+E15/P: "{CTRL+{DEL}}"
+E16/P: "{CTRL+{BACKSPACE}}"
+F01/P: "{CTRL+{SHIFT+{F8}}}"
+F02/P: "SHIFTSHIFT"
+F03/P: "{LWIN+f}"
+F04/P: "{F3}"
+F05/P: "{SHIFT+{F3}}"
+F06/P: "{CTRL+r}"
+F07/P: "{CTRL+{SHIFT+f}}"
+F08/P: "{CTRL+{SHIFT+r}}"
+F09/P: "{ALT+j}"
+F10/P: "{ALT+{CTRL+{SHIFT+j}}}"
+F11/P: "{ALT+{SHIFT++j}}"
+F12/P: "{CTRL+SPACE}"
+F13/P: "{CTRL+p}"
+F14/P: "{CTRL+q}"
+F15/P: "{CTRL+{F1}}"
+F16/P: "{CTRL+{ALT+t}}"
+G01/P: "{ALT+8}"
+G02/P: "{ALT+9}"
+G03/P: "{CTRL+S}"
+G04/P: "{CTRL+{SHIFT+{F12}}}"
+G05/P: "{ALT+{SHIFT+i}}"
+G06/P: "{CTRL+`}"
+G07/P: "{CTRL+{ALT+s}}"
+G08/P: "{CTRL+{SHIFT+a}}"
+G09/P: "{F8}"
+G10/P: "{F7}"
+G11/P: "{SHIFT+{F7}}"
+G12/P: "{SHIFT+{F8}}"
+G13/P: "{ALT+{F9}}"
+G14/P: "{ALT+{F8}}"
+G15/P: "{F9}"
+G16/P: "{CTRL+{F8}}"
+H01/P: "{LWIN+f}"
+H02/P: "SHIFTSHIFT"
+H03/P: "{ALT+RETURN}"
+H04/P: "{ALT+INS}"
+H05/P: "{CTRL+p}"
+H06/P: "{CTRL+w}"
+H07/P: "{CTRL+{SHIFT+w}}"
+H08/P: "{SHIFT+{F6}}"
+H09/P: "{ALT+0}"
+H10/P: "{ALT+1}"
+H11/P: "{ALT+2}"
+H12/P: "{ALT+3}"
+H13/P: "{ALT+4}"
+H14/P: "{ALT+5}"
+H15/P: "{ALT+6}"
+H16/P: "{ALT+7}"
+!@KEYATTRIB:A12 00000A11
+!@KEYATTRIB:A16 00000A10
+!@KEYATTRIB:B01 00000A10
+!@KEYATTRIB:B02 00000A10
+!@KEYATTRIB:B03 00000A10
+!@KEYATTRIB:B04 00000A10
+!@KEYATTRIB:C01 00000A10
+!@KEYATTRIB:C02 00000A10
+!@KEYATTRIB:C03 00000A10
+!@KEYATTRIB:C08 00000A10
+!@KEYATTRIB:C09 00000A10
+!@KEYATTRIB:C10 00000A10
+!@KEYATTRIB:C15 00000A10
+!@KEYATTRIB:C16 00000A10
+!@KEYATTRIB:D01 00000A10
+!@KEYATTRIB:D02 00000A10
+!@KEYATTRIB:D03 00000A10
+!@KEYATTRIB:D04 00000A10
+!@KEYATTRIB:E01 00000A10
+!@KEYATTRIB:F03 00000A10
+!@KEYATTRIB:F04 00000A10
+!@KEYATTRIB:F05 00000A10
+!@KEYATTRIB:F06 00000A10
+!@KEYATTRIB:F07 00000A10
+!@KEYATTRIB:G01 00000A10
+!@KEYATTRIB:G02 00000A10
+!@KEYATTRIB:G03 00000A10
+!@KEYATTRIB:G04 00000A10
+!@KEYATTRIB:G05 00000A10
+!@KEYATTRIB:G06 00000A10
+!@KEYATTRIB:G07 00000A10
+!@KEYATTRIB:G08 00000A10
+!@KEYATTRIB:G09 00000A10
+!@KEYATTRIB:G10 00000A10
+!@KEYATTRIB:G11 00000A10
+!@KEYATTRIB:G12 00000A10
+!@KEYATTRIB:G13 00000A10
+!@KEYATTRIB:G14 00000A10
+!@KEYATTRIB:H01 00000A10
+!@KEYATTRIB:H02 00000A10
+!@KEYATTRIB:H03 00000A10
+!@KEYATTRIB:H04 00000A10
+!@KEYATTRIB:H05 00000A10
+!@KEYATTRIB:H06 00000A10
+!@KEYATTRIB:H07 00000A10
+!@KEYATTRIB:H08 00000A10
+!@KEYATTRIB:H09 00000A10
+!@KEYATTRIB:H14 00000A10
+!@KEYATTRIB:H15 00000A10
+!@KEYLAYER:Normal-Layer,8A80,10
+!@KEYLAYER:Shift-Layer,8A81,10
+!@KEYLAYER:Control-Layer,8A86,10
+!@KEYLAYER:StdKey-Layer,6AAA,514
+!@KEYLAYER:Fn-Layer,9AAA,11
