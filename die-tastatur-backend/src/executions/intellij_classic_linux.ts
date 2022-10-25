@@ -157,7 +157,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_VCS_COMMIT_TO_VCS, `{${SpecialKeys.CTRL}+k}`),
         new InternalExecution(CommandsDefinitions.IDE_VCS_UPDATE_TO_VCS, `{${SpecialKeys.CTRL}+t}`),
         new InternalExecution(CommandsDefinitions.IDE_VCS_PUSH_TO_VCS, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+k}}`),
-        new InternalExecution(CommandsDefinitions.IDE_VCS_QUICK_POPUP, `{${SpecialKeys.ALT}+BackQuote (}`),
+        new InternalExecution(CommandsDefinitions.IDE_VCS_QUICK_POPUP, `{${SpecialKeys.ALT}+\`}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_SURROUND_LIVE_TEMPLATE, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+j}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_INSERT_LIVE_TEMPLATE, `{${SpecialKeys.CTRL}+}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_SYNCHRONIZE, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+y}}`),
