@@ -28,7 +28,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
     let keyset = keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_LINUX);
 
     const executions = [
-        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, `{${SpecialKeys.LWIN}+f}`),
+        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, `{${SpecialKeys.CTRL}+f}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_SEARCH_EVERYWHERE, `${SpecialKeys.SHIFT}${SpecialKeys.SHIFT}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_SHOW_INTENTION_ACTION_QUICK_FIXES, `{${SpecialKeys.ALT}+${SpecialKeys.RETURN}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_GENERATE, `{${SpecialKeys.ALT}+${SpecialKeys.INS}}`),
@@ -60,7 +60,6 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_RESUME, `${SpecialKeys.F9}`),
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, `{${SpecialKeys.CTRL}+${SpecialKeys.F8}}`),
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.F8}}}`),
-        new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, `{${SpecialKeys.CTRL}+f}`),
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_NEXT, `${SpecialKeys.F3}`),
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_PREVIOUS, `{${SpecialKeys.SHIFT}+${SpecialKeys.F3}}`),
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE, `{${SpecialKeys.CTRL}+r}`),
@@ -115,8 +114,8 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GO_TO_EDITOR, `${SpecialKeys.ESCAPE}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GO_TO_LINE, `{${SpecialKeys.CTRL}+g}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_RECENT_FILES_POPUP, `{${SpecialKeys.CTRL}+e}`),
-        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_BACK, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.CURSOR_LEFT}}}}`),
-        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_FORWARD, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.CURSOR_RIGHT}}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_BACK, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+{${SpecialKeys.CURSOR_LEFT}}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_FORWARD, `{${SpecialKeys.CTRL}+{${SpecialKeys.ALT}+${SpecialKeys.CURSOR_RIGHT}}}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_TO_LAST_EDIT_LOCATION, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+{${SpecialKeys.BACKSPACE}}}}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION, `{${SpecialKeys.CTRL}+b}`),
         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_OPEN_QUICK_DEFINITION_LOOKUP, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+i}}`),
