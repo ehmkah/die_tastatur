@@ -57,7 +57,6 @@ export class KeyboardLayoutsController {
             result = result + "<div/>";
             for (const key of row) {
                 result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
-                console.log(key.execution);
             }
             result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${letters[rowCounter]}</span>`
             rowCounter++;

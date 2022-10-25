@@ -15,6 +15,7 @@ import {intellijClassicLinuxExecutions} from "../executions/intellij_classic_lin
 import {Key} from "readline";
 import {KeysetsService} from "../keysets/keysets.service";
 import {webstormDefaultMaxosxExecutions} from "../executions/webstorm_classic_macosx";
+import {linuxIntellijDeveloperLayout} from "./linux-intellij-developer";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -28,6 +29,7 @@ export class KeyboardLayoutsService {
             macosxDefaultDevKeyboardLayout(keyboards[0], this),
             macosxWebstormKeyboardTestExecutionLayout(keyboards[0], this),
             macosxWebstormDeveloperLayout(keyboards[0], this),
+            linuxIntellijDeveloperLayout(keyboards[0], this),
             emptyKeyboardLayout(keyboards[0], this)
         ].
         concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0])).
