@@ -109,38 +109,38 @@ MSR M3, : ""
 !@KEYPRINT:F14 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F15 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F16 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G01 "copy line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G02 "delete line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G03 "line join";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G04 "line split";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G05 "hide tool";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G06 "select in view";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G07 "type definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G08 "method hierachy";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G09 "jump to source";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G10 "jump nav bar";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G01 "hide tool";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G02 "select in view";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G03 "type definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G04 "method hierachy";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G05 "jump to source";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "jump nav bar";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G07 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G08 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G09 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G10 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G11 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G12 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G13 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G14 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G15 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G16 "..........\\line..........";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H01 "Highlight usage in file";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H02 "show usage";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H03 "Commit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H04 "VCS update";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H05 "VCS push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H06 "VCS popup";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H07 "surround template";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H08 "live template";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H09 "synchronize";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H10 "project structure";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H11 "smart code complete";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H12 "complete statement";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H13 "external docu";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H14 "generate code";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H15 "Implement methods";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:H16 "optimise import";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H01 "VCS push";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H02 "VCS popup";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H03 "surround template";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H04 "live template";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H05 "synchronize";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H06 "project structure";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H07 "smart code complete";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H08 "complete statement";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H09 "external docu";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H10 "generate code";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H11 "Implement methods";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H12 "optimise import";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H13 "copy line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H14 "delete line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H15 "line join";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:H16 "line split";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYLAYER:AlwaysActive,AAAA,11
 A01/P: ""
 A02/P: ""
@@ -238,38 +238,38 @@ F13/P: ""
 F14/P: ""
 F15/P: ""
 F16/P: ""
-G01/P: "{CTRL+c}"
-G02/P: "{CTRL+y}"
-G03/P: "{CTRL+{SHIFT+j}}"
-G04/P: "{CTRL+RETURN}"
-G05/P: "{SHIFT+{ESC}}"
-G06/P: "{ALT+{F1}}"
-G07/P: "{CTRL+{SHIFT+b}}"
-G08/P: "{CTRL+{SHIFT+h}}"
-G09/P: "{F4}"
-G10/P: "{ALT+{HOME}}"
+G01/P: "{SHIFT+{ESC}}"
+G02/P: "{ALT+{F1}}"
+G03/P: "{CTRL+{SHIFT+b}}"
+G04/P: "{CTRL+{SHIFT+h}}"
+G05/P: "{F4}"
+G06/P: "{ALT+{HOME}}"
+G07/P: ""
+G08/P: ""
+G09/P: ""
+G10/P: ""
 G11/P: ""
 G12/P: ""
 G13/P: ""
 G14/P: ""
 G15/P: ""
 G16/P: ""
-H01/P: "{CTRL+{SHIFT+{F7}}}"
-H02/P: "{CTRL+{ALT+{F7}}}"
-H03/P: "{CTRL+k}"
-H04/P: "{CTRL+t}"
-H05/P: "{CTRL+{SHIFT+k}}"
-H06/P: "{ALT+BackQuote (}"
-H07/P: "{CTRL+{ALT+j}}"
-H08/P: "{CTRL+}"
-H09/P: "{CTRL+{ALT+y}}"
-H10/P: "{CTRL+{ALT+{SHIFT+s}}}"
-H11/P: "{CTRL +{SHIFT+SPACE}}"
-H12/P: "{CTRL+{SHIFT+RETURN}}"
-H13/P: "{SHIFT+{F1}}"
-H14/P: "{ALT+INS}"
-H15/P: "{CTRL+i}"
-H16/P: "{CTRL+{ALT+o}}"
+H01/P: "{CTRL+{SHIFT+k}}"
+H02/P: "{ALT+BackQuote (}"
+H03/P: "{CTRL+{ALT+j}}"
+H04/P: "{CTRL+}"
+H05/P: "{CTRL+{ALT+y}}"
+H06/P: "{CTRL+{ALT+{SHIFT+s}}}"
+H07/P: "{CTRL+{SHIFT+SPACE}}"
+H08/P: "{CTRL+{SHIFT+RETURN}}"
+H09/P: "{SHIFT+{F1}}"
+H10/P: "{ALT+INS}"
+H11/P: "{CTRL+i}"
+H12/P: "{CTRL+{ALT+o}}"
+H13/P: "{CTRL+c}"
+H14/P: "{CTRL+y}"
+H15/P: "{CTRL+{SHIFT+j}}"
+H16/P: "{CTRL+RETURN}"
 !@KEYATTRIB:A12 00000A11
 !@KEYATTRIB:A16 00000A10
 !@KEYATTRIB:B01 00000A10
