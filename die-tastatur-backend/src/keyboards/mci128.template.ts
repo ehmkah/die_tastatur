@@ -1,7 +1,10 @@
 import {KeyboardLayout} from "../keyboard-layouts/keyboard-layout.interface";
 
-function mapToMciKeyprint(keyboardLayout: KeyboardLayout, value: number, columnCounter: number) {
-    let keyPrint = keyboardLayout.keys[value][columnCounter]?.execution.command.defaultKeyPrintText ?? '';
+function mapToMciKeyprint(keyboardLayout: KeyboardLayout, rowCounter: number, columnCounter: number) {
+    if(keyboardLayout.keys[rowCounter][columnCounter]?.execution=== undefined) {
+        console.log(`in Keyboard ${keyboardLayout.name} at position ${rowCounter},${columnCounter} command is not defined.`);
+    }
+    let keyPrint = keyboardLayout.keys[rowCounter][columnCounter]?.execution.command.defaultKeyPrintText ?? '';
     return keyPrint.replace(/\n/gi, "\\\\line");
 }
 

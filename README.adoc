@@ -1,5 +1,15 @@
 == Die Tastatur
 
+=== Legal notice
+
+Everything you do with this program you do it on your own risk.
+Wrongly used it could harm your hardware.
+I am using the names of tools to tell you how _Die Tastatur_ might be used.
+I am not owening any rights in using those tool-names and I am not connected to any tool provider mentioned in _Die Tastatur_.
+All shortcuts have been extracted from public available documentation.
+
+=== Overview
+
 Sometimes useful shortcurts are cryptical to enter or to remember.
 For example how do you undo last git commit locally?
 Normally I search the internet, find the answer in stackoverflow and copy the shortcut.
@@ -8,7 +18,8 @@ This is were _Die Tastatur_ comes to help you.
 
 Die Tastatur provides useful shortcuts for several programs, so they can easily be added to a programmable keyboard.
 
-Current state - maybe usefule maybe not
+Current state - maybe usefule maybe not.
+Look at link:Changelog.adoc[] for changes.
 
 Your contributions are always welcome.
 
@@ -25,7 +36,7 @@ Your contributions are always welcome.
 
 == Supported programs
 
-* E.g. Webstorm, git, kubectl, docker, kubens, docker-compose, shell
+* E.g. Webstorm, IntelliJ, git, kubectl, docker, kubens, docker-compose, shell
 * See `executions.service.ts` for a complete list
 
 == Supported Operating systems
@@ -73,6 +84,12 @@ Your contributions are always welcome.
 == Howto add a new execution to die tastatur?
 
 * See `webstorm_classic_macosx.ts` as an example and how its used in `executions.service.ts`
+* If you want to a have a test keyboard layout for you generated use method `generateKeyboardLayoutForExecutionSet` and call it with your executions
+** It generates as many layouts as needed on the keyboard you define
+* You will find it under http://localhost:3000/keyboard-layouts/ with an id like `testkeyboardlayout<number>`
+** number is at least 0 and depends on how many executions you added
+** e.g. `testkeyboardlayout0.Intellij classic Linux` for testing an intelliJ linux setup
+* If you are happy with your executions go to <<_howto_define_your_own_keyboard_layout>> and put it to something useful
 
 == Thinking about
 
@@ -89,6 +106,8 @@ Your contributions are always welcome.
 * a banana as keyboard - <https://hackaday.com/2022/09/18/banana-split-macropad-is-dessert-for-your-desk/
 * controller for usb-keyboard - https://nicekeyboards.com/nice-nano/
 * workshops building your own keyboard - https://ckeys.org/workshops/
+* Collection of shortcuts - https://technastic.com/mac-keyboard-shortcuts-symbols-pdf/
+
 
 == Thanks for reading
 

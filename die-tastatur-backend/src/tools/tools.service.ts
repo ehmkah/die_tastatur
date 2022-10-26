@@ -8,7 +8,8 @@ export class ToolsService {
     // Returns all supported tools
     findAll(): Array<Tool> {
         return [
-            <Tool>{id: 'intelllij', name: ToolsDefinitions.Intellij},
+            <Tool>{id: 'intellij', name: ToolsDefinitions.IntelliJ},
+            <Tool>{id: 'webstorm', name: ToolsDefinitions.Webstorm},
             <Tool>{id: 'terminal', name: ToolsDefinitions.Terminal},
             <Tool>{id: 'vsCode', name: 'VsCode'},
             <Tool>{id: 'xcode', name: 'Xcode'},

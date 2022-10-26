@@ -6,6 +6,7 @@ export enum SpecialKeys {
     LWIN = 'LWIN',
     SPACE = 'SPACE',
     ESCAPE='{ESC}',
+    HOME='{HOME}',
     RETURN = 'RETURN',
     CURSOR_UP='{UP}',
     CURSOR_DOWN='{DOWN}',
@@ -29,4 +30,5 @@ export enum SpecialKeys {
     F10 = '{F10}',
     F11 = '{F11}',
     F12 = '{F12}',
+    INS = 'INS'
 }

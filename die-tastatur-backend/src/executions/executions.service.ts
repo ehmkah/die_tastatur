@@ -15,6 +15,7 @@ import {docker_compose_default_macosx} from "./docker_compose_default_macosx";
 import {shellDefaultMacosx} from "./shell-default-macosx";
 import {ssh_agentDefaultMaxosx} from "./ssh_agent-default-maxosx";
 import {otherDefaultAll} from "./other-default-all";
+import {intellijClassicLinuxExecutions} from "./intellij_classic_linux";
 
 @Injectable()
 export class ExecutionsService {
@@ -24,8 +25,7 @@ export class ExecutionsService {
     }
 
     findAll(): Array<Execution> {
-
-        const executions: Array<Execution> = webstormDefaultMaxosxExecutions(this, this.keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX)).concat(
+        const executions: Array<Execution> = webstormDefaultMaxosxExecutions(this, this.keysetService.findByName(KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX)).concat(
             git_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             kubect_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             kubens_default_macos(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
@@ -34,8 +34,8 @@ export class ExecutionsService {
             docker_compose_default_macosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             ssh_agentDefaultMaxosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
-            otherDefaultAll(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))
-        );
+            otherDefaultAll(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
+            intellijClassicLinuxExecutions(this, this.keysetService));
 
         return executions;
     }
@@ -63,7 +63,7 @@ export class ExecutionsService {
 
 }
 
-class KrauTest extends ExecutionsService{
+class KrauTest extends ExecutionsService {
 
     findAll(): Array<Execution> {
 

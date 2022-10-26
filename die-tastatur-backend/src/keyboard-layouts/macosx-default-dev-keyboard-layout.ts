@@ -4,12 +4,13 @@ import {KeyboardLayoutDetail} from "./keyboard-layout-detail.interface";
 import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
+import {emptyKeyboardLayout} from "./empty-keyboard-layout";
 
 export function macosxDefaultDevKeyboardLayout(keyboard: Keyboard, keyboardLayoutsService: KeyboardLayoutsService): KeyboardLayout {
 
-    let intelliJClassicKeyset = KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX;
+    let intelliJClassicKeyset = KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX;
     let terminalDefaultKeyset = KeysetDefinitions.TERMINAL_MACOSX;
-    let board: Array<Array<KeyboardLayoutDetail>> = [Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16), Array(16)];
+    let board: Array<Array<KeyboardLayoutDetail>> = emptyKeyboardLayout(keyboard, keyboardLayoutsService).keys;
 
     board[0][0] = keyboardLayoutsService.createKeyDetails('0_0', CommandsDefinitions.JUMP_TO_GIT_VIEW, intelliJClassicKeyset);
     board[0][1] = keyboardLayoutsService.createKeyDetails('0_1', CommandsDefinitions.OPEN_COMMIT_DIALOG, intelliJClassicKeyset);
