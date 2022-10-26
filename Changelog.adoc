@@ -1,0 +1,7 @@
+== Changelog
+
+0.1.0 (not released)
+
+* support for IntelliJ implemented
+* export all executions in dedicated test-keyboard-layouts for easier testing
+* basic setup for managing shortcuts

@@ -3,9 +3,8 @@ export enum CommandsDefinitions {
     // Empty command, allows explicitly to define empty keys
     EMPTY_COMMAND = 'empty',
 
-    // WINDOW Manager available in early all applications
+    // WINDOW Manager available in nearly all applications
     GENERAL_CUT = 'GENERAL_CUT',
-
 
     // IDE Commands
     JUMP_TO_PROJECT_VIEW = 'project_view',

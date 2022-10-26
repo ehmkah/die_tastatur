@@ -5,7 +5,7 @@
 Everything you do with this program you do it on your own risk.
 Wrongly used it could harm your hardware.
 I am using the names of tools to tell you how _Die Tastatur_ might be used.
-I am not owening any rights in using those tool-names and I am not connected to any tool provider mentioned in _Die tastatur_.
+I am not owening any rights in using those tool-names and I am not connected to any tool provider mentioned in _Die Tastatur_.
 All shortcuts have been extracted from public available documentation.
 
 === Overview
@@ -18,7 +18,8 @@ This is were _Die Tastatur_ comes to help you.
 
 Die Tastatur provides useful shortcuts for several programs, so they can easily be added to a programmable keyboard.
 
-Current state - maybe usefule maybe not
+Current state - maybe usefule maybe not.
+Look at link:Changelog.adoc[] for changes.
 
 Your contributions are always welcome.
 
