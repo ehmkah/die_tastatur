@@ -58,8 +58,8 @@ export class KeyboardLayoutsService {
         const requiredTestboards = executions.length / NUMBER_OF_KEYS;
         for (let i = 0; i < requiredTestboards; i++) {
             let keyboardLayout = emptyKeyboardLayout(keyboard, this);
-            keyboardLayout.id = `${executions[0].keyset.name}.testkeyboardlayout${i}.`;
-            keyboardLayout.name = `${executions[0].keyset.name}.testkeyboardlayout${i}.`;
+            keyboardLayout.id = `${executions[0].keyset.name}.testkeyboardlayout${i}`;
+            keyboardLayout.name = `${executions[0].keyset.name}.testkeyboardlayout${i}`;
             result.push(keyboardLayout);
         }
 

@@ -23,6 +23,7 @@ export enum CommandsDefinitions {
     IDE_DEBUG_TOGGLE_BREAKPOINT = 'toggle_breakpoint',
     IDE_DEBUG_VIEW_BREAKPOINT = 'ide_toggle_view_breakpoint',
     IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF = 'breakpoints_toggle_on_off',
+    IDE_DEBUG_STOP = 'IDE_DEBUG_STOP',
 
     IDE_NAVIGATION_GOTO_DECLARATION = 'goto_declaration',
     IDE_NAVIGATION_GOTO_CLASS = 'goto_class',

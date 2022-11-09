@@ -60,6 +60,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_RESUME, `${SpecialKeys.F9}`),
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, `{${SpecialKeys.CTRL}+${SpecialKeys.F8}}`),
         new InternalExecution(CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.F8}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STOP, `{${SpecialKeys.CTRL}+${SpecialKeys.F2}}`),
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_NEXT, `${SpecialKeys.F3}`),
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND_PREVIOUS, `{${SpecialKeys.SHIFT}+${SpecialKeys.F3}}`),
         new InternalExecution(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE, `{${SpecialKeys.CTRL}+r}`),
