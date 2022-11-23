@@ -52,7 +52,7 @@ describe('ExecutionsService', () => {
         })
 
     it('testOneIntellijShortcuts', () => {
-        const actual = sut.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, KeysetDefinitions.INTELLIJ_CLASSIC_MACOSX );
+        const actual = sut.findByCommandIDAndKeysetId(CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, KeysetDefinitions.INTELLIJ_CLASSIC_LINUX );
         expect(actual.command.name).toEqual('ide_search_and_replace_find');
     })
 });

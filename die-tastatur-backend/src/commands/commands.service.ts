@@ -30,6 +30,7 @@ export class CommandsService {
             <Command>{id: 'ide_debug_resume', description: 'Resume', defaultKeyPrintText: 'resume', name: CommandsDefinitions.IDE_DEBUG_RESUME},
             <Command>{id: 'ide_toggle_view_breakpoint', description: 'View breakpoints', defaultKeyPrintText: 'view breakpoints', name: CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT},
             <Command>{id: 'ide_debug_smart_step_into', description: 'Smart step into', defaultKeyPrintText: 'stepinto smart', name: CommandsDefinitions.IDE_DEBUG_SMART_STEP_INTO},
+            <Command>{id: 'ide_debug_stop', description: 'Stop running debugger', defaultKeyPrintText: 'stop debug', name: CommandsDefinitions.IDE_DEBUG_STOP},
 
             <Command>{id: 'ide_navigation_goto_declaration', description: 'Goto declaration', defaultKeyPrintText: 'goto\ndeclaration', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_DECLARATION},
             <Command>{id: 'ide_navigation_goto_class', description: 'Goto class', defaultKeyPrintText: 'goto\nclass', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS},
