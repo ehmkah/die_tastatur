@@ -45,6 +45,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_7, `{${SpecialKeys.ALT}+7}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_8, `{${SpecialKeys.ALT}+8}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_9, `{${SpecialKeys.ALT}+9}`),
+        new InternalExecution(CommandsDefinitions.IDE_GENERAL_COLUMN_SELECTION_MODE, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+a}}column selection${SpecialKeys.CTRL}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_SAVE_ALL, `{${SpecialKeys.CTRL}+S}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_TOGGLE_MAXIMIZE_WINDOW, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.F12}}}`),
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_INSPECT_CURRENT_FILE, `{${SpecialKeys.ALT}+{${SpecialKeys.SHIFT}+i}}`),
