@@ -114,7 +114,7 @@ MSR M3, : ""
 !@KEYPRINT:G03 "goto\\linefile";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G04 "goto\\linesymbol";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G05 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:G06 "goto supermethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:G06 "goto super\\linemethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G07 "goto line";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G08 "goto previous method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:G09 "goto next method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
