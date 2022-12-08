@@ -1,9 +1,6 @@
-import {Controller, Get, Param, Res, StreamableFile} from '@nestjs/common';
+import {Controller, Get, Param} from '@nestjs/common';
 import {KeyboardLayout} from "./keyboard-layout.interface";
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
-import {createReadStream} from "fs";
-import {join} from 'path';
-import type {Response} from 'express';
 import {mapToMC128} from "../keyboards/mci128.template";
 
 @Controller('keyboard-layouts')
@@ -40,8 +37,8 @@ export class KeyboardLayoutsController {
     mapToHTML(keyboardLayout: KeyboardLayout) {
         // good sice for prehkeytech-keyboard cabs
         const widthInMillimeter = 12;
-        const paddingInMillimeter=0.5;
-        const fontSize='10px';
+        const paddingInMillimeter = 0.5;
+        const fontSize = '10px';
         let result = "<html>";
         result = result + `<h2>${keyboardLayout.name}</h2>`;
         const letters = ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
@@ -56,7 +53,7 @@ export class KeyboardLayoutsController {
             result = result + "<div/>";
             result = result + "<div/>";
             for (const key of row) {
-                if(key === undefined || key.execution.command === undefined) {
+                if (key === undefined || key.execution.command === undefined) {
                     console.log("A good breakpoint to find wrong configured boards ");
                 }
                 result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
@@ -64,7 +61,6 @@ export class KeyboardLayoutsController {
             result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${letters[rowCounter]}</span>`
             rowCounter++;
         }
-        columnCounter = columnCounter;
         result = result + "<div/>";
         while (columnCounter > 0) {
             result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
@@ -72,7 +68,7 @@ export class KeyboardLayoutsController {
         }
 
 
-        result = result + `<div>Keysize ${widthInMillimeter+ paddingInMillimeter}mm</div>`;
+        result = result + `<div>Keysize ${widthInMillimeter + paddingInMillimeter}mm</div>`;
         result = result + `<div>Fontsize ${fontSize}</div>`;
         result = result + `<div>Coypright Michael Krauße - die Tastatur 2022</div>`;
         result = result + "</html>";
