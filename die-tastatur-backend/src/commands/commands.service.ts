@@ -192,7 +192,6 @@ export class CommandsService {
             <Command>{id: 'ide_running_run_gulp_npm_grunt',description: 'Run Gulp7Grun/npm tasks', defaultKeyPrintText: 'run npm', name: CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT},
             <Command>{id: 'IDE_RUNNING_BUILD_PROJECT',description: 'Build project', defaultKeyPrintText: 'build project', name: CommandsDefinitions.IDE_RUNNING_BUILD_PROJECT},
 
-            <Command>{id: 'column_selection_mode',description: 'Toggle column selection mode', defaultKeyPrintText: 'toggle column selection mode', name: CommandsDefinitions.COLUMN_SELECTION_MODE},
             <Command>{id: 'breakpoints_toggle_on_off',description: 'Toggle mute breakpoints', defaultKeyPrintText: 'toggle mute breakpoints',      name: CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF},
 
             // docker

@@ -111,7 +111,7 @@ export function macosxWebstormDeveloperLayout(keyboard: Keyboard, keyboardLayout
     board[5][12] = keyboardLayoutsService.createKeyDetails('5_12', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][13] = keyboardLayoutsService.createKeyDetails('5_13', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][14] = keyboardLayoutsService.createKeyDetails('5_14', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
-    board[5][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.COLUMN_SELECTION_MODE, keysetWebstorm);
+    board[5][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
 
     board[6][0] = keyboardLayoutsService.createKeyDetails('6_0', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[6][1] = keyboardLayoutsService.createKeyDetails('6_1', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
