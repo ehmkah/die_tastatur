@@ -183,7 +183,6 @@ export enum CommandsDefinitions {
     IDE_RUNNING_RUN_GULP_NPM_GRUNT = 'ide_running_run_gulp_npm_grunt',
     IDE_RUNNING_BUILD_PROJECT = 'IDE_RUNNING_BUILD_PROJECT',
 
-    COLUMN_SELECTION_MODE = 'column_selection_mode',
 
 
 

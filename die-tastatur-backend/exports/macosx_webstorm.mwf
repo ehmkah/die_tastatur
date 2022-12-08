@@ -95,7 +95,7 @@ MSR M3, : ""
 !@KEYPRINT:E16 "Find previous";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F01 "quick definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F02 "type definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:F03 "goto supermethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:F03 "goto super\\linemethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F04 "goto previous method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F05 "goto next method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:F06 "mv code end";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;

@@ -58,7 +58,7 @@ MSR M3, : ""
 !@KEYPRINT:C11 "navigate last edit";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C12 "goto\\linedeclaration";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C13 "quick definition";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
-!@KEYPRINT:C14 "goto supermethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
+!@KEYPRINT:C14 "goto super\\linemethod";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C15 "goto next method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:C16 "goto previous method";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
 !@KEYPRINT:D01 "expand all";0.00;0.00;0.00;0.00;       0;       0;0;0;0;0;0;
@@ -188,8 +188,8 @@ C11/P: "{CTRL+{SHIFT+{{BACKSPACE}}}}"
 C12/P: "{CTRL+b}"
 C13/P: "{CTRL+{SHIFT+i}}"
 C14/P: "{CTRL+u}"
-C15/P: "{ALT+{UP}}"
-C16/P: "{ALT+{DOWN}}"
+C15/P: "{ALT+{DOWN}}"
+C16/P: "{ALT+{UP}}"
 D01/P: "{CTRL+{SHIFT+{PLUS}}}"
 D02/P: "{CTRL+{SHIFT+{MINUS}}}"
 D03/P: "{CTRL+{F4}}"
@@ -239,7 +239,7 @@ F14/P: "{CTRL+{ALT+t}}"
 F15/P: "{CTRL+{DIV}}"
 F16/P: "{CTRL+{SHIFT+{DIV}}}"
 G01/P: "{ALT+9}"
-G02/P: "{CTRL+{SHIFT+a}}column selectionCTRL"
+G02/P: "{SHIFT+{ALT+INS}}"
 G03/P: "{CTRL+S}"
 G04/P: "{CTRL+{SHIFT+{F12}}}"
 G05/P: "{ALT+{SHIFT+i}}"

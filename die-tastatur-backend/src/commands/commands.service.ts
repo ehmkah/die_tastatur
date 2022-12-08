@@ -50,7 +50,7 @@ export class CommandsService {
             <Command>{id: 'ide_navigation_goto_implementation', description: 'Goto implementation', defaultKeyPrintText: 'goto implementation', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_IMPLEMENTATION},
             <Command>{id: 'ide_navigation_open_quick_definition_lookup', description: 'Open quick definition lookup', defaultKeyPrintText: 'quick definition', name: CommandsDefinitions.IDE_NAVIGATION_OPEN_QUICK_DEFINITION_LOOKUP},
             <Command>{id: 'ide_navigation_goto_type_definitiaon', description: 'Goto type declaration', defaultKeyPrintText: 'type definition', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_TYPE_DEFINITION},
-            <Command>{id: 'ide_navigation_goto_super_method_super_class', description: 'Goto super-method/ super-class', defaultKeyPrintText: 'goto supermethod', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_SUPER_METHOD_SUPER_CLASS},
+            <Command>{id: 'ide_navigation_goto_super_method_super_class', description: 'Goto super-method/ super-class', defaultKeyPrintText: 'goto super\nmethod', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_SUPER_METHOD_SUPER_CLASS},
             <Command>{id: 'ide_navigation_goto_previous_method', description: 'Goto previous method', defaultKeyPrintText: 'goto previous method', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_PREVIOUS_METHOD},
             <Command>{id: 'ide_navigation_goto_next_method', description: 'Goto next method', defaultKeyPrintText: 'goto next method', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_NEXT_METHOD},
             <Command>{id: 'ide_navigation_move_code_block_end', description: 'Move code block end', defaultKeyPrintText: 'mv code end', name: CommandsDefinitions.IDE_NAVIGATION_MOVE_CODE_BLOCK_END},
@@ -192,7 +192,6 @@ export class CommandsService {
             <Command>{id: 'ide_running_run_gulp_npm_grunt',description: 'Run Gulp7Grun/npm tasks', defaultKeyPrintText: 'run npm', name: CommandsDefinitions.IDE_RUNNING_RUN_GULP_NPM_GRUNT},
             <Command>{id: 'IDE_RUNNING_BUILD_PROJECT',description: 'Build project', defaultKeyPrintText: 'build project', name: CommandsDefinitions.IDE_RUNNING_BUILD_PROJECT},
 
-            <Command>{id: 'column_selection_mode',description: 'Toggle column selection mode', defaultKeyPrintText: 'toggle column selection mode', name: CommandsDefinitions.COLUMN_SELECTION_MODE},
             <Command>{id: 'breakpoints_toggle_on_off',description: 'Toggle mute breakpoints', defaultKeyPrintText: 'toggle mute breakpoints',      name: CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINTS_ON_OFF},
 
             // docker
