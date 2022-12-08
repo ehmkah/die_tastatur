@@ -131,6 +131,7 @@ export class CommandsService {
             <Command>{id: 'IDE_GENERAL_SYNCHRONIZE', description: 'synchronize with filesystem', defaultKeyPrintText: 'synchronize', name: CommandsDefinitions.IDE_GENERAL_SYNCHRONIZE},
             <Command>{id: 'IDE_GENERAL_HIDE_ACTIVE_TOOL', description: 'Hide active or last active tool window', defaultKeyPrintText: 'hide tool', name: CommandsDefinitions.IDE_GENERAL_HIDE_ACTIVE_VIEW},
             <Command>{id: 'IDE_GENERAL_SELECT_CURRENT_FILE_IN_ANY_VIEW', description: 'Select current file in any view', defaultKeyPrintText: 'select in view', name: CommandsDefinitions.IDE_GENERAL_SELECT_CURRENT_FILE_IN_ANY_VIEW},
+            <Command>{id: 'IDE_GENERAL_COLUMN_SELECTION_MODE', description: 'Toggle column selection mode', defaultKeyPrintText: 'toggle column selection', name: CommandsDefinitions.IDE_GENERAL_COLUMN_SELECTION_MODE},
 
             <Command>{id: 'IDE_EDITING_GENERATE', description: 'Generate Code', defaultKeyPrintText: 'generate', name: CommandsDefinitions.IDE_EDITING_GENERATE},
             <Command>{id: 'IDE_EDITING_SURROUND', description: 'Surround with if, try, for', defaultKeyPrintText: 'surround', name: CommandsDefinitions.IDE_EDITING_SURROUND},
