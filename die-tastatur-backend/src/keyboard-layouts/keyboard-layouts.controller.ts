@@ -57,7 +57,7 @@ export class KeyboardLayoutsController {
             result = result + "<div/>";
             for (const key of row) {
                 if(key === undefined || key.execution.command === undefined) {
-                    console.log("hu");
+                    console.log("A good breakpoint to find wrong configured boards ");
                 }
                 result = result + `<span style="font-size: ${fontSize};padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; height: ${widthInMillimeter}mm; border: 1px solid; display: inline-block; vertical-align: top">${key.execution.command.defaultKeyPrintText}</span>`;
             }
