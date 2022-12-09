@@ -2,6 +2,7 @@
 
 0.1.0 (not released)
 
-* support for IntelliJ implemented
-* export all executions in dedicated test-keyboard-layouts for easier testing
-* basic setup for managing shortcuts
+* feature: support for mci-96 keyboard
+* feature: support for IntelliJ implemented
+* feature: export all executions in dedicated test-keyboard-layouts for easier testing
+* feature: basic setup for managing shortcuts
