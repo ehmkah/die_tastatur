@@ -10,7 +10,7 @@ import {ToolsService} from "../tools/tools.service";
 
 describe('KeyboardLayoutsController', () => {
     let controller: KeyboardLayoutsController;
-    let keyboardService : KeyboardsService;
+    let keyboardService: KeyboardsService;
 
 
     beforeEach(async () => {

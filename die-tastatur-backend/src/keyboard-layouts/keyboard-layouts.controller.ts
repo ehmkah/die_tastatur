@@ -50,7 +50,8 @@ export class KeyboardLayoutsController {
             result = result + `<span style="font-size: ${fontSize}; padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter++;
         }
-        for (const row of keyboardLayout.keys) {
+        for (var i = 0; i < keyboardLayout.keyboard.ySize; i++) {
+            const row = keyboardLayout.keys[i];
             result = result + "<div/>";
             result = result + "<div/>";
             for (const key of row) {
