@@ -31,7 +31,7 @@ export class KeyboardLayoutsService {
             macosxWebstormKeyboardTestExecutionLayout(keyboards[0], this),
             macosxWebstormDeveloperLayout(keyboards[0], this),
             linuxIntellijDeveloperLayout(keyboards[0], this),
-            linuxIntellijDeveloperLayoutFor96(keyboards[0], this),
+            linuxIntellijDeveloperLayoutFor96(this.keyboardsService, this),
             emptyKeyboardLayout(keyboards[0], this)
         ].
         concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0])).
