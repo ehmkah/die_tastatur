@@ -17,7 +17,7 @@ describe('KeyboardsService', () => {
     });
 
     it('shouldFindById', () => {
-      expect(service.findById(KeyboardIds.PREHKEYTECH_96).id).toEqual(KeyboardIds.PREHKEYTECH_96);
+        expect(service.findById(KeyboardIds.PREHKEYTECH_96).id).toEqual(KeyboardIds.PREHKEYTECH_96);
     });
 
 });
