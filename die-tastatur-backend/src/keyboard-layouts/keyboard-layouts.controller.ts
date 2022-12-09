@@ -3,6 +3,8 @@ import {KeyboardLayout} from "./keyboard-layout.interface";
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
 import {mapToMC128} from "../keyboards/mci128.template";
 import {Keyboard} from "../keyboards/keyboard.interface";
+import {KeyboardIds} from "../keyboards/keyboards.service";
+import {mapToMC96} from "../keyboards/mci96.template";
 
 @Controller('keyboard-layouts')
 export class KeyboardLayoutsController {
@@ -22,9 +24,13 @@ export class KeyboardLayoutsController {
 
     @Get(':id/file')
     getFile(@Param('id') id: string): string {
-        let keyboardLayout = this.keyboardLayoutsService.findById(id);
-
-        return mapToMC128(keyboardLayout);
+        const keyboardLayout = this.keyboardLayoutsService.findById(id);
+        if (KeyboardIds.PREHKEYTECH_128 === keyboardLayout.keyboard.id) {
+            return mapToMC128(keyboardLayout);
+        }
+        if (KeyboardIds.PREHKEYTECH_96 === keyboardLayout.keyboard.id) {
+            return mapToMC96(keyboardLayout);
+        }
     }
 
     @Get(':id/html')
