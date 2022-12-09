@@ -2,6 +2,7 @@ import {Controller, Get, Param} from '@nestjs/common';
 import {KeyboardLayout} from "./keyboard-layout.interface";
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
 import {mapToMC128} from "../keyboards/mci128.template";
+import {Keyboard} from "../keyboards/keyboard.interface";
 
 @Controller('keyboard-layouts')
 export class KeyboardLayoutsController {
@@ -41,7 +42,7 @@ export class KeyboardLayoutsController {
         const fontSize = '10px';
         let result = "<html>";
         result = result + `<h2>${keyboardLayout.name}</h2>`;
-        const letters = ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
+        const letters = this.getLetters(keyboardLayout.keyboard);
         let rowCounter = 0;
         const constColumNumber = keyboardLayout.keys[0].length;
         let columnCounter = 0;
@@ -76,4 +77,12 @@ export class KeyboardLayoutsController {
     }
 
 
+    getLetters(keyboard: Keyboard) {
+        if (8 === keyboard.ySize) {
+            return ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
+        }
+        if (6 === keyboard.ySize) {
+            return ['H', 'G', 'F', 'E', 'D', 'C'];
+        }
+    }
 }

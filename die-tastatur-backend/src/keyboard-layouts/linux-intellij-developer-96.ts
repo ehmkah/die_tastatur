@@ -15,7 +15,7 @@ export function linuxIntellijDeveloperLayoutFor96(keyboardService: KeyboardsServ
     return <KeyboardLayout>{
         id: 'Linux-intellij-developer-96',
         keyboard,
-        name: 'Linux Intellij Developer Keyboard',
+        name: 'Linux Intellij Developer Keyboard for 96 keyboard',
         description: 'Keyboardlayout for Intellij developers',
         keys: board
     };
