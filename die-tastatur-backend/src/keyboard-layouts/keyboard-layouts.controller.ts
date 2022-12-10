@@ -5,6 +5,7 @@ import {mapToMC128} from "../keyboards/mci128.template";
 import {Keyboard} from "../keyboards/keyboard.interface";
 import {KeyboardIds} from "../keyboards/keyboards.service";
 import {mapToMC96} from "../keyboards/mci96.template";
+import {mapToMC84} from "../keyboards/mci84.template";
 
 @Controller('keyboard-layouts')
 export class KeyboardLayoutsController {
@@ -31,6 +32,9 @@ export class KeyboardLayoutsController {
         if (KeyboardIds.PREHKEYTECH_96 === keyboardLayout.keyboard.id) {
             return mapToMC96(keyboardLayout);
         }
+        if (KeyboardIds.PREHKEYTECH_84 === keyboardLayout.keyboard.id) {
+            return mapToMC84(keyboardLayout);
+        }
     }
 
     @Get(':id/html')
@@ -50,9 +54,9 @@ export class KeyboardLayoutsController {
         result = result + `<h2>${keyboardLayout.name}</h2>`;
         const letters = this.getLetters(keyboardLayout.keyboard);
         let rowCounter = 0;
-        const constColumNumber = keyboardLayout.keys[0].length;
+        const columNumber = keyboardLayout.keyboard.xSize;
         let columnCounter = 0;
-        while (columnCounter < constColumNumber) {
+        while (columnCounter < columNumber) {
             result = result + `<span style="font-size: ${fontSize}; padding: ${paddingInMillimeter}mm; width: ${widthInMillimeter}mm; border: 1px solid; overflow: visible;display: inline-block">${columnCounter}</span>`;
             columnCounter++;
         }
@@ -60,7 +64,8 @@ export class KeyboardLayoutsController {
             const row = keyboardLayout.keys[i];
             result = result + "<div/>";
             result = result + "<div/>";
-            for (const key of row) {
+            for(var x = 0; x < keyboardLayout.keyboard.xSize; x++) {
+                const key = row[x];
                 if (key === undefined || key.execution.command === undefined) {
                     console.log("A good breakpoint to find wrong configured boards ");
                 }
@@ -88,8 +93,12 @@ export class KeyboardLayoutsController {
         if (8 === keyboard.ySize) {
             return ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
         }
+        if (7 == keyboard.ySize) {
+            return ['H', 'G', 'F', 'E', 'D', 'C', 'B'];
+        }
         if (6 === keyboard.ySize) {
             return ['H', 'G', 'F', 'E', 'D', 'C'];
         }
+
     }
 }

@@ -27,13 +27,16 @@ describe('KeyboardLayoutsController', () => {
         expect(controller).toBeDefined();
     });
 
-    it('should return right letters for keyboard', () => {
+    it('should return right letters for keyboard mci-128', () => {
         expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_128))).toEqual(['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']);
     });
 
-    it('should return right letters for keyboard', () => {
+    it('should return right letters for keyboard mci-96', () => {
         expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_96))).toEqual(['H', 'G', 'F', 'E', 'D', 'C']);
     });
+    it('should return right letters for keyboard mci-84', () => {
+        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_84))).toEqual(['H', 'G', 'F', 'E', 'D', 'C', 'B']);
+    })
 
     it('should return valid layout for MCI 128', () => {
         const actual = controller.getFile('maxos_default_dev');
