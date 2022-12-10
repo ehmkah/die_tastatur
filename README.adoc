@@ -35,6 +35,7 @@ Your contributions are always welcome.
 
 * link:https://www.prehkeytec.com/products/programmable-keyboards/mci-128/[Prehkeytech MCI 128]
 * link:https://www.prehkeytec.com/products/programmable-keyboards/mci-96/[Prehkeytech MCI 96]
+* link:https://www.prehkeytec.com/products/programmable-keyboards/mci-84/[Prehkeytech MCI 84]
 
 == Supported programs
 
