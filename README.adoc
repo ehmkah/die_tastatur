@@ -33,6 +33,7 @@ Your contributions are always welcome.
 == Supported devices
 
 * link:https://www.prehkeytec.com/products/programmable-keyboards/mci-128/[Prehkeytech MCI 128]
+* link:https://www.prehkeytec.com/products/programmable-keyboards/mci-96/[Prehkeytech MCI 96]
 
 == Supported programs
 

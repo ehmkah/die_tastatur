@@ -2,7 +2,7 @@ import {Test, TestingModule} from '@nestjs/testing';
 import {KeyboardLayoutsController} from './keyboard-layouts.controller';
 import {KeyboardLayoutsService} from "./keyboard-layouts.service";
 import {ExecutionsService} from "../executions/executions.service";
-import {KeyboardsService} from "../keyboards/keyboards.service";
+import {KeyboardIds, KeyboardsService} from "../keyboards/keyboards.service";
 import {CommandsService} from "../commands/commands.service";
 import {KeysetsService} from "../keysets/keysets.service";
 import {OperatingSystemsService} from "../operating_systems/operating_systems.service";
@@ -10,6 +10,8 @@ import {ToolsService} from "../tools/tools.service";
 
 describe('KeyboardLayoutsController', () => {
     let controller: KeyboardLayoutsController;
+    let keyboardService: KeyboardsService;
+
 
     beforeEach(async () => {
         const module: TestingModule = await Test.createTestingModule({
@@ -17,11 +19,20 @@ describe('KeyboardLayoutsController', () => {
             providers: [KeyboardLayoutsService, ExecutionsService, KeyboardsService, CommandsService, KeysetsService, OperatingSystemsService, ToolsService]
         }).compile();
 
+        keyboardService = module.get<KeyboardsService>(KeyboardsService);
         controller = module.get<KeyboardLayoutsController>(KeyboardLayoutsController);
     });
 
     it('should be defined', () => {
         expect(controller).toBeDefined();
+    });
+
+    it('should return right letters for keyboard', () => {
+        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_128))).toEqual(['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A']);
+    });
+
+    it('should return right letters for keyboard', () => {
+        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_96))).toEqual(['H', 'G', 'F', 'E', 'D', 'C']);
     });
 
     it('should return valid layout for MCI 128', () => {
