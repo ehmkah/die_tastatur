@@ -88,8 +88,12 @@ export class KeyboardLayoutsController {
         if (8 === keyboard.ySize) {
             return ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
         }
+        if (7 == keyboard.ySize) {
+            return ['H', 'G', 'F', 'E', 'D', 'C', 'B'];
+        }
         if (6 === keyboard.ySize) {
             return ['H', 'G', 'F', 'E', 'D', 'C'];
         }
+
     }
 }
