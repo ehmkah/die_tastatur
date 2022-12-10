@@ -26,9 +26,7 @@ Your contributions are always welcome.
 == Example
 
 * You need a programmable keyboard, see <<supported_devices>>
-* Go to `die-tastatur-backend/exports` link:die-tastatur-backend/exports[]
-
-
+* Go to link:die-tastatur-backend/exports[]
 ** `*.html` - shows how the keyboardlayout would look like
 ** `*.mwf` - files which can be exported to prehkeytech programmable keyboards
 * Install keyboardlayout on your programmable keyboard
