@@ -25,10 +25,11 @@ Your contributions are always welcome.
 
 == Example
 
-* You need a programmable keyboard, see supported devices
-* Run die tastatur backend application, see Run Die tastatur
-* Export one keyboard layout for Prehkeytech MCI-128, see export keyboardlayout
-* Install keyboardlayout on your Prehkeytech MCI-128
+* You need a programmable keyboard, see <<_supported_devices>>
+* Go to `die-tastatur-backend/exports`
+** `*.html` - shows how the keyboardlayout would look like
+** `*.mwf` - files which can be exported to prehkeytech programmable keyboards
+* Install keyboardlayout on your programmable keyboard
 
 == Supported devices
 
