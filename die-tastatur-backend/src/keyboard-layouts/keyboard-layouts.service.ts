@@ -12,11 +12,11 @@ import {macosxWebstormDeveloperLayout} from "./macos-webstorm-developer";
 import {Execution} from "../executions/execution.interface";
 import {Keyboard} from "../keyboards/keyboard.interface";
 import {intellijClassicLinuxExecutions} from "../executions/intellij_classic_linux";
-import {Key} from "readline";
 import {KeysetsService} from "../keysets/keysets.service";
 import {webstormDefaultMaxosxExecutions} from "../executions/webstorm_classic_macosx";
 import {linuxIntellijDeveloperLayout} from "./linux-intellij-developer";
 import {linuxIntellijDeveloperLayoutFor96} from "./linux-intellij-developer-96";
+import {linuxIntellijDeveloperLayoutFor84} from "./linux-intellij-developer-84";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -32,6 +32,7 @@ export class KeyboardLayoutsService {
             macosxWebstormDeveloperLayout(keyboards[0], this),
             linuxIntellijDeveloperLayout(keyboards[0], this),
             linuxIntellijDeveloperLayoutFor96(this.keyboardsService, this),
+            linuxIntellijDeveloperLayoutFor84(this.keyboardsService, this),
             emptyKeyboardLayout(keyboards[0], this)
         ].
         concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0])).
