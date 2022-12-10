@@ -5,6 +5,7 @@ import {mapToMC128} from "../keyboards/mci128.template";
 import {Keyboard} from "../keyboards/keyboard.interface";
 import {KeyboardIds} from "../keyboards/keyboards.service";
 import {mapToMC96} from "../keyboards/mci96.template";
+import {mapToMC84} from "../keyboards/mci84.template";
 
 @Controller('keyboard-layouts')
 export class KeyboardLayoutsController {
@@ -30,6 +31,9 @@ export class KeyboardLayoutsController {
         }
         if (KeyboardIds.PREHKEYTECH_96 === keyboardLayout.keyboard.id) {
             return mapToMC96(keyboardLayout);
+        }
+        if (KeyboardIds.PREHKEYTECH_84 === keyboardLayout.keyboard.id) {
+            return mapToMC84(keyboardLayout);
         }
     }
 

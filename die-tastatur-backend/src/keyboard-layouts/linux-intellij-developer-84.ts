@@ -24,8 +24,8 @@ export function linuxIntellijDeveloperLayoutFor84(keyboardService: KeyboardsServ
     board[0][8] = keyboardLayoutsService.createKeyDetails('0_8', CommandsDefinitions.IDE_DEBUG_EVALUATE_EXPRESSION, keysetLinuxClassic);
     board[0][9] = keyboardLayoutsService.createKeyDetails('0_9', CommandsDefinitions.IDE_DEBUG_RESUME, keysetLinuxClassic);
     board[0][10] = keyboardLayoutsService.createKeyDetails('0_10', CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, keysetLinuxClassic);
-    board[0][11] = keyboardLayoutsService.createKeyDetails('0_11', CommandsDefinitions.IDE_DEBUG_VIEW_BREAKPOINT, keysetLinuxClassic);
-    board[0][15] = keyboardLayoutsService.createKeyDetails('0_15', CommandsDefinitions.IDE_GENERAL_TOGGLE_MAXIMIZE_WINDOW, keysetLinuxClassic);
+    //
+    board[0][11] = keyboardLayoutsService.createKeyDetails('0_11', CommandsDefinitions.IDE_GENERAL_TOGGLE_MAXIMIZE_WINDOW, keysetLinuxClassic);
 
     board[1][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_7, keysetLinuxClassic);
     board[1][1] = keyboardLayoutsService.createKeyDetails('1_1', CommandsDefinitions.IDE_NAVIGATION_GOTO_CLASS, keysetLinuxClassic);
@@ -38,7 +38,7 @@ export function linuxIntellijDeveloperLayoutFor84(keyboardService: KeyboardsServ
     board[1][8] = keyboardLayoutsService.createKeyDetails('1_8', CommandsDefinitions.IDE_NAVIGATION_GOTO_NEXT_METHOD, keysetLinuxClassic);
     board[1][9] = keyboardLayoutsService.createKeyDetails('1_9', CommandsDefinitions.IDE_NAVIGATION_NEXT_HIGHLIGHTED_ERROR, keysetLinuxClassic);
     board[1][10] = keyboardLayoutsService.createKeyDetails('1_10', CommandsDefinitions.IDE_NAVIGATION_PREVIOUS_HIGHLIGHTED_ERROR, keysetLinuxClassic);
-//    board[1][11] = keyboardLayoutsService.createKeyDetails('1_11', CommandsDefinitions.IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET, keysetLinuxClassic);
+    board[1][11] = keyboardLayoutsService.createKeyDetails('1_11', CommandsDefinitions.IDE_EDITING_SHOW_DESCRIPTION_ERROR_OR_WARNING_AT_CARRET, keysetLinuxClassic);
 
     board[2][0] = keyboardLayoutsService.createKeyDetails('2_0', CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_1, keysetLinuxClassic);
     board[2][1] = keyboardLayoutsService.createKeyDetails('2_1', CommandsDefinitions.IDE_REFACTORING_REFACTOR_THIS, keysetLinuxClassic);
@@ -52,21 +52,20 @@ export function linuxIntellijDeveloperLayoutFor84(keyboardService: KeyboardsServ
     board[2][9] = keyboardLayoutsService.createKeyDetails('2_9', CommandsDefinitions.IDE_REFACTORING_EXTRACT_CONSTANT, keysetLinuxClassic);
     board[2][10] = keyboardLayoutsService.createKeyDetails('2_10', CommandsDefinitions.IDE_REFACTORING_EXTRACT_PARAMETER, keysetLinuxClassic);
     board[2][11] = keyboardLayoutsService.createKeyDetails('2_11', CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE, keysetLinuxClassic);
-    board[2][12] = keyboardLayoutsService.createKeyDetails('2_12', CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE_IN_PATH, keysetLinuxClassic);
 
-    board[3][0] = keyboardLayoutsService.createKeyDetails('1_0', CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_3, keysetLinuxClassic);
+    board[3][0] = keyboardLayoutsService.createKeyDetails('3_0', CommandsDefinitions.IDE_GENERAL_OPEN_CORRESPONDING_TOOL_WINDOW_3, keysetLinuxClassic);
     board[3][1] = keyboardLayoutsService.createKeyDetails('3_1', CommandsDefinitions.IDE_NAVIGATION_CALL_HIERACHY, keysetLinuxClassic);
     board[3][2] = keyboardLayoutsService.createKeyDetails('3_2', CommandsDefinitions.IDE_NAVIGATION_TYPE_HIERACHIY, keysetLinuxClassic);
     board[3][3] = keyboardLayoutsService.createKeyDetails('3_3', CommandsDefinitions.IDE_USAGE_SEARCH_FIND_USAGE, keysetLinuxClassic);
     board[3][4] = keyboardLayoutsService.createKeyDetails('3_4', CommandsDefinitions.IDE_USAGE_SEARCH_FIND_USAGE_IN_FILE, keysetLinuxClassic);
-    board[3][15] = keyboardLayoutsService.createKeyDetails('3_15', CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES, keysetLinuxClassic);
+    board[3][11] = keyboardLayoutsService.createKeyDetails('3_11', CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE_IN_PATH, keysetLinuxClassic);
 
     board[4][0] = keyboardLayoutsService.createKeyDetails('4_0', CommandsDefinitions.IDE_VCS_QUICK_POPUP, keysetLinuxClassic);
     board[4][1] = keyboardLayoutsService.createKeyDetails('4_1', CommandsDefinitions.IDE_VCS_COMMIT_TO_VCS, keysetLinuxClassic);
-    //board[4][2] = keyboardLayoutsService.createKeyDetails('4_3', CommandsDefinitions.COMMIT, keysetWebstorm);
     board[4][3] = keyboardLayoutsService.createKeyDetails('4_3', CommandsDefinitions.IDE_VCS_PUSH_TO_VCS, keysetLinuxClassic);
     board[4][4] = keyboardLayoutsService.createKeyDetails('4_4', CommandsDefinitions.IDE_VCS_UPDATE_TO_VCS, keysetLinuxClassic);
-    board[4][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.IDE_GENERAL_COLUMN_SELECTION_MODE, keysetLinuxClassic);
+    board[4][11] = keyboardLayoutsService.createKeyDetails('4_11', CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES, keysetLinuxClassic);
+
 
     board[5][0] = keyboardLayoutsService.createKeyDetails('5_0', CommandsDefinitions.EMPTY_COMMAND, keysetTerminal);
     board[5][1] = keyboardLayoutsService.createKeyDetails('5_1', CommandsDefinitions.IDE_EDITING_DELETE_WORD_START, keysetLinuxClassic);
@@ -75,13 +74,13 @@ export function linuxIntellijDeveloperLayoutFor84(keyboardService: KeyboardsServ
     board[5][4] = keyboardLayoutsService.createKeyDetails('5_4', CommandsDefinitions.IDE_EDITING_JOIN_LINES, keysetLinuxClassic);
     board[5][5] = keyboardLayoutsService.createKeyDetails('5_5', CommandsDefinitions.IDE_EDITING_START_NEW_LINES, keysetLinuxClassic);
     board[5][6] = keyboardLayoutsService.createKeyDetails('5_6', CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT, keysetLinuxClassic);
-
     board[5][7] = keyboardLayoutsService.createKeyDetails('5_7', CommandsDefinitions.IDE_EDITING_TOGGLE_CASE_WORD, keysetLinuxClassic);
+    board[5][11] = keyboardLayoutsService.createKeyDetails('5_11', CommandsDefinitions.IDE_GENERAL_COLUMN_SELECTION_MODE, keysetLinuxClassic);
 
-    board[5][12] = keyboardLayoutsService.createKeyDetails('5_12', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_TO_LAST_EDIT_LOCATION, keysetLinuxClassic);
-    board[5][13] = keyboardLayoutsService.createKeyDetails('5_13', CommandsDefinitions.IDE_NAVIGATION_RECENT_FILES_POPUP, keysetLinuxClassic);
-    board[5][14] = keyboardLayoutsService.createKeyDetails('5_14', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_BACK, keysetLinuxClassic);
-    board[5][15] = keyboardLayoutsService.createKeyDetails('5_15', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_FORWARD, keysetLinuxClassic);
+    board[6][8] = keyboardLayoutsService.createKeyDetails('5_8', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_TO_LAST_EDIT_LOCATION, keysetLinuxClassic);
+    board[6][9] = keyboardLayoutsService.createKeyDetails('5_9', CommandsDefinitions.IDE_NAVIGATION_RECENT_FILES_POPUP, keysetLinuxClassic);
+    board[6][10] = keyboardLayoutsService.createKeyDetails('5_10', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_BACK, keysetLinuxClassic);
+    board[6][11] = keyboardLayoutsService.createKeyDetails('5_11', CommandsDefinitions.IDE_NAVIGATION_NAVIGATE_FORWARD, keysetLinuxClassic);
 
     return <KeyboardLayout>{
         id: 'Linux-intellij-developer-84',
