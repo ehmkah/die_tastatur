@@ -2,6 +2,7 @@
 
 0.1.0 (not released)
 
+* feature: support for mci-84π keyboard
 * feature: support for mci-96 keyboard
 * feature: support for IntelliJ implemented
 * feature: export all executions in dedicated test-keyboard-layouts for easier testing
