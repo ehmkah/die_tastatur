@@ -82,6 +82,8 @@ Your contributions are always welcome.
 == Howto define your own keyboard-layout?
 
 * See `macosx-webstorm-keyboard-test-execution-layout.ts` as an example and how its used in `keyboard-layouts.service.ts`
+* When finished go to `die-tastatur-backend/exports` and run `python3 exportAll.py` it will create a file you can upload to your keyboard
+* If you think your layout might be useful, please open a PR :-)
 
 == Howto add a new execution to die tastatur?
 
