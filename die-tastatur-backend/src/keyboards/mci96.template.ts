@@ -9,7 +9,7 @@ function mapToMciKeyprint(keyboardLayout: KeyboardLayout, rowCounter: number, co
 }
 
 export function mapToMC96(keyboardLayout: KeyboardLayout): string {
-    const rows: { [key: string]: number } = {'A': 7, 'B': 6, 'C': 5, 'D': 4, 'E': 3, 'F': 2, 'G': 1, 'H': 0};
+    const rows: { [key: string]: number } = {'A': 6, 'B': 5, 'C': 4, 'D': 3, 'E': 2, 'F': 1, 'G': 0, 'H': 0};
     const columns: Array<string> = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16'];
 
     let result = `TYPE MC128
