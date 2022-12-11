@@ -64,7 +64,7 @@ export class KeyboardLayoutsController {
             const row = keyboardLayout.keys[i];
             result = result + "<div/>";
             result = result + "<div/>";
-            for(var x = 0; x < keyboardLayout.keyboard.xSize; x++) {
+            for (var x = 0; x < keyboardLayout.keyboard.xSize; x++) {
                 const key = row[x];
                 if (key === undefined || key.execution.command === undefined) {
                     console.log("A good breakpoint to find wrong configured boards ");
@@ -94,10 +94,10 @@ export class KeyboardLayoutsController {
             return ['H', 'G', 'F', 'E', 'D', 'C', 'B', 'A'];
         }
         if (7 == keyboard.ySize) {
-            return ['H', 'G', 'F', 'E', 'D', 'C', 'B'];
+            return ['G', 'F', 'E', 'D', 'C', 'B', 'A'];
         }
         if (6 === keyboard.ySize) {
-            return ['H', 'G', 'F', 'E', 'D', 'C'];
+            return ['F', 'E', 'D', 'C', 'B', 'A'];
         }
 
     }
