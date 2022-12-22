@@ -32,10 +32,10 @@ describe('KeyboardLayoutsController', () => {
     });
 
     it('should return right letters for keyboard mci-96', () => {
-        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_96))).toEqual(['H', 'G', 'F', 'E', 'D', 'C']);
+        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_96))).toEqual(['F', 'E', 'D', 'C', 'B', 'A']);
     });
     it('should return right letters for keyboard mci-84', () => {
-        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_84))).toEqual(['H', 'G', 'F', 'E', 'D', 'C', 'B']);
+        expect(controller.getLetters(keyboardService.findById(KeyboardIds.PREHKEYTECH_84))).toEqual(['G', 'F', 'E', 'D', 'C', 'B', 'A']);
     })
 
     it('should return valid layout for MCI 128', () => {
