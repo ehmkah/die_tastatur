@@ -82,7 +82,7 @@ export class KeyboardLayoutsController {
 
         result = result + `<div>Keysize ${widthInMillimeter + paddingInMillimeter}mm</div>`;
         result = result + `<div>Fontsize ${fontSize}</div>`;
-        result = result + `<div>Copyright Michael Krauße - <a href="https://github.com/ehmkah/die_tastatur">Die Tastatur</a> 2022</div>`;
+        result = result + `<div>Copyright Michael Krauße - <a href="https://github.com/ehmkah/die_tastatur">Die Tastatur</a> 2022 - 2023</div>`;
         result = result + "</html>";
         return result;
     }
