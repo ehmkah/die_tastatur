@@ -1,3 +1,4 @@
+/**
 Ctrl+Shift+P, F1   Show Command Palette
 Ctrl+P   Quick Open, Go to File...
 Ctrl+Shift+N   New window/instance
@@ -106,164 +107,36 @@ Ctrl+K P    Copy path of active file
 Ctrl+K R    Reveeal active file in explorer
 Ctrl+K O    Show active file in new window/instance
 
+F11     Toggle full screen
+Shift+Alt+0 toggle editor layout (horizontal/ vertical)
+CTRL+ =/-   Zoom in / out
+Ctrl+B  Toggle side bar visibility
+CTRL+SHIFT+E    Show explorer/ Toggle focus
+Ctrl+Shift+F    Show search
+CTRL+Shift+G    Show Source Control
+CTRL+shift+D    Show debug
+CTRL+Shift+X    Show extensions
+Ctrl+Shift+h    Replace in files
+ctrl+shift+j    toggle search details
+ ctrl+shift+u   show output panel
+ ctrl+shift+v   open markdown preview
+ ctrl+K v   open markdown preview to the side
+ ctrl+k z   zen mode (ESC ESC to exit)
 
+ F9 Toggle breakpoint
+ F5 Start/Continue
+ Shift+F5   Stop
+ F11/ Shift+F11 step into/out
+ F10    Step over
+ Ctrl+K Ctrl +I Show hover
 
-
-
-
-
-
-Shift+Alt+0 Ctrl+B Ctrl+Shift+F Ctrl+Shift+D Ctrl+Shift+H Ctrl+Shift+U Ctrl+K V
-Debug
-F5
-F11 / Shift+F11
-Open File...
-Save As...
-Close
-Reopen closed editor Open next
-Copy path of active file
-Show active file in new window/instance
-Toggle editor layout (horizontal/vertical) Toggle Sidebar visibility
-Show Search
-Show Debug
-Replace in files
-Show Output panel
-Open Markdown preview to the side
-Start/Continue Step into/out Show hover
-Ctrl+S
-Save
-General
-Ctrl+Shift+P, F1
-Ctrl+P
-Ctrl+Shift+N
-Ctrl+Shift+W
-Ctrl+,
-Ctrl+K Ctrl+S Basic editing
-Ctrl+X
-Ctrl+C
-Alt+ ↑ / ↓
-Shift+Alt + ↓ / ↑
-Ctrl+Shift+K
-Ctrl+Enter
-Ctrl+Shift+Enter
-Ctrl+Shift+\
-Ctrl+] / [
-    Home / End
-    Ctrl+Home
-    Ctrl+End
-    Ctrl+↑ / ↓
-Alt+PgUp / PgDn
-Ctrl+Shift+[
-    Ctrl+Shift+]
-Ctrl+K Ctrl+[
-    Ctrl+K Ctrl+]
-Ctrl+K Ctrl+0
-Ctrl+K Ctrl+J
-Ctrl+K Ctrl+C
-Ctrl+K Ctrl+U
-Ctrl+/
-Shift+Alt+A
-Alt+Z
-Navigation
-Ctrl+T
-Ctrl+G
-Ctrl+P
-Ctrl+Shift+O
-Ctrl+Shift+M
-F8
-Shift+F8
-Ctrl+Shift+Tab
-Alt+ ← / →
-Ctrl+F
-Ctrl+H
-F3 / Shift+F3
-Alt+Enter
-Ctrl+D
-Ctrl+K Ctrl+D
-Alt+C / R / W
-Find
-Replace
-Find next/previous
-Select all occurences of Find match
-Add selection to next Find match
-Move last selection to next Find match
-Toggle case-sensitive / regex / whole word
-Ctrl+K S
-Save All
-Ctrl+K Ctrl+W
-Close All
-Ctrl+K Enter
-Keep preview mode editor open
-Multi-cursor and selection
-Ctrl+Shift+Tab
-Open previous
-Alt+Click
-Ctrl+Alt+ ↑ / ↓
-Ctrl+U
-Shift+Alt+I
-Ctrl+L
-Ctrl+Shift+L
-Ctrl+F2
-Shift+Alt+→
-Shift+Alt+←
-Shift+Alt + (drag mouse)
-Ctrl+Shift+Alt +PgUp/PgDn
-Insert cursor
-Insert cursor above / below
-Undo last cursor operation
-Insert cursor at end of each line selected
-Select current line
-Select all occurrences of current selection
-Select all occurrences of current word
-Expand selection
-Shrink selection
-Column (box) selection
-Column (box) selection page up/down
-Ctrl+K R
-Reveal active file in Explorer
-F11
-Toggle full screen
-Ctrl+ = / -
-Zoom in/out
-Ctrl+Shift+E
-Show Explorer / Toggle focus
-Ctrl+Shift+G
-Show Source Control
-Ctrl+Shift+Alt Column (box) selection + (arrow key)
-Ctrl+Shift+X
-Show Extensions
-Ctrl+Shift+J
-Toggle Search details
-Rich languages editing
-Ctrl+Shift+V
-Open Markdown preview
-Ctrl+Space, Ctrl+I
-Ctrl+Shift+Space
-Shift+Alt+F
-Ctrl+K Ctrl+F
-F12
-Alt+F12
-Ctrl+K F12
-Ctrl+.
-Shift+F12
-F2
-Ctrl+K Ctrl+X
-Ctrl+K M
-Editor management
-Trigger suggestion
-Trigger parameter hints
-Format document
-Format selection
-Go to Definition
-Peek Definition
-Open Definition to the side
-Quick Fix
-Show References
-Rename Symbol
-Trim trailing whitespace
-Ctrl+K Ctrl+I Integrated terminal
-Ctrl+K Z
-Zen Mode (Esc Esc to exit)
+ ctrl+  show integrated terminal
+ ctrl+shift+    craete new terminal
+ ctrl+c copy selection
+ ctrl+v paste into active terminal
+ ctrl+UP/Down   scroll up/ down
+ ctrl+HOME/END  scroll to top/bottom
+ **/
 
 
 
