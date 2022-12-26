@@ -16,6 +16,7 @@ import {shellDefaultMacosx} from "./shell-default-macosx";
 import {ssh_agentDefaultMaxosx} from "./ssh_agent-default-maxosx";
 import {otherDefaultAll} from "./other-default-all";
 import {intellijClassicLinuxExecutions} from "./intellij_classic_linux";
+import {visualstudioLinuxExecutions} from "./visualcode-windows";
 
 @Injectable()
 export class ExecutionsService {
@@ -35,7 +36,8 @@ export class ExecutionsService {
             shellDefaultMacosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             ssh_agentDefaultMaxosx(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
             otherDefaultAll(this, this.keysetService.findByName(KeysetDefinitions.TERMINAL_MACOSX))).concat(
-            intellijClassicLinuxExecutions(this, this.keysetService));
+            intellijClassicLinuxExecutions(this, this.keysetService).concat(
+            visualstudioLinuxExecutions(this, this.keysetService)));
 
         return executions;
     }
@@ -61,18 +63,4 @@ export class ExecutionsService {
     }
 
 
-}
-
-class KrauTest extends ExecutionsService {
-
-    findAll(): Array<Execution> {
-
-
-        return super.findAll();
-
-    }
-
-    heuuL() {
-        const heud = 'ju';
-    }
 }

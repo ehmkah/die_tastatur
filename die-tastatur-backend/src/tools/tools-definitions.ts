@@ -7,6 +7,9 @@ export enum ToolsDefinitions {
 
     IntelliJ = 'Intellij',
     Webstorm = 'Webstorm',
-    Terminal = 'Terminal'
+    Terminal = 'Terminal',
+
+    VisualStudio = 'VisualStudio'
+
 
 }

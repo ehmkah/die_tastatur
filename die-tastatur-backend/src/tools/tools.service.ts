@@ -11,7 +11,7 @@ export class ToolsService {
             <Tool>{id: 'intellij', name: ToolsDefinitions.IntelliJ},
             <Tool>{id: 'webstorm', name: ToolsDefinitions.Webstorm},
             <Tool>{id: 'terminal', name: ToolsDefinitions.Terminal},
-            <Tool>{id: 'vsCode', name: 'VsCode'},
+            <Tool>{id: 'vsCode', name: ToolsDefinitions.VisualStudio},
             <Tool>{id: 'xcode', name: 'Xcode'},
             <Tool>{id: 'eclipse', name: 'Eclipse'}
         ];

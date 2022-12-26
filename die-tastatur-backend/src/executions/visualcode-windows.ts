@@ -3,8 +3,9 @@ import {KeysetsService} from "../keysets/keysets.service";
 import {Execution} from "./execution.interface";
 import {CommandsDefinitions} from "../commands/commands-definitions";
 import {KeysetDefinitions} from "../keysets/keyset-definitions";
+import {SpecialKeys} from "./special_keys";
 
-export function intellijClassicLinuxExecutions(executionService: ExecutionsService, keysetService: KeysetsService): Array<Execution> {
+export function visualstudioLinuxExecutions(executionService: ExecutionsService, keysetService: KeysetsService): Array<Execution> {
     class InternalExecution {
         command: CommandsDefinitions;
         executor: string;
@@ -16,17 +17,20 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         }
     }
 
-    let keyset = keysetService.findByName(KeysetDefinitions.INTELLIJ_CLASSIC_LINUX);
+    let keyset = keysetService.findByName(KeysetDefinitions.VISUAL_STUDIO_LINUX);
 
     const executions = [
+
         /**
          Ctrl+Shift+P, F1   Show Command Palette
-         Ctrl+P   Quick Open, Go to File...
+**/
+         //Ctrl+P   Quick Open, Go to File...
+         new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, `{${SpecialKeys.CTRL}+p}`),
+/**
          Ctrl+Shift+N   New window/instance
          Ctrl+Shift+W   Close window/instance
          Ctrl+,   User Settings
          Ctrl+K Ctrl+S   Keyboard Shortcuts
-
 
          Ctrl+X   Cut line (empty selection)
          Ctrl+C   Copy line (empty selection)

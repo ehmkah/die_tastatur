@@ -17,6 +17,7 @@ import {webstormDefaultMaxosxExecutions} from "../executions/webstorm_classic_ma
 import {linuxIntellijDeveloperLayout} from "./linux-intellij-developer";
 import {linuxIntellijDeveloperLayoutFor96} from "./linux-intellij-developer-96";
 import {linuxIntellijDeveloperLayoutFor84} from "./linux-intellij-developer-84";
+import {visualstudioLinuxExecutions} from "../executions/visualcode-windows";
 
 @Injectable()
 export class KeyboardLayoutsService {
@@ -27,6 +28,7 @@ export class KeyboardLayoutsService {
     findAll(): Array<KeyboardLayout> {
         const keyboards = this.keyboardsService.findAll();
         return [
+            // layouts defined manually
             macosxDefaultDevKeyboardLayout(keyboards[0], this),
             macosxWebstormKeyboardTestExecutionLayout(keyboards[0], this),
             macosxWebstormDeveloperLayout(keyboards[0], this),
@@ -35,8 +37,10 @@ export class KeyboardLayoutsService {
             linuxIntellijDeveloperLayoutFor84(this.keyboardsService, this),
             emptyKeyboardLayout(keyboards[0], this)
         ].
-        concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0])).
-            concat(this.generateKeyboardLayoutForExecutionSet(webstormDefaultMaxosxExecutions(this.executionService, this.keysetService.findByName(KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX)), keyboards[0]));
+            // automatic generated keyboard-layouts from defined executions
+            concat(this.generateKeyboardLayoutForExecutionSet(intellijClassicLinuxExecutions(this.executionService, this.keysetService), keyboards[0])).
+            concat(this.generateKeyboardLayoutForExecutionSet(webstormDefaultMaxosxExecutions(this.executionService, this.keysetService.findByName(KeysetDefinitions.WEBSTORM_CLASSIC_MACOSX)), keyboards[0])).
+            concat(this.generateKeyboardLayoutForExecutionSet(visualstudioLinuxExecutions(this.executionService, this.keysetService), keyboards[0]));
     }
 
     createKeyDetails(id: string, commandName: CommandsDefinitions, keyset: KeysetDefinitions) {

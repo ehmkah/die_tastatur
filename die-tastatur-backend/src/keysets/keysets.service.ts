@@ -42,6 +42,13 @@ export class KeysetsService {
                 operatingSystem: operatingSystems[1],
                 description: 'Intellij classic',
                 name: KeysetDefinitions.INTELLIJ_CLASSIC_LINUX
+            },
+            <Keyset>{
+                id: '5',
+                tool: this.toolsService.findByName(ToolsDefinitions.VisualStudio),
+                operatingSystem: operatingSystems[1],
+                description: 'Visual Studio Linux',
+                name: KeysetDefinitions.VISUAL_STUDIO_LINUX
             }
         ];
     }
