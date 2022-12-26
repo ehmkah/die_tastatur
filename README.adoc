@@ -39,7 +39,7 @@ Your contributions are always welcome.
 
 == Supported programs
 
-* E.g. Webstorm, IntelliJ, git, kubectl, docker, kubens, docker-compose, shell
+* E.g. Webstorm, IntelliJ, Visual Studio, git, kubectl, docker, kubens, docker-compose, shell
 * See `executions.service.ts` for a complete list
 
 == Supported Operating systems

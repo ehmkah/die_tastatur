@@ -51,7 +51,6 @@ export class ExecutionsService {
         return matchingExecutions[0];
     }
 
-
     createExecution(id: string, commandDefinition: CommandsDefinitions, keyset: Keyset, executor: string): Execution {
         const command = this.commandService.findByCommandDefintion(commandDefinition);
         return <Execution>{
