@@ -97,27 +97,30 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
          // Shift+F12  Show References
          // F2  Rename Symbol
          // Ctrl+K Ctrl+X  Trim trailing whitespace
-         // Ctrl+K M  change file lamnguage
+         // Ctrl+K M  change file language
          //
-         // Ctrl+F4, Ctrl+W
-         // Ctrl+K F
-         // Ctrl+\
-         // Ctrl+ 1 / 2 / 3
-         // Ctrl+K Ctrl+ ←/→
-         // Close editor
-         // Close folder
-         // Split editor
-         // Focus into 1st, 2nd or 3rd editor group
-         // Focus into previous/next editor group
+        // Close editor
+        // Ctrl+F4, Ctrl+W
+        // Close folder
+        // Ctrl+K F
+        // Split editor
+        // Ctrl+\
+        // Focus into 1st, 2nd or 3rd editor group
+        // Ctrl+ 1 / 2 / 3
+        // Focus into previous/next editor group
+        // Ctrl+K Ctrl+ ←/→
          // Ctrl+Shift+PgUp/PgDn Moveeditorleft/right
          // Ctrl+K ← / → Move active editor group
          //
          // Ctrl+N  New File
+        new InternalExecution(CommandsDefinitions.IDE_CREATE_NEW_FILE, `{${SpecialKeys.CTRL}+n}`),
          // Ctrl+O  Open File...
+        new InternalExecution(CommandsDefinitions.IDE_NAVIGATION_GOTO_FILE, `{${SpecialKeys.CTRL}+o}`),
          // Ctrl+S  Save
          // Ctrl+Shift+S    Save As...
          // Ctrl+K S    Save All
          // Ctrl+F4 Close
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB, `{${SpecialKeys.CTRL}+${SpecialKeys.F4}}`),
          // Ctrl+K Ctrl+W   Close ALl
          // Ctrl+Shift+T    Reopen closed editor
          // Ctrl+K Enter    Keep preview mode editor open
@@ -128,6 +131,7 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
          // Ctrl+K O    Show active file in new window/instance
          //
          // F11     Toggle full screen
+        new InternalExecution(CommandsDefinitions.IDE_GENERAL_TOGGLE_MAXIMIZE_WINDOW, `${SpecialKeys.F11}`),
          // Shift+Alt+0 toggle editor layout (horizontal/ vertical)
          // CTRL+ =/-   Zoom in / out
          // Ctrl+B  Toggle side bar visibility
@@ -144,10 +148,16 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
          // ctrl+k z   zen mode (ESC ESC to exit)
          //
          // F9 Toggle breakpoint
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_TOGGLE_BREAKPOINT, `${SpecialKeys.F9}`),
          // F5 Start/Continue
+        new InternalExecution(CommandsDefinitions.IDE_RUNNING_DEBUG, `${SpecialKeys.F5}`),
          // Shift+F5   Stop
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STOP, `{${SpecialKeys.SHIFT}+${SpecialKeys.F5}}`),
          // F11/ Shift+F11 step into/out
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STEP_INTO, `${SpecialKeys.F11}`),
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STEP_OUT, `{${SpecialKeys.SHIFT}+${SpecialKeys.F11}}`),
          // F10    Step over
+        new InternalExecution(CommandsDefinitions.IDE_DEBUG_STEP_OVER, `${SpecialKeys.F10}`),
          // Ctrl+K Ctrl +I Show hover
          //
          // ctrl+  show integrated terminal

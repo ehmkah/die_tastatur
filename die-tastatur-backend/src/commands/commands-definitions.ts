@@ -167,6 +167,7 @@ export enum CommandsDefinitions {
     IDE_EDITING_EXPAND_ALL = 'ide_editing_expand_all',
     IDE_EDITING_COOLAPSE_ALL = 'ide_editing_coolapse_all',
     IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB = 'ide_editing_close_active_editor_tab',
+    IDE_CREATE_NEW_FILE = 'ide_create_new_file',
 
     IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES = 'ide_multiple_carets_select_all_occurences',
     IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE = 'ide_multiple_carets_select_next_occurence',

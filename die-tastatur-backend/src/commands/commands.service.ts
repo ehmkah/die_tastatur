@@ -77,6 +77,7 @@ export class CommandsService {
             <Command>{id: 'ide_navigation_goto_numbered_bookmark_8', description: 'Goto numbered 8 bookmark', defaultKeyPrintText: 'goto bookmark 8', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_8},
             <Command>{id: 'ide_navigation_goto_numbered_bookmark_9', description: 'Goto numbered 9 bookmark', defaultKeyPrintText: 'goto bookmark 9', name: CommandsDefinitions.IDE_NAVIGATION_GOTO_NUMBERED_BOOKMARK_9},
             <Command>{id: 'ide_navigation_show_bookmark', description: 'Show bookmark', defaultKeyPrintText: 'show bookmark', name: CommandsDefinitions.IDE_NAVIGATION_SHOW_BOOKMARK},
+            <Command>{id: 'ide_create_new_file', description: 'Create new file', defaultKeyPrintText: 'new file', name: CommandsDefinitions.IDE_CREATE_NEW_FILE},
 
             <Command>{id: 'ide_search_and_replace_find', description: 'Find', defaultKeyPrintText: 'Find', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND},
             <Command>{id: 'ide_search_and_replace_replace', description: 'Replace', defaultKeyPrintText: 'Replace', name: CommandsDefinitions.IDE_SEARCH_AND_REPLACE_REPLACE},
