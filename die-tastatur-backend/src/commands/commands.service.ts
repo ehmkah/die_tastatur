@@ -144,6 +144,7 @@ export class CommandsService {
             <Command>{id: 'IDE_EDITING_DUPLICATE_LINE', description: 'Duplicate current line or selected block', defaultKeyPrintText: 'duplicate', name: CommandsDefinitions.IDE_EDITING_DUPLICATE_LINE},
             <Command>{id: 'IDE_EDITING_COPY_LINE', description: 'copy complete line to clipboard', defaultKeyPrintText: 'copy line', name: CommandsDefinitions.IDE_EDITING_COPY_LINE},
             <Command>{id: 'IDE_EDITING_DELETE_LINE', description: 'Delete current line', defaultKeyPrintText: 'delete line', name: CommandsDefinitions.IDE_EDITING_DELETE_LINE},
+            <Command>{id: 'IDE_EDITING_INSERT_LINE_BELOW', description: 'Insert line bewlow current line', defaultKeyPrintText: 'insert line', name: CommandsDefinitions.IDE_EDITING_INSERT_LINE_BELOW},
 
             <Command>{id: 'ide_editing_basic_code_completion', description: 'Basic code completion', defaultKeyPrintText: 'code complete', name: CommandsDefinitions.IDE_EDITING_BASIC_CODE_COMPLETION},
             <Command>{id: 'ide_editing_smart_code_completion', description: 'smart code completion', defaultKeyPrintText: 'smart code complete', name: CommandsDefinitions.IDE_EDITING_SMART_CODE_COMPLETION},

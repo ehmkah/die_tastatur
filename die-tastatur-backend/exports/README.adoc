@@ -3,8 +3,8 @@
 Contains all available keyboardlayouts.
 Do not touch the `\*.mwf` and `*.html` files by manually use the `exportAll.py` script.
 
-* Install python3
-* Install requests module - `pip3 install requests`
 * Run _Die Tastatur_ - `npm run start`
-* Run export script - `python3 exportAll.py`
+* Install python3
+* Open pipen shell _ `pipenv shell`
+* Run export script - `python exportAll.py`
 

@@ -75,6 +75,7 @@ export class KeyboardLayoutsService {
         let xCounter = 0;
         for (const execution of executions) {
             const keyboardId = Math.floor(keyCounter / NUMBER_OF_KEYS);
+            console.log(result[keyboardId].name+"::"+yCounter+"::"+xCounter+"::"+execution.command.name);
             result[keyboardId].keys[yCounter][xCounter] = this.createKeyDetails(`${yCounter}{${xCounter}`, execution.command.name, execution.keyset.name);
 
             xCounter = xCounter + 1;

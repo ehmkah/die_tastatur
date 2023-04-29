@@ -2,6 +2,7 @@ import requests
 r = requests.get('http://localhost:3000/keyboard-layouts/')
 
 for keyboardlayout in r.json():
+    print(keyboardlayout)
     keyboardlayoutId = keyboardlayout["id"]
     mwfFileContent=requests.get('http://localhost:3000/keyboard-layouts/'+keyboardlayoutId+'/file')
     outfileMwf = open(keyboardlayoutId+'.mwf','w')
