@@ -37,6 +37,7 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
         // Ctrl+Shift+K   Delete line
         new InternalExecution(CommandsDefinitions.IDE_EDITING_DELETE_LINE, `{${SpecialKeys.CTRL}+{${SpecialKeys.CTRL}+k}}`),
         // Ctrl+Enter   Insert line below
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_INSERT_LINE_BELOW, `{${SpecialKeys.CTRL}+${SpecialKeys.RETURN}`),
         // Ctrl+Shift+Enter   Insert line above
         // Ctrl+Shift+\   Jump to matching bracket
         // Ctrl+] / [   Indent/outdent line
