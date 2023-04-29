@@ -93,7 +93,7 @@ export function intellijClassicLinuxExecutions(executionService: ExecutionsServi
         new InternalExecution(CommandsDefinitions.IDE_EDITING_EXPAND_CODE_BLOCK, `{${SpecialKeys.CTRL}+${SpecialKeys.PLUS}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_COLLAPSE_CODE_BLOCK, `{${SpecialKeys.CTRL}+${SpecialKeys.MINUS}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_EXPAND_ALL, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.PLUS}}}`),
-        new InternalExecution(CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.MINUS}}}`),
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COLAPSE_ALL, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+${SpecialKeys.MINUS}}}`),
         new InternalExecution(CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB, `{${SpecialKeys.CTRL}+${SpecialKeys.F4}}`),
         new InternalExecution(CommandsDefinitions.IDE_REFACTORING_COPY, `${SpecialKeys.F5}`),
         new InternalExecution(CommandsDefinitions.IDE_REFACTORING_MOVE, `${SpecialKeys.F6}`),

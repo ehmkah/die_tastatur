@@ -163,10 +163,12 @@ export enum CommandsDefinitions {
     IDE_EDITING_SELECT_TILL_CODE_BLOCK_START = 'ide_editing_select_till_code_block_start',
     IDE_EDITING_DELETE_WORD_END = 'ide_editing_delete_word_end',
     IDE_EDITING_DELETE_WORD_START = 'ide_editing_delete_word_start',
+
     IDE_EDITING_EXPAND_CODE_BLOCK = 'ide_editing_expand_code_block',
     IDE_EDITING_COLLAPSE_CODE_BLOCK = 'ide_editing_collapse_code_block',
     IDE_EDITING_EXPAND_ALL = 'ide_editing_expand_all',
-    IDE_EDITING_COOLAPSE_ALL = 'ide_editing_coolapse_all',
+    IDE_EDITING_COLAPSE_ALL = 'ide_editing_coolapse_all',
+
     IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB = 'ide_editing_close_active_editor_tab',
     IDE_CREATE_NEW_FILE = 'ide_create_new_file',
 

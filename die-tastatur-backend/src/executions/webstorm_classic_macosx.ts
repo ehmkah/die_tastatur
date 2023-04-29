@@ -148,7 +148,7 @@ export function webstormDefaultMaxosxExecutions(executionService: ExecutionsServ
         executionService.createExecution('IDE_EDITING_EXPAND_CODE_BLOCK', CommandsDefinitions.IDE_EDITING_EXPAND_CODE_BLOCK, keyset, `{${SpecialKeys.LWIN}+${SpecialKeys.PLUS}}`),
         executionService.createExecution('IDE_EDITING_COLLAPSE_CODE_BLOCK', CommandsDefinitions.IDE_EDITING_COLLAPSE_CODE_BLOCK, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.MINUS}}}`),
         executionService.createExecution('IDE_EDITING_EXPAND_ALL', CommandsDefinitions.IDE_EDITING_EXPAND_ALL, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.PLUS}}}`),
-        executionService.createExecution('IDE_EDITING_COOLAPSE_ALL', CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.MINUS}}}`),
+        executionService.createExecution('IDE_EDITING_COOLAPSE_ALL', CommandsDefinitions.IDE_EDITING_COLAPSE_ALL, keyset, `{${SpecialKeys.SHIFT}+{${SpecialKeys.LWIN}+${SpecialKeys.MINUS}}}`),
         executionService.createExecution('IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB', CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB, keyset, `{${SpecialKeys.LWIN}+w}`),
         executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES, keyset, `{${SpecialKeys.CTRL}+{${SpecialKeys.LWIN}+g}}`),
         executionService.createExecution('IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE', CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE, keyset, `{${SpecialKeys.CTRL}+g}`),

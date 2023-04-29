@@ -29,7 +29,6 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
         // Ctrl+,   User Settings
         new InternalExecution(CommandsDefinitions.IDE_GENERAL_OPEN_PREFERENCES, `{${SpecialKeys.CTRL}+,}`),
         // Ctrl+K Ctrl+S   Keyboard Shortcuts
-        //
         // Ctrl+X   Cut line (empty selection)
         // Ctrl+C   Copy line (empty selection)
         // Alt+ ↑ / ↓   Move line up/down
@@ -47,11 +46,15 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
         // Ctrl+↑ / ↓   Scroll line up/down
         // Alt+PgUp / PgDn   Scroll page up/down
         // Ctrl+Shift+[   Fold (collapse) region
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COLLAPSE_CODE_BLOCK, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+[}`),
         // Ctrl+Shift+]   Unfold (uncollapse) region
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_EXPAND_CODE_BLOCK, `{${SpecialKeys.CTRL}+{${SpecialKeys.SHIFT}+]}`),
         // Ctrl+K Ctrl+[   Fold (collapse) all subregions
         // Ctrl+K Ctrl+]   Unfold (uncollapse) all subregions
         // Ctrl+K Ctrl+0   Fold (collapse) all regions
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COLAPSE_ALL, `{${SpecialKeys.CTRL}+0`),
         // Ctrl+K Ctrl+J   Unfold (uncollapse) all regions
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_COLAPSE_ALL, `{${SpecialKeys.CTRL}+j`),
         // Ctrl+K Ctrl+C   Add line comment Ctrl+K Ctrl+U   Remove line comment
         // Ctrl+/   Toggle line comment
         new InternalExecution(CommandsDefinitions.IDE_EDITING_COMMENT_OR_UNCOMMENT, `{${SpecialKeys.CTRL}+k}`),
@@ -89,8 +92,11 @@ export function visualstudioLinuxExecutions(executionService: ExecutionsService,
         // Ctrl+L  Select current line
         // Ctrl+Shift+L  Select all occurrences of current selection
         // Ctrl+F2  Select all occurrences of current word
+        new InternalExecution(CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES, `{${SpecialKeys.SHIFT}+${SpecialKeys.F2}}`),
         // Shift+Alt+→  Expand selection
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_SELECT_SUCCESSIVLY, `{${SpecialKeys.SHIFT}+${SpecialKeys.ALT}+${SpecialKeys.CURSOR_RIGHT}`),
         // Shift+Alt+←  Shrink selection
+        new InternalExecution(CommandsDefinitions.IDE_EDITING_DECREASE_CURRENT_SELECTION, `{${SpecialKeys.SHIFT}+${SpecialKeys.ALT}+${SpecialKeys.CURSOR_LEFT}`),
         // Shift+Alt + (drag mouse)  Column (box) selection
         // Ctrl+Shift+Alt +PgUp/PgDn  Column (box) selection page up/down
         // Ctrl+Shift+Alt Column (box) selection + (arrow key)

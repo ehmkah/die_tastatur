@@ -178,7 +178,7 @@ export class CommandsService {
             <Command>{id: 'ide_editing_expand_code_block', description: 'Expand code block', defaultKeyPrintText: 'expand code block', name: CommandsDefinitions.IDE_EDITING_EXPAND_CODE_BLOCK},
             <Command>{id: 'ide_editing_collapse_code_block', description: 'Collapse code block', defaultKeyPrintText: 'collapse code block', name: CommandsDefinitions.IDE_EDITING_COLLAPSE_CODE_BLOCK},
             <Command>{id: 'ide_editing_expand_all', description: 'Expand/collapse code block', defaultKeyPrintText: 'expand all', name: CommandsDefinitions.IDE_EDITING_EXPAND_ALL},
-            <Command>{id: 'ide_editing_coolapse_all', description: 'Collapse all', defaultKeyPrintText: 'collapse all', name: CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL},
+            <Command>{id: 'ide_editing_coolapse_all', description: 'Collapse all', defaultKeyPrintText: 'collapse all', name: CommandsDefinitions.IDE_EDITING_COLAPSE_ALL},
             <Command>{id: 'ide_editing_close_active_editor_tab', description: 'Close active editor tab', defaultKeyPrintText: 'close tab', name: CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB},
             <Command>{id: 'ide_multiple_carets_select_all_occurences',description: 'Select all occurences', defaultKeyPrintText: 'select all occurences', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_ALL_OCCURENCES},
             <Command>{id: 'ide_multiple_carets_select_next_occurence',description: 'Select next occurence', defaultKeyPrintText: 'select next occurence', name: CommandsDefinitions.IDE_MULTIPLE_CARETS_SELECT_NEXT_OCCURENCE},

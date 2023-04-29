@@ -70,7 +70,7 @@ export function macosxWebstormKeyboardTestExecutionLayout(keyboard: Keyboard, ke
     board[3][6] = keyboardLayoutsService.createKeyDetails('3_6', CommandsDefinitions.IDE_EDITING_EXPAND_CODE_BLOCK, keyset);
     board[3][7] = keyboardLayoutsService.createKeyDetails('3_7', CommandsDefinitions.IDE_EDITING_COLLAPSE_CODE_BLOCK, keyset);
     board[3][8] = keyboardLayoutsService.createKeyDetails('3_8', CommandsDefinitions.IDE_EDITING_EXPAND_ALL, keyset);
-    board[3][9] = keyboardLayoutsService.createKeyDetails('3_9', CommandsDefinitions.IDE_EDITING_COOLAPSE_ALL, keyset);
+    board[3][9] = keyboardLayoutsService.createKeyDetails('3_9', CommandsDefinitions.IDE_EDITING_COLAPSE_ALL, keyset);
     board[3][10] = keyboardLayoutsService.createKeyDetails('3_10', CommandsDefinitions.IDE_EDITING_CLOSE_ACTIVE_EDITOR_TAB, keyset);
     board[3][11] = keyboardLayoutsService.createKeyDetails('3_11', CommandsDefinitions.IDE_NAVIGATION_SHOW_BOOKMARK, keyset);
     board[3][12] = keyboardLayoutsService.createKeyDetails('3_12', CommandsDefinitions.IDE_SEARCH_AND_REPLACE_FIND, keyset);
